@@ -1,0 +1,69 @@
+{
+ "r0": {
+  "A": 38.0,
+  "B": 109.75
+ },
+ "n_images_processed": 1003,
+ "n_tuning_images": 40,
+ "note": "counts below are HELD-OUT images only (tuning set excluded)",
+ "A": {
+  "images": 480,
+  "images_4160x3120": 0,
+  "pos_crops": 5726,
+  "parasitized_boxes": 5514,
+  "merged_troph_gam": 3,
+  "separate_pos": {
+   "Trophozoite": 210,
+   "Gametocyte": 2
+  },
+  "neg_total": 46179,
+  "neg_per_field_min_q1_med_q3_max": [
+   14.0,
+   76.0,
+   91.0,
+   119.0,
+   167.0
+  ],
+  "fields_ge2": 480,
+  "fields_ge5": 480,
+  "fields_ge10": 480,
+  "raw_detections_per_field_min_q1_med_q3_max": [
+   14.0,
+   84.75,
+   103.0,
+   133.0,
+   183.0
+  ],
+  "detector_recall_iou0.5": 0.7141820819731592
+ },
+ "B": {
+  "images": 483,
+  "images_4160x3120": 4,
+  "pos_crops": 4074,
+  "parasitized_boxes": 3749,
+  "merged_troph_gam": 0,
+  "separate_pos": {
+   "Trophozoite": 317,
+   "Gametocyte": 8
+  },
+  "neg_total": 51342,
+  "neg_per_field_min_q1_med_q3_max": [
+   9.0,
+   90.0,
+   104.0,
+   118.0,
+   234.0
+  ],
+  "fields_ge2": 483,
+  "fields_ge5": 483,
+  "fields_ge10": 482,
+  "raw_detections_per_field_min_q1_med_q3_max": [
+   10.0,
+   98.0,
+   113.0,
+   127.0,
+   238.0
+  ],
+  "detector_recall_iou0.5": 0.7756735129367831
+ }
+}

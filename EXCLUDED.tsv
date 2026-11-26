@@ -1,0 +1,16 @@
+path	reason
+results_src/figmech_v39/figmech_v39_arrays.npz	per-cell scores of BBBC-ALL fields
+results_src/dafunnel/d_a_funnel_bbbc.json	per-field counts and FPR of all BBBC-ALL images
+results_src/ebatch/ebatch_e4_macfail.json	lists individual image identifiers
+results_src/ebatch/ebatch_e4_macfail_r7.json	lists individual image identifiers
+results_src/ebatch/ebatch_e4_macmask.json	per-group pixel statistics of NIH images
+runs/simw3_20261124T194046Z/simw3_rows.json	on the VM only, 92 MB (over 50 MB): release-asset candidate
+code/build/assemble_bj_v6.py	manuscript text; released after acceptance
+code/build/draft11_edits.py	manuscript text; released after acceptance
+code/build/draft12_edits.py	manuscript text; released after acceptance
+code/build/draft13_edits.py	manuscript text; released after acceptance
+code/build/draft14_edits.py	manuscript text; released after acceptance
+code/build/draft15_edits.py	manuscript text; released after acceptance
+code/build/sec4_ademp_v68.tex	manuscript text; released after acceptance
+code/build/si_trim_v1.py	manuscript text; released after acceptance
+code/build/si_trim_v2.py	manuscript text; released after acceptance

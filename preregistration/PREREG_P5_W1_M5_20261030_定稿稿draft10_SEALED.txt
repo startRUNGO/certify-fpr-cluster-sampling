@@ -1,0 +1,1 @@
+封存记录：用户在本会话内经 AskUserQuestion 亲自批准封存 draft10（2026-10-31 17:59:38 UTC）。sha256 见同目录 .sha256 文件。封存后：Mac preflight → VM 推理一次 → Mac 评估一次。

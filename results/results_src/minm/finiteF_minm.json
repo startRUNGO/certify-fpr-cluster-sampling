@@ -1,0 +1,6 @@
+{
+ "n_min_iid|delta_over_K": 33,
+ "n_min_hyp|delta_over_K|F100": 26,
+ "n_min_hyp|delta_over_K|F300": 30,
+ "n_min_hyp|delta_over_K|F1000": 32
+}

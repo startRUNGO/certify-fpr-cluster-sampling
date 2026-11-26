@@ -1,0 +1,26 @@
+{
+ "mpidb_full": {
+  "n_failed_units": 7,
+  "n_units": 104,
+  "sequence": "1409171742",
+  "first_field": 3,
+  "last_field": 10,
+  "n_units_in_sequence": 10,
+  "failed_median_od_red_min": -0.0408219945202552,
+  "failed_median_od_red_max": -0.028749413285985792,
+  "failed_share_od_gt_beta_red_min": 0.008214285714285714,
+  "failed_share_od_gt_beta_red_max": 0.025384615384615384,
+  "failed_share_od_gt_beta_green_min": 0.7093333333333334,
+  "failed_share_od_gt_beta_green_max": 0.7844,
+  "failed_share_od_gt_beta_blue_min": 0.888,
+  "failed_share_od_gt_beta_blue_max": 0.946923076923077,
+  "passing_median_od_red_median": 0.33314444652853825,
+  "passing_median_od_red_min": -0.028749413285985792,
+  "passing_n_units": 97,
+  "passing_n_median_od_red_below_zero": 2,
+  "failed_all_median_od_red_below_zero": true,
+  "source_diag_n_units": 104,
+  "note_front_version": "diagnosis made with the r1-r4 e4_norm (before the foreground repair); MP-IDB crops contain no black fill, so the repair does not change this finding",
+  "note_black_share_source": "black-pixel share of the MP-IDB sample 0.0 (max channel <= 10) in e4_front_rootcause_diag.json f4f172e0 composition/mh; not recomputed here"
+ }
+}

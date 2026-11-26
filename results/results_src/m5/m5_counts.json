@@ -1,0 +1,8 @@
+{
+ "ids_file": "ids_m5hcm.npz (M5 inference outputs, m5_infer_20261031T180153Z)",
+ "ids_sha256": "32abb8620e8d4ea42c2730bd94b1a1037b04e73019e0659587298f388e445723",
+ "cells": 183105,
+ "fields": 1217,
+ "positives": 2761,
+ "negatives": 180344
+}

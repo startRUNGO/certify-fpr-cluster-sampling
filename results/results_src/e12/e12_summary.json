@@ -1,0 +1,5185 @@
+{
+ "version": "e12_r1",
+ "spec": "P5_规格_E11E12_水平修正与压力测试_开发站与合成_20261108_draft2",
+ "script_sha256": "aef3570877fdf7427fb469d4e99d3341547342bb36fb86366e47c69b971ccd59",
+ "pins": {
+  "m3_replay_lib": "ed9d1f17701c9f30e92df0152a1c10bec6f7ee2d2bc392e65d617962ff0081de",
+  "m3_split_dev_eval": "cbf1e7f4f33dd1c74cbfd0f3ac4d34a397e8a7ef44b82c9365ca117733bf6457",
+  "s8_bounds": "54a2af8d3704c16b0994dcdc584d4f407cd9564cc07d49ad74cdf7c4cad5ae7f",
+  "e10_synth": "00be97b1f15a0fd5ac7c03b06d41f6adc0ac44a2c11b165e54748fbe68f7e08e",
+  "ebatch_lib": "359b6bce2dfdbf50a2acb8b909d631ab40d445447275915e2318e70981ef007f"
+ },
+ "reps": 5,
+ "ndraw": 200,
+ "m": 22,
+ "levels": {
+  "S3": 0.03333333333333333,
+  "S3c": 0.016666666666666666
+ },
+ "anchors": {
+  "a_generator_checks": {
+   "icc_tau0.0": [
+    0.0,
+    1.9274705288631186e-17
+   ],
+   "icc_tau1.0": [
+    0.27707407198465966,
+    0.24890581353714486
+   ],
+   "iid_type1_B1u_0.10": {
+    "rate": 0.0485,
+    "limit": 0.12012461179749812,
+    "site_fpr": 0.100030019012041,
+    "n_draws": 2000
+   }
+  },
+  "b": "passed (make_site2 neutral == make_site bit for bit)",
+  "c": "passed (copy of run_site_seed == library for S3, B1u_c0, B1u_c1s, SPLIT6, 5 draws)",
+  "d": "passed (S3 and SPLIT6 per-realisation coverage at eps 0.10 and 0.05 equal E10 cell 0 within 1e-12)",
+  "e": "passed (S3c certified => S3 certified, every draw)"
+ },
+ "cells": {
+  "0": {
+   "cell": {
+    "name": "base",
+    "tau": 0.5,
+    "r": 100,
+    "pi": 0.05,
+    "tail": "normal",
+    "F": 300,
+    "size_sigma": 0.0,
+    "rare": null,
+    "slides": null,
+    "two_stage": null
+   },
+   "realised_icc_per_realisation": [
+    0.08582792646634037,
+    0.08213536799738202,
+    0.07623103856293441,
+    0.06872017267887795,
+    0.07871683527646875
+   ],
+   "realised_icc_mean": 0.07832626819640069,
+   "results": {
+    "S3|0.1": {
+     "coverage": 0.998,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      0.99,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9940000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.02536496628302175
+    },
+    "S3c|0.1": {
+     "coverage": 0.999,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      0.995,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9970000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.030986792075773966
+    },
+    "SPLIT6|0.1": {
+     "coverage": 0.994,
+     "coverage_per_realisation": [
+      0.995,
+      0.99,
+      0.995,
+      0.99,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.991,
+      0.9970000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.017812661720749322
+    },
+    "B1u_c1s|0.1": {
+     "coverage": 0.977,
+     "coverage_per_realisation": [
+      0.975,
+      0.975,
+      0.985,
+      0.975,
+      0.975
+     ],
+     "coverage_ci90_seedcluster": [
+      0.975,
+      0.9809999999999999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.0185635583003681
+    },
+    "S3c-S3|0.1": {
+     "delta_coverage": 0.0010000000000000009,
+     "delta_ds_own": -0.005621825792752215,
+     "delta_coverage_per_realisation": [
+      0.0,
+      0.0,
+      0.0050000000000000044,
+      0.0,
+      0.0
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.005078979343863917,
+      -0.005715158924205387,
+      -0.005634469696969697,
+      -0.006259191176470589,
+      -0.005421329822251485
+     ]
+    },
+    "S3|0.05": {
+     "coverage": 0.9960000000000001,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      0.99,
+      0.995,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.993,
+      0.999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.051650302342841736
+    },
+    "S3c|0.05": {
+     "coverage": 0.999,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      0.995,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9970000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.06360170321909073
+    },
+    "SPLIT6|0.05": {
+     "coverage": 0.99,
+     "coverage_per_realisation": [
+      0.985,
+      0.995,
+      0.98,
+      0.995,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.985,
+      0.9949999999999999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.04086875207107296
+    },
+    "B1u_c1s|0.05": {
+     "coverage": 0.984,
+     "coverage_per_realisation": [
+      0.99,
+      0.995,
+      0.965,
+      0.98,
+      0.99
+     ],
+     "coverage_ci90_seedcluster": [
+      0.976,
+      0.991
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.03435472653134995
+    },
+    "S3c-S3|0.05": {
+     "delta_coverage": 0.0030000000000000027,
+     "delta_ds_own": -0.011951400876248991,
+     "delta_coverage_per_realisation": [
+      0.0,
+      0.0,
+      0.0050000000000000044,
+      0.0050000000000000044,
+      0.0050000000000000044
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.01224787363304982,
+      -0.012050733496332525,
+      -0.012926136363636355,
+      -0.009721200980392163,
+      -0.012811059907834092
+     ]
+    }
+   }
+  },
+  "1": {
+   "cell": {
+    "name": "A_rho0.01_d2.0",
+    "tau": 0.5,
+    "r": 100,
+    "pi": 0.05,
+    "tail": "normal",
+    "F": 300,
+    "size_sigma": 0.0,
+    "rare": [
+     0.01,
+     2.0
+    ],
+    "slides": null,
+    "two_stage": null
+   },
+   "realised_icc_per_realisation": [
+    0.12613368459177823,
+    0.12180749135496959,
+    0.11151016292405493,
+    0.1085261115575493,
+    0.11044292072553227
+   ],
+   "realised_icc_mean": 0.11568407423077687,
+   "results": {
+    "S3|0.1": {
+     "coverage": 0.998,
+     "coverage_per_realisation": [
+      0.995,
+      1.0,
+      1.0,
+      1.0,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9960000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.02625805127101604
+    },
+    "S3c|0.1": {
+     "coverage": 1.0,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      1.0,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.0327113982343208
+    },
+    "SPLIT6|0.1": {
+     "coverage": 0.9950000000000001,
+     "coverage_per_realisation": [
+      1.0,
+      0.995,
+      0.99,
+      0.995,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.993,
+      0.9970000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.01800749714144952
+    },
+    "B1u_c1s|0.1": {
+     "coverage": 0.977,
+     "coverage_per_realisation": [
+      0.975,
+      0.995,
+      0.965,
+      0.985,
+      0.965
+     ],
+     "coverage_ci90_seedcluster": [
+      0.969,
+      0.985
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.018137919388894967
+    },
+    "S3c-S3|0.1": {
+     "delta_coverage": 0.0020000000000000018,
+     "delta_ds_own": -0.006453346963304756,
+     "delta_coverage_per_realisation": [
+      0.0050000000000000044,
+      0.0,
+      0.0,
+      0.0,
+      0.0050000000000000044
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.006145966709346987,
+      -0.006828057107386723,
+      -0.007504866969500319,
+      -0.00667099286177807,
+      -0.005116851168511679
+     ]
+    },
+    "rare_split|S3|0.1": {
+     "share_draws_with_rare_field": 0.174,
+     "coverage_with_rare": 1.0,
+     "coverage_without_rare": 0.9975786924939467,
+     "n_with": 174,
+     "n_without": 826
+    },
+    "rare_split|S3c|0.1": {
+     "share_draws_with_rare_field": 0.174,
+     "coverage_with_rare": 1.0,
+     "coverage_without_rare": 1.0,
+     "n_with": 174,
+     "n_without": 826
+    },
+    "S3|0.05": {
+     "coverage": 0.998,
+     "coverage_per_realisation": [
+      1.0,
+      0.995,
+      0.995,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9960000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.049116261611312925
+    },
+    "S3c|0.05": {
+     "coverage": 0.999,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      0.995,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9970000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.06181047285519351
+    },
+    "SPLIT6|0.05": {
+     "coverage": 0.9890000000000001,
+     "coverage_per_realisation": [
+      0.98,
+      1.0,
+      0.98,
+      0.985,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.982,
+      0.9960000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.038814564874885285
+    },
+    "B1u_c1s|0.05": {
+     "coverage": 0.983,
+     "coverage_per_realisation": [
+      0.985,
+      0.975,
+      0.985,
+      0.985,
+      0.985
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9790000000000001,
+      0.985
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.03266304745322661
+    },
+    "S3c-S3|0.05": {
+     "delta_coverage": 0.0010000000000000009,
+     "delta_ds_own": -0.01269421124388059,
+     "delta_coverage_per_realisation": [
+      0.0,
+      0.0050000000000000044,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.014154929577464795,
+      -0.013060211049037873,
+      -0.01187865022712526,
+      -0.012381570408825447,
+      -0.011995694956949576
+     ]
+    },
+    "rare_split|S3|0.05": {
+     "share_draws_with_rare_field": 0.174,
+     "coverage_with_rare": 1.0,
+     "coverage_without_rare": 0.9975786924939467,
+     "n_with": 174,
+     "n_without": 826
+    },
+    "rare_split|S3c|0.05": {
+     "share_draws_with_rare_field": 0.174,
+     "coverage_with_rare": 1.0,
+     "coverage_without_rare": 0.9987893462469734,
+     "n_with": 174,
+     "n_without": 826
+    }
+   }
+  },
+  "2": {
+   "cell": {
+    "name": "A_rho0.01_d4.0",
+    "tau": 0.5,
+    "r": 100,
+    "pi": 0.05,
+    "tail": "normal",
+    "F": 300,
+    "size_sigma": 0.0,
+    "rare": [
+     0.01,
+     4.0
+    ],
+    "slides": null,
+    "two_stage": null
+   },
+   "realised_icc_per_realisation": [
+    0.1587527193815068,
+    0.16796348311330786,
+    0.16987969083050652,
+    0.16057124129348985,
+    0.1744418435061904
+   ],
+   "realised_icc_mean": 0.1663217956250003,
+   "results": {
+    "S3|0.1": {
+     "coverage": 0.9960000000000001,
+     "coverage_per_realisation": [
+      1.0,
+      0.995,
+      0.995,
+      0.99,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.993,
+      0.999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.03293708349344575
+    },
+    "S3c|0.1": {
+     "coverage": 0.998,
+     "coverage_per_realisation": [
+      1.0,
+      0.995,
+      1.0,
+      0.995,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9960000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.04075761385017511
+    },
+    "SPLIT6|0.1": {
+     "coverage": 0.993,
+     "coverage_per_realisation": [
+      0.995,
+      0.995,
+      0.985,
+      0.99,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9890000000000001,
+      0.9970000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.021961779339939605
+    },
+    "B1u_c1s|0.1": {
+     "coverage": 0.9639999999999999,
+     "coverage_per_realisation": [
+      0.95,
+      0.97,
+      0.97,
+      0.97,
+      0.96
+     ],
+     "coverage_ci90_seedcluster": [
+      0.958,
+      0.97
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.023117243830657986
+    },
+    "S3c-S3|0.1": {
+     "delta_coverage": 0.0020000000000000018,
+     "delta_ds_own": -0.007820530356729367,
+     "delta_coverage_per_realisation": [
+      0.0,
+      0.0,
+      0.0050000000000000044,
+      0.0050000000000000044,
+      0.0
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.010649772579597136,
+      -0.00568677792041079,
+      -0.007834793491864826,
+      -0.007134262191260288,
+      -0.007797045600513801
+     ]
+    },
+    "rare_split|S3|0.1": {
+     "share_draws_with_rare_field": 0.196,
+     "coverage_with_rare": 1.0,
+     "coverage_without_rare": 0.9950248756218906,
+     "n_with": 196,
+     "n_without": 804
+    },
+    "rare_split|S3c|0.1": {
+     "share_draws_with_rare_field": 0.196,
+     "coverage_with_rare": 1.0,
+     "coverage_without_rare": 0.9975124378109452,
+     "n_with": 196,
+     "n_without": 804
+    },
+    "S3|0.05": {
+     "coverage": 0.9970000000000001,
+     "coverage_per_realisation": [
+      1.0,
+      0.995,
+      0.99,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.994,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.057162513611680676
+    },
+    "S3c|0.05": {
+     "coverage": 0.999,
+     "coverage_per_realisation": [
+      0.995,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9970000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.07027699748970287
+    },
+    "SPLIT6|0.05": {
+     "coverage": 0.9890000000000001,
+     "coverage_per_realisation": [
+      0.98,
+      0.98,
+      0.995,
+      0.99,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.983,
+      0.9949999999999999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.04632473436012166
+    },
+    "B1u_c1s|0.05": {
+     "coverage": 0.978,
+     "coverage_per_realisation": [
+      0.97,
+      0.98,
+      0.98,
+      0.98,
+      0.98
+     ],
+     "coverage_ci90_seedcluster": [
+      0.974,
+      0.9800000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.03993311955989702
+    },
+    "S3c-S3|0.05": {
+     "delta_coverage": 0.0020000000000000018,
+     "delta_ds_own": -0.013114483878022188,
+     "delta_coverage_per_realisation": [
+      -0.0050000000000000044,
+      0.0050000000000000044,
+      0.010000000000000009,
+      0.0,
+      0.0
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.012884990253411312,
+      -0.014236200256739398,
+      -0.010297246558197748,
+      -0.0151931602279924,
+      -0.012960822093770072
+     ]
+    },
+    "rare_split|S3|0.05": {
+     "share_draws_with_rare_field": 0.196,
+     "coverage_with_rare": 1.0,
+     "coverage_without_rare": 0.996268656716418,
+     "n_with": 196,
+     "n_without": 804
+    },
+    "rare_split|S3c|0.05": {
+     "share_draws_with_rare_field": 0.196,
+     "coverage_with_rare": 1.0,
+     "coverage_without_rare": 0.9987562189054726,
+     "n_with": 196,
+     "n_without": 804
+    }
+   }
+  },
+  "3": {
+   "cell": {
+    "name": "A_rho0.03_d2.0",
+    "tau": 0.5,
+    "r": 100,
+    "pi": 0.05,
+    "tail": "normal",
+    "F": 300,
+    "size_sigma": 0.0,
+    "rare": [
+     0.03,
+     2.0
+    ],
+    "slides": null,
+    "two_stage": null
+   },
+   "realised_icc_per_realisation": [
+    0.15293213205707726,
+    0.19766241785084426,
+    0.17986506955842652,
+    0.17284093840785295,
+    0.17091262420073805
+   ],
+   "realised_icc_mean": 0.17484263641498782,
+   "results": {
+    "S3|0.1": {
+     "coverage": 0.9970000000000001,
+     "coverage_per_realisation": [
+      0.995,
+      0.995,
+      1.0,
+      0.995,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9949999999999999,
+      0.999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.029623688198391902
+    },
+    "S3c|0.1": {
+     "coverage": 1.0,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      1.0,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.036035228744620076
+    },
+    "SPLIT6|0.1": {
+     "coverage": 0.985,
+     "coverage_per_realisation": [
+      0.985,
+      0.985,
+      0.99,
+      0.985,
+      0.98
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9829999999999999,
+      0.9870000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.020478382081234515
+    },
+    "B1u_c1s|0.1": {
+     "coverage": 0.975,
+     "coverage_per_realisation": [
+      0.985,
+      0.96,
+      0.99,
+      0.95,
+      0.99
+     ],
+     "coverage_ci90_seedcluster": [
+      0.962,
+      0.9879999999999999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.021091727249237933
+    },
+    "S3c-S3|0.1": {
+     "delta_coverage": 0.0030000000000000027,
+     "delta_ds_own": -0.006411540546228176,
+     "delta_coverage_per_realisation": [
+      0.0050000000000000044,
+      0.0050000000000000044,
+      0.0,
+      0.0050000000000000044,
+      0.0
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.005864779874213841,
+      -0.006612702366127033,
+      -0.005992462311557787,
+      -0.006796331435800121,
+      -0.006791426743442096
+     ]
+    },
+    "rare_split|S3|0.1": {
+     "share_draws_with_rare_field": 0.516,
+     "coverage_with_rare": 1.0,
+     "coverage_without_rare": 0.993801652892562,
+     "n_with": 516,
+     "n_without": 484
+    },
+    "rare_split|S3c|0.1": {
+     "share_draws_with_rare_field": 0.516,
+     "coverage_with_rare": 1.0,
+     "coverage_without_rare": 1.0,
+     "n_with": 516,
+     "n_without": 484
+    },
+    "S3|0.05": {
+     "coverage": 0.998,
+     "coverage_per_realisation": [
+      1.0,
+      0.995,
+      1.0,
+      0.995,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9960000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.051668245092727216
+    },
+    "S3c|0.05": {
+     "coverage": 1.0,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      1.0,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.06193233088546205
+    },
+    "SPLIT6|0.05": {
+     "coverage": 0.985,
+     "coverage_per_realisation": [
+      0.98,
+      0.985,
+      0.995,
+      0.975,
+      0.99
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9799999999999999,
+      0.99
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.041358375061780174
+    },
+    "B1u_c1s|0.05": {
+     "coverage": 0.983,
+     "coverage_per_realisation": [
+      0.97,
+      0.985,
+      0.975,
+      0.985,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.976,
+      0.991
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.03661948122778582
+    },
+    "S3c-S3|0.05": {
+     "delta_coverage": 0.0020000000000000018,
+     "delta_ds_own": -0.010264085792734832,
+     "delta_coverage_per_realisation": [
+      0.0,
+      0.0050000000000000044,
+      0.0,
+      0.0050000000000000044,
+      0.0
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.011672955974842775,
+      -0.012061021170610212,
+      -0.00974560301507537,
+      -0.009430740037950656,
+      -0.008410108765195143
+     ]
+    },
+    "rare_split|S3|0.05": {
+     "share_draws_with_rare_field": 0.516,
+     "coverage_with_rare": 1.0,
+     "coverage_without_rare": 0.9958677685950413,
+     "n_with": 516,
+     "n_without": 484
+    },
+    "rare_split|S3c|0.05": {
+     "share_draws_with_rare_field": 0.516,
+     "coverage_with_rare": 1.0,
+     "coverage_without_rare": 1.0,
+     "n_with": 516,
+     "n_without": 484
+    }
+   }
+  },
+  "4": {
+   "cell": {
+    "name": "A_rho0.03_d4.0",
+    "tau": 0.5,
+    "r": 100,
+    "pi": 0.05,
+    "tail": "normal",
+    "F": 300,
+    "size_sigma": 0.0,
+    "rare": [
+     0.03,
+     4.0
+    ],
+    "slides": null,
+    "two_stage": null
+   },
+   "realised_icc_per_realisation": [
+    0.31821655238250174,
+    0.3204684244915391,
+    0.3075653640484412,
+    0.3247345136488384,
+    0.3056908023303572
+   ],
+   "realised_icc_mean": 0.31533513138033553,
+   "results": {
+    "S3|0.1": {
+     "coverage": 0.9880000000000001,
+     "coverage_per_realisation": [
+      0.985,
+      0.99,
+      0.985,
+      0.99,
+      0.99
+     ],
+     "coverage_ci90_seedcluster": [
+      0.986,
+      0.99
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.0355039476370099
+    },
+    "S3c|0.1": {
+     "coverage": 0.9970000000000001,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      0.99,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.994,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.04390704854504044
+    },
+    "SPLIT6|0.1": {
+     "coverage": 0.9810000000000001,
+     "coverage_per_realisation": [
+      0.97,
+      0.99,
+      0.98,
+      0.975,
+      0.99
+     ],
+     "coverage_ci90_seedcluster": [
+      0.975,
+      0.9870000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.02324859186815083
+    },
+    "B1u_c1s|0.1": {
+     "coverage": 0.9410000000000001,
+     "coverage_per_realisation": [
+      0.925,
+      0.95,
+      0.935,
+      0.945,
+      0.95
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9339999999999999,
+      0.9480000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.023732246376291014
+    },
+    "S3c-S3|0.1": {
+     "delta_coverage": 0.009000000000000008,
+     "delta_ds_own": -0.00840310090803054,
+     "delta_coverage_per_realisation": [
+      0.015000000000000013,
+      0.010000000000000009,
+      0.015000000000000013,
+      0.0,
+      0.0050000000000000044
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.00852849092047589,
+      -0.00864882090503507,
+      -0.008348402652200111,
+      -0.007486595174262735,
+      -0.009003194888178898
+     ]
+    },
+    "rare_split|S3|0.1": {
+     "share_draws_with_rare_field": 0.499,
+     "coverage_with_rare": 1.0,
+     "coverage_without_rare": 0.9760479041916168,
+     "n_with": 499,
+     "n_without": 501
+    },
+    "rare_split|S3c|0.1": {
+     "share_draws_with_rare_field": 0.499,
+     "coverage_with_rare": 1.0,
+     "coverage_without_rare": 0.9940119760479041,
+     "n_with": 499,
+     "n_without": 501
+    },
+    "S3|0.05": {
+     "coverage": 0.9950000000000001,
+     "coverage_per_realisation": [
+      1.0,
+      0.995,
+      0.995,
+      0.995,
+      0.99
+     ],
+     "coverage_ci90_seedcluster": [
+      0.993,
+      0.9970000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.06393285617394855
+    },
+    "S3c|0.05": {
+     "coverage": 0.998,
+     "coverage_per_realisation": [
+      0.995,
+      1.0,
+      1.0,
+      1.0,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9960000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.07841625299066676
+    },
+    "SPLIT6|0.05": {
+     "coverage": 0.985,
+     "coverage_per_realisation": [
+      0.98,
+      0.995,
+      0.98,
+      0.985,
+      0.985
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9810000000000001,
+      0.9890000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.04828791168524068
+    },
+    "B1u_c1s|0.05": {
+     "coverage": 0.9690000000000001,
+     "coverage_per_realisation": [
+      0.97,
+      0.96,
+      0.98,
+      0.975,
+      0.96
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9629999999999999,
+      0.975
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.04180005136843961
+    },
+    "S3c-S3|0.05": {
+     "delta_coverage": 0.0030000000000000027,
+     "delta_ds_own": -0.014483396816718225,
+     "delta_coverage_per_realisation": [
+      -0.0050000000000000044,
+      0.0050000000000000044,
+      0.0050000000000000044,
+      0.0050000000000000044,
+      0.0050000000000000044
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.013825923606762686,
+      -0.013301465901848303,
+      -0.01311934900542494,
+      -0.015978552278820377,
+      -0.01619169329073481
+     ]
+    },
+    "rare_split|S3|0.05": {
+     "share_draws_with_rare_field": 0.499,
+     "coverage_with_rare": 1.0,
+     "coverage_without_rare": 0.9900199600798403,
+     "n_with": 499,
+     "n_without": 501
+    },
+    "rare_split|S3c|0.05": {
+     "share_draws_with_rare_field": 0.499,
+     "coverage_with_rare": 1.0,
+     "coverage_without_rare": 0.9960079840319361,
+     "n_with": 499,
+     "n_without": 501
+    }
+   }
+  },
+  "5": {
+   "cell": {
+    "name": "A_rho0.1_d2.0",
+    "tau": 0.5,
+    "r": 100,
+    "pi": 0.05,
+    "tail": "normal",
+    "F": 300,
+    "size_sigma": 0.0,
+    "rare": [
+     0.1,
+     2.0
+    ],
+    "slides": null,
+    "two_stage": null
+   },
+   "realised_icc_per_realisation": [
+    0.33907055014021453,
+    0.3289525846296015,
+    0.33683807515210074,
+    0.3569120057811271,
+    0.28614408065711594
+   ],
+   "realised_icc_mean": 0.3295834592720319,
+   "results": {
+    "S3|0.1": {
+     "coverage": 0.9960000000000001,
+     "coverage_per_realisation": [
+      0.99,
+      1.0,
+      1.0,
+      1.0,
+      0.99
+     ],
+     "coverage_ci90_seedcluster": [
+      0.992,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.03535773552444533
+    },
+    "S3c|0.1": {
+     "coverage": 1.0,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      1.0,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.04343724892546271
+    },
+    "SPLIT6|0.1": {
+     "coverage": 0.984,
+     "coverage_per_realisation": [
+      0.975,
+      0.98,
+      0.985,
+      0.985,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9789999999999999,
+      0.9890000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.024113208260531448
+    },
+    "B1u_c1s|0.1": {
+     "coverage": 0.966,
+     "coverage_per_realisation": [
+      0.955,
+      0.975,
+      0.97,
+      0.945,
+      0.985
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9549999999999998,
+      0.977
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.023872019245125962
+    },
+    "S3c-S3|0.1": {
+     "delta_coverage": 0.0040000000000000036,
+     "delta_ds_own": -0.00807951340101739,
+     "delta_coverage_per_realisation": [
+      0.010000000000000009,
+      0.0,
+      0.0,
+      0.0,
+      0.010000000000000009
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.008972691807542267,
+      -0.007273869346733658,
+      -0.006579463701765861,
+      -0.009574788902291916,
+      -0.007996753246753245
+     ]
+    },
+    "rare_split|S3|0.1": {
+     "share_draws_with_rare_field": 0.901,
+     "coverage_with_rare": 0.9988901220865705,
+     "coverage_without_rare": 0.9696969696969697,
+     "n_with": 901,
+     "n_without": 99
+    },
+    "rare_split|S3c|0.1": {
+     "share_draws_with_rare_field": 0.901,
+     "coverage_with_rare": 1.0,
+     "coverage_without_rare": 1.0,
+     "n_with": 901,
+     "n_without": 99
+    },
+    "S3|0.05": {
+     "coverage": 0.999,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      0.995,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9970000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.05656992980565556
+    },
+    "S3c|0.05": {
+     "coverage": 1.0,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      1.0,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.06937348750262898
+    },
+    "SPLIT6|0.05": {
+     "coverage": 0.9890000000000001,
+     "coverage_per_realisation": [
+      0.995,
+      0.985,
+      0.995,
+      0.985,
+      0.985
+     ],
+     "coverage_ci90_seedcluster": [
+      0.985,
+      0.993
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.04721304696783062
+    },
+    "B1u_c1s|0.05": {
+     "coverage": 0.977,
+     "coverage_per_realisation": [
+      0.965,
+      0.985,
+      0.975,
+      0.985,
+      0.975
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9709999999999999,
+      0.983
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.039856533920256135
+    },
+    "S3c-S3|0.05": {
+     "delta_coverage": 0.0010000000000000009,
+     "delta_ds_own": -0.012803557696973417,
+     "delta_coverage_per_realisation": [
+      0.0,
+      0.0,
+      0.0050000000000000044,
+      0.0,
+      0.0
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.012841352405721713,
+      -0.013514447236180907,
+      -0.011278613472858079,
+      -0.013428829915560922,
+      -0.012954545454545455
+     ]
+    },
+    "rare_split|S3|0.05": {
+     "share_draws_with_rare_field": 0.901,
+     "coverage_with_rare": 0.9988901220865705,
+     "coverage_without_rare": 1.0,
+     "n_with": 901,
+     "n_without": 99
+    },
+    "rare_split|S3c|0.05": {
+     "share_draws_with_rare_field": 0.901,
+     "coverage_with_rare": 1.0,
+     "coverage_without_rare": 1.0,
+     "n_with": 901,
+     "n_without": 99
+    }
+   }
+  },
+  "6": {
+   "cell": {
+    "name": "A_rho0.1_d4.0",
+    "tau": 0.5,
+    "r": 100,
+    "pi": 0.05,
+    "tail": "normal",
+    "F": 300,
+    "size_sigma": 0.0,
+    "rare": [
+     0.1,
+     4.0
+    ],
+    "slides": null,
+    "two_stage": null
+   },
+   "realised_icc_per_realisation": [
+    0.8241248095186747,
+    0.8031386724995108,
+    0.8319404784746768,
+    0.8067396302208358,
+    0.8283670067708122
+   ],
+   "realised_icc_mean": 0.818862119496902,
+   "results": {
+    "S3|0.1": {
+     "coverage": 0.9549999999999998,
+     "coverage_per_realisation": [
+      0.965,
+      0.94,
+      0.965,
+      0.955,
+      0.95
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9479999999999998,
+      0.962
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.05486687825105844
+    },
+    "S3c|0.1": {
+     "coverage": 0.9799999999999999,
+     "coverage_per_realisation": [
+      0.995,
+      0.97,
+      0.975,
+      0.99,
+      0.97
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9719999999999999,
+      0.9880000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.06739289793770911
+    },
+    "SPLIT6|0.1": {
+     "coverage": 0.975,
+     "coverage_per_realisation": [
+      0.96,
+      0.975,
+      0.975,
+      0.98,
+      0.985
+     ],
+     "coverage_ci90_seedcluster": [
+      0.969,
+      0.9809999999999999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.03146060439448363
+    },
+    "B1u_c1s|0.1": {
+     "coverage": 0.9120000000000001,
+     "coverage_per_realisation": [
+      0.89,
+      0.92,
+      0.92,
+      0.915,
+      0.915
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9019999999999999,
+      0.9189999999999999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.036982797918754015
+    },
+    "S3c-S3|0.1": {
+     "delta_coverage": 0.025000000000000022,
+     "delta_ds_own": -0.01252601968665067,
+     "delta_coverage_per_realisation": [
+      0.030000000000000027,
+      0.030000000000000027,
+      0.010000000000000009,
+      0.03500000000000003,
+      0.020000000000000018
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.011859660163624927,
+      -0.010871588089330017,
+      -0.012252925877763325,
+      -0.012839821314613913,
+      -0.01480610298792117
+     ]
+    },
+    "rare_split|S3|0.1": {
+     "share_draws_with_rare_field": 0.901,
+     "coverage_with_rare": 0.9966703662597114,
+     "coverage_without_rare": 0.5757575757575758,
+     "n_with": 901,
+     "n_without": 99
+    },
+    "rare_split|S3c|0.1": {
+     "share_draws_with_rare_field": 0.901,
+     "coverage_with_rare": 1.0,
+     "coverage_without_rare": 0.797979797979798,
+     "n_with": 901,
+     "n_without": 99
+    },
+    "S3|0.05": {
+     "coverage": 0.9730000000000001,
+     "coverage_per_realisation": [
+      0.98,
+      0.955,
+      0.98,
+      0.975,
+      0.975
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9649999999999999,
+      0.9789999999999999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.08001808612055851
+    },
+    "S3c|0.05": {
+     "coverage": 0.9840000000000002,
+     "coverage_per_realisation": [
+      0.99,
+      0.965,
+      0.99,
+      0.99,
+      0.985
+     ],
+     "coverage_ci90_seedcluster": [
+      0.975,
+      0.99
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.09703524925279165
+    },
+    "SPLIT6|0.05": {
+     "coverage": 0.976,
+     "coverage_per_realisation": [
+      0.97,
+      0.975,
+      0.98,
+      0.975,
+      0.98
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9730000000000001,
+      0.9789999999999999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.055333938933159396
+    },
+    "B1u_c1s|0.05": {
+     "coverage": 0.93,
+     "coverage_per_realisation": [
+      0.935,
+      0.92,
+      0.965,
+      0.895,
+      0.935
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9129999999999999,
+      0.9469999999999998
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.05542411144850362
+    },
+    "S3c-S3|0.05": {
+     "delta_coverage": 0.01100000000000001,
+     "delta_ds_own": -0.01701716313223315,
+     "delta_coverage_per_realisation": [
+      0.010000000000000009,
+      0.010000000000000009,
+      0.010000000000000009,
+      0.015000000000000013,
+      0.010000000000000009
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.02216488357457519,
+      -0.016343052109181147,
+      -0.014307542262678816,
+      -0.01604020421186983,
+      -0.016230133502860775
+     ]
+    },
+    "rare_split|S3|0.05": {
+     "share_draws_with_rare_field": 0.901,
+     "coverage_with_rare": 0.9988901220865705,
+     "coverage_without_rare": 0.7373737373737373,
+     "n_with": 901,
+     "n_without": 99
+    },
+    "rare_split|S3c|0.05": {
+     "share_draws_with_rare_field": 0.901,
+     "coverage_with_rare": 1.0,
+     "coverage_without_rare": 0.8383838383838383,
+     "n_with": 901,
+     "n_without": 99
+    }
+   }
+  },
+  "7": {
+   "cell": {
+    "name": "B_sig0.5",
+    "tau": 0.5,
+    "r": 100,
+    "pi": 0.05,
+    "tail": "normal",
+    "F": 300,
+    "size_sigma": 0.5,
+    "rare": null,
+    "slides": null,
+    "two_stage": null
+   },
+   "realised_icc_per_realisation": [
+    0.07983156173045663,
+    0.07250982869069116,
+    0.07001121992205551,
+    0.07052862589756459,
+    0.0752821829451538
+   ],
+   "realised_icc_mean": 0.07363268383718434,
+   "results": {
+    "S3|0.1": {
+     "coverage": 0.9960000000000001,
+     "coverage_per_realisation": [
+      1.0,
+      0.99,
+      0.995,
+      0.995,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.993,
+      0.999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.02931585823518219
+    },
+    "S3c|0.1": {
+     "coverage": 0.999,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      0.995,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9970000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.035754301366056646
+    },
+    "SPLIT6|0.1": {
+     "coverage": 0.9890000000000001,
+     "coverage_per_realisation": [
+      0.98,
+      0.99,
+      1.0,
+      0.99,
+      0.985
+     ],
+     "coverage_ci90_seedcluster": [
+      0.984,
+      0.994
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.023573073403511703
+    },
+    "B1u_c1s|0.1": {
+     "coverage": 0.9800000000000001,
+     "coverage_per_realisation": [
+      0.99,
+      0.96,
+      0.98,
+      0.99,
+      0.98
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9719999999999999,
+      0.9879999999999999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.020845043302992094
+    },
+    "S3c-S3|0.1": {
+     "delta_coverage": 0.0030000000000000027,
+     "delta_ds_own": -0.006438443130874455,
+     "delta_coverage_per_realisation": [
+      0.0,
+      0.010000000000000009,
+      0.0050000000000000044,
+      0.0,
+      0.0
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.006264591439688723,
+      -0.006067544361763027,
+      -0.007809123649459786,
+      -0.004775546367395165,
+      -0.007275409836065578
+     ]
+    },
+    "S3|0.05": {
+     "coverage": 0.9949999999999999,
+     "coverage_per_realisation": [
+      1.0,
+      0.99,
+      0.995,
+      0.995,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.993,
+      0.9970000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.050295839300191526
+    },
+    "S3c|0.05": {
+     "coverage": 0.999,
+     "coverage_per_realisation": [
+      1.0,
+      0.995,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9970000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.06245558711449837
+    },
+    "SPLIT6|0.05": {
+     "coverage": 0.9949999999999999,
+     "coverage_per_realisation": [
+      0.985,
+      0.995,
+      1.0,
+      0.995,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.991,
+      0.999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.04487147965804326
+    },
+    "B1u_c1s|0.05": {
+     "coverage": 0.984,
+     "coverage_per_realisation": [
+      0.985,
+      0.985,
+      0.995,
+      0.98,
+      0.975
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9789999999999999,
+      0.9890000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.03367753124043134
+    },
+    "S3c-S3|0.05": {
+     "delta_coverage": 0.0040000000000000036,
+     "delta_ds_own": -0.012159747814306844,
+     "delta_coverage_per_realisation": [
+      0.0,
+      0.0050000000000000044,
+      0.0050000000000000044,
+      0.0050000000000000044,
+      0.0050000000000000044
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.011964980544747109,
+      -0.011880366342301087,
+      -0.012490996398559412,
+      -0.010118133490844644,
+      -0.01434426229508197
+     ]
+    }
+   }
+  },
+  "8": {
+   "cell": {
+    "name": "B_sig1.0",
+    "tau": 0.5,
+    "r": 100,
+    "pi": 0.05,
+    "tail": "normal",
+    "F": 300,
+    "size_sigma": 1.0,
+    "rare": null,
+    "slides": null,
+    "two_stage": null
+   },
+   "realised_icc_per_realisation": [
+    0.07286966786642723,
+    0.07069063927835118,
+    0.08950880523959892,
+    0.06562696247354355,
+    0.1115549790124507
+   ],
+   "realised_icc_mean": 0.08205021077407432,
+   "results": {
+    "S3|0.1": {
+     "coverage": 1.0,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      1.0,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.03467355295315848
+    },
+    "S3c|0.1": {
+     "coverage": 1.0,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      1.0,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.043853423088023674
+    },
+    "SPLIT6|0.1": {
+     "coverage": 0.9789999999999999,
+     "coverage_per_realisation": [
+      0.975,
+      0.98,
+      0.985,
+      0.99,
+      0.965
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9720000000000001,
+      0.985
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.030032040428950708
+    },
+    "B1u_c1s|0.1": {
+     "coverage": 0.9870000000000001,
+     "coverage_per_realisation": [
+      0.98,
+      0.985,
+      0.99,
+      0.995,
+      0.985
+     ],
+     "coverage_ci90_seedcluster": [
+      0.983,
+      0.991
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.022464718889200895
+    },
+    "S3c-S3|0.1": {
+     "delta_coverage": 0.0,
+     "delta_ds_own": -0.009179870134865197,
+     "delta_coverage_per_realisation": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.007710247349823313,
+      -0.009720327421555257,
+      -0.009777623349548292,
+      -0.00962593516209476,
+      -0.009065217391304357
+     ]
+    },
+    "S3|0.05": {
+     "coverage": 0.9960000000000001,
+     "coverage_per_realisation": [
+      0.995,
+      0.995,
+      1.0,
+      0.995,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9949999999999999,
+      0.998
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0020000000000000018,
+     "ds_own": -0.06406037188370725
+    },
+    "S3c|0.05": {
+     "coverage": 1.0,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      1.0,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.006000000000000005,
+     "ds_own": -0.0852911046230861
+    },
+    "SPLIT6|0.05": {
+     "coverage": 0.984,
+     "coverage_per_realisation": [
+      0.98,
+      0.985,
+      0.995,
+      0.995,
+      0.965
+     ],
+     "coverage_ci90_seedcluster": [
+      0.975,
+      0.992
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.055185687614615474
+    },
+    "B1u_c1s|0.05": {
+     "coverage": 0.99,
+     "coverage_per_realisation": [
+      0.98,
+      0.985,
+      1.0,
+      0.995,
+      0.99
+     ],
+     "coverage_ci90_seedcluster": [
+      0.985,
+      0.9949999999999999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.04452137071900478
+    },
+    "S3c-S3|0.05": {
+     "delta_coverage": 0.0040000000000000036,
+     "delta_ds_own": -0.021230732739378845,
+     "delta_coverage_per_realisation": [
+      0.0050000000000000044,
+      0.0050000000000000044,
+      0.0,
+      0.0050000000000000044,
+      0.0050000000000000044
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.01775971731448764,
+      -0.019474761255115956,
+      -0.025072967338429453,
+      -0.0256795511221945,
+      -0.01816666666666667
+     ]
+    }
+   }
+  },
+  "9": {
+   "cell": {
+    "name": "B_sig1.5",
+    "tau": 0.5,
+    "r": 100,
+    "pi": 0.05,
+    "tail": "normal",
+    "F": 300,
+    "size_sigma": 1.5,
+    "rare": null,
+    "slides": null,
+    "two_stage": null
+   },
+   "realised_icc_per_realisation": [
+    0.05774395993953827,
+    0.10266224910726894,
+    0.08009510132112539,
+    0.086281494266105,
+    0.053429300450237784
+   ],
+   "realised_icc_mean": 0.07604242101685507,
+   "results": {
+    "S3|0.1": {
+     "coverage": 1.0,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      1.0,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.02400000000000002,
+     "ds_own": -0.06737114047503805
+    },
+    "S3c|0.1": {
+     "coverage": 1.0,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      1.0,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.03600000000000003,
+     "ds_own": -0.09265687167493258
+    },
+    "SPLIT6|0.1": {
+     "coverage": 0.966,
+     "coverage_per_realisation": [
+      0.98,
+      0.96,
+      1.0,
+      0.97,
+      0.92
+     ],
+     "coverage_ci90_seedcluster": [
+      0.946,
+      0.984
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0030000000000000027,
+     "ds_own": -0.0457141019968625
+    },
+    "B1u_c1s|0.1": {
+     "coverage": 0.991,
+     "coverage_per_realisation": [
+      0.995,
+      0.99,
+      0.99,
+      0.995,
+      0.985
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9880000000000001,
+      0.994
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.028000000000000004,
+     "ds_own": -0.05323584879102563
+    },
+    "S3c-S3|0.1": {
+     "delta_coverage": 0.0,
+     "delta_ds_own": -0.025285731199894523,
+     "delta_coverage_per_realisation": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.028160200250312892,
+      -0.019903147699757866,
+      -0.02212809917355371,
+      -0.025932330827067668,
+      -0.0303048780487805
+     ]
+    },
+    "S3|0.05": {
+     "coverage": 0.9970000000000001,
+     "coverage_per_realisation": [
+      0.99,
+      1.0,
+      1.0,
+      0.995,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.994,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.05,
+     "ds_own": -0.11731198020911723
+    },
+    "S3c|0.05": {
+     "coverage": 0.998,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      0.99,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9940000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.05599999999999998,
+     "ds_own": -0.15473310213918542
+    },
+    "SPLIT6|0.05": {
+     "coverage": 0.9709999999999999,
+     "coverage_per_realisation": [
+      0.97,
+      0.96,
+      1.0,
+      0.975,
+      0.95
+     ],
+     "coverage_ci90_seedcluster": [
+      0.959,
+      0.984
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0010000000000000009,
+     "ds_own": -0.07352880247080154
+    },
+    "B1u_c1s|0.05": {
+     "coverage": 0.994,
+     "coverage_per_realisation": [
+      0.99,
+      0.995,
+      0.995,
+      0.995,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.992,
+      0.9949999999999999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.05900000000000001,
+     "ds_own": -0.10458993632017692
+    },
+    "S3c-S3|0.05": {
+     "delta_coverage": 0.0010000000000000009,
+     "delta_ds_own": -0.0374211219300682,
+     "delta_coverage_per_realisation": [
+      0.010000000000000009,
+      0.0,
+      0.0,
+      -0.0050000000000000044,
+      0.0
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.052324780976220286,
+      -0.02996368038740918,
+      -0.029793388429752057,
+      -0.029101503759398503,
+      -0.045922256097560954
+     ]
+    }
+   }
+  },
+  "10": {
+   "cell": {
+    "name": "B_sig2.0",
+    "tau": 0.5,
+    "r": 100,
+    "pi": 0.05,
+    "tail": "normal",
+    "F": 300,
+    "size_sigma": 2.0,
+    "rare": null,
+    "slides": null,
+    "two_stage": null
+   },
+   "realised_icc_per_realisation": [
+    0.05977858010405512,
+    0.0844038513557757,
+    0.04937808234147794,
+    0.061519654024371186,
+    0.06584277070067408
+   ],
+   "realised_icc_mean": 0.06418458770527082,
+   "results": {
+    "S3|0.1": {
+     "coverage": 0.999,
+     "coverage_per_realisation": [
+      0.995,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9970000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.031000000000000028,
+     "ds_own": -0.099529518857036
+    },
+    "S3c|0.1": {
+     "coverage": 1.0,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      1.0,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.038000000000000034,
+     "ds_own": -0.13591326539182938
+    },
+    "SPLIT6|0.1": {
+     "coverage": 0.9120000000000001,
+     "coverage_per_realisation": [
+      0.885,
+      0.92,
+      0.965,
+      0.845,
+      0.945
+     ],
+     "coverage_ci90_seedcluster": [
+      0.8799999999999999,
+      0.943
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0010000000000000009,
+     "ds_own": -0.05361201632050636
+    },
+    "B1u_c1s|0.1": {
+     "coverage": 0.994,
+     "coverage_per_realisation": [
+      0.99,
+      1.0,
+      0.995,
+      0.995,
+      0.99
+     ],
+     "coverage_ci90_seedcluster": [
+      0.991,
+      0.9970000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.05699999999999998,
+     "ds_own": -0.08883323472130729
+    },
+    "S3c-S3|0.1": {
+     "delta_coverage": 0.0010000000000000009,
+     "delta_ds_own": -0.03638374653479337,
+     "delta_coverage_per_realisation": [
+      0.0050000000000000044,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.03195787292817681,
+      -0.05968372093023255,
+      -0.03916666666666664,
+      -0.03652992277992277,
+      -0.014580549368968077
+     ]
+    },
+    "S3|0.05": {
+     "coverage": 0.992,
+     "coverage_per_realisation": [
+      0.985,
+      0.995,
+      1.0,
+      1.0,
+      0.98
+     ],
+     "coverage_ci90_seedcluster": [
+      0.986,
+      0.998
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.04600000000000002,
+     "ds_own": -0.17303493137307535
+    },
+    "S3c|0.05": {
+     "coverage": 0.9970000000000001,
+     "coverage_per_realisation": [
+      0.995,
+      1.0,
+      1.0,
+      1.0,
+      0.99
+     ],
+     "coverage_ci90_seedcluster": [
+      0.994,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.06299999999999999,
+     "ds_own": -0.22498492716583077
+    },
+    "SPLIT6|0.05": {
+     "coverage": 0.93,
+     "coverage_per_realisation": [
+      0.88,
+      0.94,
+      0.97,
+      0.875,
+      0.985
+     ],
+     "coverage_ci90_seedcluster": [
+      0.8959999999999999,
+      0.9640000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0040000000000000036,
+     "ds_own": -0.10110922620394139
+    },
+    "B1u_c1s|0.05": {
+     "coverage": 0.9879999999999999,
+     "coverage_per_realisation": [
+      0.98,
+      0.99,
+      0.995,
+      0.995,
+      0.98
+     ],
+     "coverage_ci90_seedcluster": [
+      0.983,
+      0.993
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.097,
+     "ds_own": -0.17216876317903376
+    },
+    "S3c-S3|0.05": {
+     "delta_coverage": 0.0050000000000000044,
+     "delta_ds_own": -0.05194999579275542,
+     "delta_coverage_per_realisation": [
+      0.010000000000000009,
+      0.0050000000000000044,
+      0.0,
+      0.0,
+      0.010000000000000009
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.04307665745856354,
+      -0.058539534883720906,
+      -0.06406333333333336,
+      -0.04700289575289576,
+      -0.04706755753526354
+     ]
+    }
+   }
+  },
+  "11": {
+   "cell": {
+    "name": "C_S3_om0.5",
+    "tau": 0.5,
+    "r": 100,
+    "pi": 0.05,
+    "tail": "normal",
+    "F": 300,
+    "size_sigma": 0.0,
+    "rare": null,
+    "slides": [
+     3,
+     0.5
+    ],
+    "two_stage": null
+   },
+   "realised_icc_per_realisation": [
+    0.07744964826209878,
+    0.06378887608070609,
+    0.08208221286452184,
+    0.09289466355915799,
+    0.03262741495137173
+   ],
+   "realised_icc_mean": 0.06976856314357129,
+   "results": {
+    "S3|0.1": {
+     "coverage": 0.9970000000000001,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      0.995,
+      0.99
+     ],
+     "coverage_ci90_seedcluster": [
+      0.994,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.026489554023174926
+    },
+    "S3c|0.1": {
+     "coverage": 1.0,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      1.0,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.031712677587618775
+    },
+    "SPLIT6|0.1": {
+     "coverage": 0.992,
+     "coverage_per_realisation": [
+      0.995,
+      0.995,
+      0.985,
+      0.99,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9890000000000001,
+      0.9949999999999999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.01776457937303363
+    },
+    "B1u_c1s|0.1": {
+     "coverage": 0.9790000000000001,
+     "coverage_per_realisation": [
+      0.98,
+      0.985,
+      0.975,
+      0.97,
+      0.985
+     ],
+     "coverage_ci90_seedcluster": [
+      0.975,
+      0.983
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.018752159584448168
+    },
+    "S3c-S3|0.1": {
+     "delta_coverage": 0.0030000000000000027,
+     "delta_ds_own": -0.005223123564443849,
+     "delta_coverage_per_realisation": [
+      0.0,
+      0.0,
+      0.0,
+      0.0050000000000000044,
+      0.010000000000000009
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.006544615384615385,
+      -0.005531432274789371,
+      -0.004519538757206926,
+      -0.004820613176777566,
+      -0.004699418228829997
+     ]
+    },
+    "S3|0.05": {
+     "coverage": 0.999,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9970000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.04559805341149924
+    },
+    "S3c|0.05": {
+     "coverage": 1.0,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      1.0,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.055926077338857016
+    },
+    "SPLIT6|0.05": {
+     "coverage": 0.992,
+     "coverage_per_realisation": [
+      1.0,
+      0.99,
+      0.975,
+      0.995,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.985,
+      0.998
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.036760124963714134
+    },
+    "B1u_c1s|0.05": {
+     "coverage": 0.9809999999999999,
+     "coverage_per_realisation": [
+      0.985,
+      0.98,
+      0.965,
+      0.985,
+      0.99
+     ],
+     "coverage_ci90_seedcluster": [
+      0.974,
+      0.9869999999999999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.029929304895242665
+    },
+    "S3c-S3|0.05": {
+     "delta_coverage": 0.0010000000000000009,
+     "delta_ds_own": -0.010328023927357788,
+     "delta_coverage_per_realisation": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0050000000000000044
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.009698461538461545,
+      -0.009138042773817238,
+      -0.012415118513773221,
+      -0.010786040443574688,
+      -0.009602456367162247
+     ]
+    }
+   }
+  },
+  "12": {
+   "cell": {
+    "name": "C_S3_om0.8",
+    "tau": 0.5,
+    "r": 100,
+    "pi": 0.05,
+    "tail": "normal",
+    "F": 300,
+    "size_sigma": 0.0,
+    "rare": null,
+    "slides": [
+     3,
+     0.8
+    ],
+    "two_stage": null
+   },
+   "realised_icc_per_realisation": [
+    0.058920459227676025,
+    0.13793245873538015,
+    0.04336712963027304,
+    0.047466250463335476,
+    0.07319896479060961
+   ],
+   "realised_icc_mean": 0.07217705256945486,
+   "results": {
+    "S3|0.1": {
+     "coverage": 0.9969999999999999,
+     "coverage_per_realisation": [
+      0.995,
+      0.995,
+      0.995,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9949999999999999,
+      0.999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.0260279423939302
+    },
+    "S3c|0.1": {
+     "coverage": 0.999,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      0.995,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9970000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.03164673395472119
+    },
+    "SPLIT6|0.1": {
+     "coverage": 0.992,
+     "coverage_per_realisation": [
+      0.99,
+      0.99,
+      0.99,
+      0.995,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.99,
+      0.994
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.017437050157458812
+    },
+    "B1u_c1s|0.1": {
+     "coverage": 0.9730000000000001,
+     "coverage_per_realisation": [
+      0.98,
+      0.97,
+      0.975,
+      0.96,
+      0.98
+     ],
+     "coverage_ci90_seedcluster": [
+      0.967,
+      0.9780000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.018201342189228868
+    },
+    "S3c-S3|0.1": {
+     "delta_coverage": 0.0020000000000000018,
+     "delta_ds_own": -0.005618791560790989,
+     "delta_coverage_per_realisation": [
+      0.0050000000000000044,
+      0.0050000000000000044,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.004946974422956954,
+      -0.006957605985037411,
+      -0.005812499999999998,
+      -0.005426260112009956,
+      -0.004950617283950624
+     ]
+    },
+    "S3|0.05": {
+     "coverage": 0.994,
+     "coverage_per_realisation": [
+      0.995,
+      0.99,
+      0.99,
+      0.995,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.991,
+      0.9970000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.04397099040628703
+    },
+    "S3c|0.05": {
+     "coverage": 1.0,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      1.0,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.05449469109629414
+    },
+    "SPLIT6|0.05": {
+     "coverage": 0.991,
+     "coverage_per_realisation": [
+      0.985,
+      0.995,
+      0.99,
+      0.995,
+      0.99
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9880000000000001,
+      0.994
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.034151450396408524
+    },
+    "B1u_c1s|0.05": {
+     "coverage": 0.984,
+     "coverage_per_realisation": [
+      0.98,
+      0.98,
+      0.98,
+      0.99,
+      0.99
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9800000000000001,
+      0.9880000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.030077543755587844
+    },
+    "S3c-S3|0.05": {
+     "delta_coverage": 0.006000000000000005,
+     "delta_ds_own": -0.010523700690007107,
+     "delta_coverage_per_realisation": [
+      0.0050000000000000044,
+      0.010000000000000009,
+      0.010000000000000009,
+      0.0050000000000000044,
+      0.0
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.00924516531503431,
+      -0.011246882793017457,
+      -0.010187500000000009,
+      -0.010469819539514626,
+      -0.011469135802469131
+     ]
+    }
+   }
+  },
+  "13": {
+   "cell": {
+    "name": "C_S6_om0.5",
+    "tau": 0.5,
+    "r": 100,
+    "pi": 0.05,
+    "tail": "normal",
+    "F": 300,
+    "size_sigma": 0.0,
+    "rare": null,
+    "slides": [
+     6,
+     0.5
+    ],
+    "two_stage": null
+   },
+   "realised_icc_per_realisation": [
+    0.058991934723490576,
+    0.04098242617118026,
+    0.0900131410560733,
+    0.06603406584834617,
+    0.11769490062853953
+   ],
+   "realised_icc_mean": 0.07474329368552599,
+   "results": {
+    "S3|0.1": {
+     "coverage": 0.998,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      0.99,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9940000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.026878369442658378
+    },
+    "S3c|0.1": {
+     "coverage": 0.999,
+     "coverage_per_realisation": [
+      0.995,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9970000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.03325779226111568
+    },
+    "SPLIT6|0.1": {
+     "coverage": 0.991,
+     "coverage_per_realisation": [
+      1.0,
+      0.985,
+      0.99,
+      0.995,
+      0.985
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9869999999999999,
+      0.9950000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.017957618016903987
+    },
+    "B1u_c1s|0.1": {
+     "coverage": 0.986,
+     "coverage_per_realisation": [
+      0.985,
+      0.995,
+      0.985,
+      0.975,
+      0.99
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9810000000000001,
+      0.991
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.01811570936298794
+    },
+    "S3c-S3|0.1": {
+     "delta_coverage": 0.0010000000000000009,
+     "delta_ds_own": -0.006379422818457306,
+     "delta_coverage_per_realisation": [
+      -0.0050000000000000044,
+      0.0,
+      0.0,
+      0.010000000000000009,
+      0.0
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.0068691588785046755,
+      -0.0055064102564102504,
+      -0.007534418022528164,
+      -0.006848325673013779,
+      -0.0051388012618296605
+     ]
+    },
+    "S3|0.05": {
+     "coverage": 0.9950000000000001,
+     "coverage_per_realisation": [
+      0.995,
+      0.995,
+      1.0,
+      0.995,
+      0.99
+     ],
+     "coverage_ci90_seedcluster": [
+      0.993,
+      0.9970000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.049701869277845326
+    },
+    "S3c|0.05": {
+     "coverage": 1.0,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      1.0,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.06120700838541443
+    },
+    "SPLIT6|0.05": {
+     "coverage": 0.9940000000000001,
+     "coverage_per_realisation": [
+      1.0,
+      0.995,
+      0.98,
+      0.995,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9879999999999999,
+      0.999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.03959446217229734
+    },
+    "B1u_c1s|0.05": {
+     "coverage": 0.9800000000000001,
+     "coverage_per_realisation": [
+      0.98,
+      0.97,
+      0.99,
+      0.975,
+      0.985
+     ],
+     "coverage_ci90_seedcluster": [
+      0.975,
+      0.985
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.032331556161950215
+    },
+    "S3c-S3|0.05": {
+     "delta_coverage": 0.0050000000000000044,
+     "delta_ds_own": -0.0115051391075691,
+     "delta_coverage_per_realisation": [
+      0.0050000000000000044,
+      0.0050000000000000044,
+      0.0,
+      0.0050000000000000044,
+      0.010000000000000009
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.010616822429906539,
+      -0.010336538461538466,
+      -0.011733416770963713,
+      -0.011930400525279064,
+      -0.012908517350157724
+     ]
+    }
+   }
+  },
+  "14": {
+   "cell": {
+    "name": "C_S6_om0.8",
+    "tau": 0.5,
+    "r": 100,
+    "pi": 0.05,
+    "tail": "normal",
+    "F": 300,
+    "size_sigma": 0.0,
+    "rare": null,
+    "slides": [
+     6,
+     0.8
+    ],
+    "two_stage": null
+   },
+   "realised_icc_per_realisation": [
+    0.06090458917259542,
+    0.046364745378094104,
+    0.05844776623380697,
+    0.03351096726736509,
+    0.06367537721094473
+   ],
+   "realised_icc_mean": 0.05258068905256126,
+   "results": {
+    "S3|0.1": {
+     "coverage": 0.9970000000000001,
+     "coverage_per_realisation": [
+      0.995,
+      1.0,
+      1.0,
+      0.995,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9949999999999999,
+      0.999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.023738657522276094
+    },
+    "S3c|0.1": {
+     "coverage": 1.0,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      1.0,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.0298313917775326
+    },
+    "SPLIT6|0.1": {
+     "coverage": 0.9940000000000001,
+     "coverage_per_realisation": [
+      1.0,
+      0.995,
+      1.0,
+      0.99,
+      0.985
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9899499999999999,
+      0.998
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.01618651795297401
+    },
+    "B1u_c1s|0.1": {
+     "coverage": 0.977,
+     "coverage_per_realisation": [
+      0.975,
+      0.99,
+      0.975,
+      0.975,
+      0.97
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9729999999999999,
+      0.983
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.015801055423920025
+    },
+    "S3c-S3|0.1": {
+     "delta_coverage": 0.0030000000000000027,
+     "delta_ds_own": -0.0060927342552565085,
+     "delta_coverage_per_realisation": [
+      0.0050000000000000044,
+      0.0,
+      0.0,
+      0.0050000000000000044,
+      0.0050000000000000044
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.006367741935483871,
+      -0.005776668746101072,
+      -0.005719720989220037,
+      -0.007684897451833438,
+      -0.0049146421536441255
+     ]
+    },
+    "S3|0.05": {
+     "coverage": 0.9960000000000001,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      0.995,
+      0.985
+     ],
+     "coverage_ci90_seedcluster": [
+      0.991,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.04873879953154704
+    },
+    "S3c|0.05": {
+     "coverage": 1.0,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      1.0,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.05871942993729503
+    },
+    "SPLIT6|0.05": {
+     "coverage": 0.9960000000000001,
+     "coverage_per_realisation": [
+      0.995,
+      1.0,
+      0.995,
+      1.0,
+      0.99
+     ],
+     "coverage_ci90_seedcluster": [
+      0.993,
+      0.999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.037938601879126045
+    },
+    "B1u_c1s|0.05": {
+     "coverage": 0.985,
+     "coverage_per_realisation": [
+      0.985,
+      0.995,
+      0.985,
+      0.975,
+      0.985
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9809999999999999,
+      0.9890000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.03182641678004569
+    },
+    "S3c-S3|0.05": {
+     "delta_coverage": 0.0040000000000000036,
+     "delta_ds_own": -0.009980630405747981,
+     "delta_coverage_per_realisation": [
+      0.0,
+      0.0,
+      0.0,
+      0.0050000000000000044,
+      0.015000000000000013
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.010029032258064528,
+      -0.009794135995009362,
+      -0.009597336715282179,
+      -0.008545680546923562,
+      -0.011936966513460275
+     ]
+    }
+   }
+  },
+  "15": {
+   "cell": {
+    "name": "C_S12_om0.5",
+    "tau": 0.5,
+    "r": 100,
+    "pi": 0.05,
+    "tail": "normal",
+    "F": 300,
+    "size_sigma": 0.0,
+    "rare": null,
+    "slides": [
+     12,
+     0.5
+    ],
+    "two_stage": null
+   },
+   "realised_icc_per_realisation": [
+    0.055127901410956096,
+    0.10233890295311156,
+    0.06682359330596223,
+    0.05629642798958141,
+    0.052547615482161705
+   ],
+   "realised_icc_mean": 0.0666268882283546,
+   "results": {
+    "S3|0.1": {
+     "coverage": 0.9970000000000001,
+     "coverage_per_realisation": [
+      1.0,
+      0.99,
+      1.0,
+      1.0,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.994,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.025306648794957327
+    },
+    "S3c|0.1": {
+     "coverage": 0.999,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9970000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.030939668065987032
+    },
+    "SPLIT6|0.1": {
+     "coverage": 0.9890000000000001,
+     "coverage_per_realisation": [
+      1.0,
+      0.975,
+      0.995,
+      0.99,
+      0.985
+     ],
+     "coverage_ci90_seedcluster": [
+      0.982,
+      0.9949999999999999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.01728627004328086
+    },
+    "B1u_c1s|0.1": {
+     "coverage": 0.9730000000000001,
+     "coverage_per_realisation": [
+      0.97,
+      0.97,
+      0.98,
+      0.965,
+      0.98
+     ],
+     "coverage_ci90_seedcluster": [
+      0.969,
+      0.978
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.01695561449252709
+    },
+    "S3c-S3|0.1": {
+     "delta_coverage": 0.0020000000000000018,
+     "delta_ds_own": -0.0056330192710297025,
+     "delta_coverage_per_realisation": [
+      0.0,
+      0.010000000000000009,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.005452768729641698,
+      -0.006858771374287524,
+      -0.0047404730617608415,
+      -0.0045284872298624705,
+      -0.006584595959595978
+     ]
+    },
+    "S3|0.05": {
+     "coverage": 0.9960000000000001,
+     "coverage_per_realisation": [
+      1.0,
+      0.99,
+      1.0,
+      1.0,
+      0.99
+     ],
+     "coverage_ci90_seedcluster": [
+      0.992,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.04855315053417537
+    },
+    "S3c|0.05": {
+     "coverage": 1.0,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      1.0,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.05923053976432731
+    },
+    "SPLIT6|0.05": {
+     "coverage": 0.991,
+     "coverage_per_realisation": [
+      1.0,
+      0.985,
+      0.995,
+      0.99,
+      0.985
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9869999999999999,
+      0.9950000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.03818223167596912
+    },
+    "B1u_c1s|0.05": {
+     "coverage": 0.99,
+     "coverage_per_realisation": [
+      0.98,
+      0.995,
+      0.995,
+      0.99,
+      0.99
+     ],
+     "coverage_ci90_seedcluster": [
+      0.986,
+      0.994
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.03405719838189709
+    },
+    "S3c-S3|0.05": {
+     "delta_coverage": 0.0040000000000000036,
+     "delta_ds_own": -0.010677389230151942,
+     "delta_coverage_per_realisation": [
+      0.0,
+      0.010000000000000009,
+      0.0,
+      0.0,
+      0.010000000000000009
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.0107328990228013,
+      -0.010433818872704254,
+      -0.011974375821287776,
+      -0.007884741322855271,
+      -0.012361111111111107
+     ]
+    }
+   }
+  },
+  "16": {
+   "cell": {
+    "name": "C_S12_om0.8",
+    "tau": 0.5,
+    "r": 100,
+    "pi": 0.05,
+    "tail": "normal",
+    "F": 300,
+    "size_sigma": 0.0,
+    "rare": null,
+    "slides": [
+     12,
+     0.8
+    ],
+    "two_stage": null
+   },
+   "realised_icc_per_realisation": [
+    0.06862462115754105,
+    0.0840751345510784,
+    0.077208909196757,
+    0.13428671027738173,
+    0.08315093493555205
+   ],
+   "realised_icc_mean": 0.08946926202366204,
+   "results": {
+    "S3|0.1": {
+     "coverage": 0.9960000000000001,
+     "coverage_per_realisation": [
+      0.99,
+      1.0,
+      0.99,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.992,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.029722280509972204
+    },
+    "S3c|0.1": {
+     "coverage": 0.999,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      0.995,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9970000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.03569696736911358
+    },
+    "SPLIT6|0.1": {
+     "coverage": 0.992,
+     "coverage_per_realisation": [
+      0.985,
+      0.995,
+      0.995,
+      0.985,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9869999999999999,
+      0.9969999999999999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.01959423470485373
+    },
+    "B1u_c1s|0.1": {
+     "coverage": 0.978,
+     "coverage_per_realisation": [
+      0.99,
+      0.98,
+      0.965,
+      0.985,
+      0.97
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9709999999999999,
+      0.985
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.020211907749710434
+    },
+    "S3c-S3|0.1": {
+     "delta_coverage": 0.0030000000000000027,
+     "delta_ds_own": -0.005974686859141388,
+     "delta_coverage_per_realisation": [
+      0.010000000000000009,
+      0.0,
+      0.0050000000000000044,
+      0.0,
+      0.0
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.005352159468438544,
+      -0.006688762626262626,
+      -0.005067360685854269,
+      -0.0065151515151515155,
+      -0.006249999999999988
+     ]
+    },
+    "S3|0.05": {
+     "coverage": 0.998,
+     "coverage_per_realisation": [
+      1.0,
+      0.995,
+      1.0,
+      1.0,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9960000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.05055028907868866
+    },
+    "S3c|0.05": {
+     "coverage": 1.0,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      1.0,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.061664474328034645
+    },
+    "SPLIT6|0.05": {
+     "coverage": 0.994,
+     "coverage_per_realisation": [
+      0.985,
+      1.0,
+      0.99,
+      0.995,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9899999999999999,
+      0.998
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.03983147794457871
+    },
+    "B1u_c1s|0.05": {
+     "coverage": 0.9870000000000001,
+     "coverage_per_realisation": [
+      1.0,
+      0.99,
+      0.985,
+      0.98,
+      0.98
+     ],
+     "coverage_ci90_seedcluster": [
+      0.982,
+      0.993
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.0349117566298696
+    },
+    "S3c-S3|0.05": {
+     "delta_coverage": 0.0020000000000000018,
+     "delta_ds_own": -0.011114185249345971,
+     "delta_coverage_per_realisation": [
+      0.0,
+      0.0050000000000000044,
+      0.0,
+      0.0,
+      0.0050000000000000044
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.012033222591362143,
+      -0.011796085858585867,
+      -0.009908144519289647,
+      -0.011380105401844538,
+      -0.010453367875647664
+     ]
+    }
+   }
+  },
+  "17": {
+   "cell": {
+    "name": "C2_S12_om0.5_s2",
+    "tau": 0.5,
+    "r": 100,
+    "pi": 0.05,
+    "tail": "normal",
+    "F": 300,
+    "size_sigma": 0.0,
+    "rare": null,
+    "slides": [
+     12,
+     0.5
+    ],
+    "two_stage": 2
+   },
+   "realised_icc_per_realisation": [
+    0.07216812129789225,
+    0.05451459734187434,
+    0.09072340128632136,
+    0.09105018659196613,
+    0.050183750071799975
+   ],
+   "realised_icc_mean": 0.07172801131797082,
+   "results": {
+    "S3|0.1": {
+     "coverage": 0.986,
+     "coverage_per_realisation": [
+      0.99,
+      0.995,
+      1.0,
+      0.95,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.969,
+      0.9970000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.02441098642913612
+    },
+    "S3c|0.1": {
+     "coverage": 0.9949999999999999,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      0.98,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9879999999999999,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.030243964885994307
+    },
+    "SPLIT6|0.1": {
+     "coverage": 0.9390000000000001,
+     "coverage_per_realisation": [
+      0.945,
+      0.93,
+      0.96,
+      0.875,
+      0.985
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9109999999999999,
+      0.9640000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.01748711022750788
+    },
+    "B1u_c1s|0.1": {
+     "coverage": 0.9560000000000001,
+     "coverage_per_realisation": [
+      0.955,
+      0.98,
+      0.97,
+      0.895,
+      0.98
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9289999999999999,
+      0.976
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.016661370127677624
+    },
+    "S3c-S3|0.1": {
+     "delta_coverage": 0.009000000000000008,
+     "delta_ds_own": -0.005832978456858181,
+     "delta_coverage_per_realisation": [
+      0.010000000000000009,
+      0.0050000000000000044,
+      0.0,
+      0.030000000000000027,
+      0.0
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.005659305993690848,
+      -0.006184448462929471,
+      -0.004589403973509928,
+      -0.007332482450542438,
+      -0.0053992514036182195
+     ]
+    },
+    "S3|0.05": {
+     "coverage": 0.993,
+     "coverage_per_realisation": [
+      0.995,
+      0.99,
+      1.0,
+      0.985,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9890000000000001,
+      0.9970000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.047838932137526505
+    },
+    "S3c|0.05": {
+     "coverage": 0.999,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      0.995,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9970000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.05944390274212128
+    },
+    "SPLIT6|0.05": {
+     "coverage": 0.9480000000000001,
+     "coverage_per_realisation": [
+      0.945,
+      0.97,
+      0.96,
+      0.87,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.915,
+      0.976
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.03796842224174661
+    },
+    "B1u_c1s|0.05": {
+     "coverage": 0.966,
+     "coverage_per_realisation": [
+      0.975,
+      0.955,
+      0.985,
+      0.92,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9450000000000001,
+      0.985
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.03132815961992282
+    },
+    "S3c-S3|0.05": {
+     "delta_coverage": 0.006000000000000005,
+     "delta_ds_own": -0.011604970604594787,
+     "delta_coverage_per_realisation": [
+      0.0050000000000000044,
+      0.010000000000000009,
+      0.0,
+      0.010000000000000009,
+      0.0050000000000000044
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.009684542586750791,
+      -0.014517781796262806,
+      -0.011625827814569535,
+      -0.010453095086151873,
+      -0.011743605739238924
+     ]
+    }
+   }
+  },
+  "18": {
+   "cell": {
+    "name": "C2_S12_om0.5_s4",
+    "tau": 0.5,
+    "r": 100,
+    "pi": 0.05,
+    "tail": "normal",
+    "F": 300,
+    "size_sigma": 0.0,
+    "rare": null,
+    "slides": [
+     12,
+     0.5
+    ],
+    "two_stage": 4
+   },
+   "realised_icc_per_realisation": [
+    0.06521209867050867,
+    0.10150048686405001,
+    0.05818713090372803,
+    0.05683478559837924,
+    0.08085430951683666
+   ],
+   "realised_icc_mean": 0.07251776231070052,
+   "results": {
+    "S3|0.1": {
+     "coverage": 0.991,
+     "coverage_per_realisation": [
+      1.0,
+      0.985,
+      0.995,
+      1.0,
+      0.975
+     ],
+     "coverage_ci90_seedcluster": [
+      0.983,
+      0.998
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.022036627774043898
+    },
+    "S3c|0.1": {
+     "coverage": 0.9970000000000001,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.985
+     ],
+     "coverage_ci90_seedcluster": [
+      0.991,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.027409718638421753
+    },
+    "SPLIT6|0.1": {
+     "coverage": 0.9710000000000001,
+     "coverage_per_realisation": [
+      0.98,
+      0.95,
+      0.97,
+      0.975,
+      0.98
+     ],
+     "coverage_ci90_seedcluster": [
+      0.962,
+      0.9780000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.014288713436950668
+    },
+    "B1u_c1s|0.1": {
+     "coverage": 0.962,
+     "coverage_per_realisation": [
+      0.97,
+      0.955,
+      0.97,
+      0.98,
+      0.935
+     ],
+     "coverage_ci90_seedcluster": [
+      0.95,
+      0.9730000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.015640116534495895
+    },
+    "S3c-S3|0.1": {
+     "delta_coverage": 0.006000000000000005,
+     "delta_ds_own": -0.005373090864377856,
+     "delta_coverage_per_realisation": [
+      0.0,
+      0.015000000000000013,
+      0.0050000000000000044,
+      0.0,
+      0.010000000000000009
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.004861200774693351,
+      -0.00546319796954315,
+      -0.00466182048040454,
+      -0.005447074293228143,
+      -0.006432160804020096
+     ]
+    },
+    "S3|0.05": {
+     "coverage": 0.9940000000000001,
+     "coverage_per_realisation": [
+      0.995,
+      0.995,
+      1.0,
+      0.99,
+      0.99
+     ],
+     "coverage_ci90_seedcluster": [
+      0.991,
+      0.9970000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.04648052727736518
+    },
+    "S3c|0.05": {
+     "coverage": 0.999,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9970000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.05741178263058666
+    },
+    "SPLIT6|0.05": {
+     "coverage": 0.9709999999999999,
+     "coverage_per_realisation": [
+      0.99,
+      0.96,
+      0.955,
+      0.98,
+      0.97
+     ],
+     "coverage_ci90_seedcluster": [
+      0.962,
+      0.9800000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.035267450833156445
+    },
+    "B1u_c1s|0.05": {
+     "coverage": 0.9719999999999999,
+     "coverage_per_realisation": [
+      0.995,
+      0.965,
+      0.96,
+      0.98,
+      0.96
+     ],
+     "coverage_ci90_seedcluster": [
+      0.962,
+      0.982
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.030583798374705085
+    },
+    "S3c-S3|0.05": {
+     "delta_coverage": 0.0050000000000000044,
+     "delta_ds_own": -0.01093125535322148,
+     "delta_coverage_per_realisation": [
+      0.0050000000000000044,
+      0.0050000000000000044,
+      0.0,
+      0.010000000000000009,
+      0.0050000000000000044
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.011646223369916081,
+      -0.011700507614213186,
+      -0.010309734513274327,
+      -0.011643655489809342,
+      -0.009356155778894468
+     ]
+    }
+   }
+  },
+  "19": {
+   "cell": {
+    "name": "C2_S12_om0.8_s2",
+    "tau": 0.5,
+    "r": 100,
+    "pi": 0.05,
+    "tail": "normal",
+    "F": 300,
+    "size_sigma": 0.0,
+    "rare": null,
+    "slides": [
+     12,
+     0.8
+    ],
+    "two_stage": 2
+   },
+   "realised_icc_per_realisation": [
+    0.05733651859326483,
+    0.1510898774331633,
+    0.07489139800612359,
+    0.0663403033439606,
+    0.058385890235387025
+   ],
+   "realised_icc_mean": 0.08160879752237987,
+   "results": {
+    "S3|0.1": {
+     "coverage": 0.9380000000000001,
+     "coverage_per_realisation": [
+      0.935,
+      0.925,
+      0.945,
+      0.935,
+      0.95
+     ],
+     "coverage_ci90_seedcluster": [
+      0.931,
+      0.945
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.024557450472335676
+    },
+    "S3c|0.1": {
+     "coverage": 0.967,
+     "coverage_per_realisation": [
+      0.965,
+      0.975,
+      0.98,
+      0.96,
+      0.955
+     ],
+     "coverage_ci90_seedcluster": [
+      0.96,
+      0.974
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.030802349742392977
+    },
+    "SPLIT6|0.1": {
+     "coverage": 0.8619999999999999,
+     "coverage_per_realisation": [
+      0.885,
+      0.825,
+      0.845,
+      0.895,
+      0.86
+     ],
+     "coverage_ci90_seedcluster": [
+      0.843,
+      0.8809999999999999
+     ],
+     "band": "below_1-delta_within_1-2delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.018403625647231293
+    },
+    "B1u_c1s|0.1": {
+     "coverage": 0.8969999999999999,
+     "coverage_per_realisation": [
+      0.925,
+      0.865,
+      0.86,
+      0.945,
+      0.89
+     ],
+     "coverage_ci90_seedcluster": [
+      0.873,
+      0.9219999999999999
+     ],
+     "band": "below_1-delta_within_1-2delta",
+     "near_boundary": true,
+     "cannot_certify": 0.0,
+     "ds_own": -0.017837393270125085
+    },
+    "S3c-S3|0.1": {
+     "delta_coverage": 0.02899999999999996,
+     "delta_ds_own": -0.006244899270057294,
+     "delta_coverage_per_realisation": [
+      0.029999999999999916,
+      0.04999999999999993,
+      0.03500000000000003,
+      0.02499999999999991,
+      0.0050000000000000044
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.005595920968769912,
+      -0.0059790209790209735,
+      -0.006135778635778633,
+      -0.005683006535947714,
+      -0.007830769230769238
+     ]
+    },
+    "S3|0.05": {
+     "coverage": 0.9460000000000001,
+     "coverage_per_realisation": [
+      0.975,
+      0.915,
+      0.925,
+      0.965,
+      0.95
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9289999999999999,
+      0.9629999999999999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.04412016209439047
+    },
+    "S3c|0.05": {
+     "coverage": 0.96,
+     "coverage_per_realisation": [
+      0.97,
+      0.935,
+      0.945,
+      0.985,
+      0.965
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9469999999999998,
+      0.9730000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.05531759115149548
+    },
+    "SPLIT6|0.05": {
+     "coverage": 0.8709999999999999,
+     "coverage_per_realisation": [
+      0.895,
+      0.825,
+      0.83,
+      0.895,
+      0.91
+     ],
+     "coverage_ci90_seedcluster": [
+      0.842,
+      0.898
+     ],
+     "band": "below_1-delta_within_1-2delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.036735839211920696
+    },
+    "B1u_c1s|0.05": {
+     "coverage": 0.9549999999999998,
+     "coverage_per_realisation": [
+      0.955,
+      0.94,
+      0.945,
+      0.965,
+      0.97
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9469999999999998,
+      0.9630000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.032572649972531786
+    },
+    "S3c-S3|0.05": {
+     "delta_coverage": 0.01399999999999999,
+     "delta_ds_own": -0.011197429057105007,
+     "delta_coverage_per_realisation": [
+      -0.0050000000000000044,
+      0.020000000000000018,
+      0.019999999999999907,
+      0.020000000000000018,
+      0.015000000000000013
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.009493307839388142,
+      -0.015893197711379523,
+      -0.007229729729729725,
+      -0.011133986928104564,
+      -0.012236923076923076
+     ]
+    }
+   }
+  },
+  "20": {
+   "cell": {
+    "name": "C2_S12_om0.8_s4",
+    "tau": 0.5,
+    "r": 100,
+    "pi": 0.05,
+    "tail": "normal",
+    "F": 300,
+    "size_sigma": 0.0,
+    "rare": null,
+    "slides": [
+     12,
+     0.8
+    ],
+    "two_stage": 4
+   },
+   "realised_icc_per_realisation": [
+    0.1725851160916466,
+    0.07502596934170025,
+    0.04257002713934599,
+    0.055401780014680324,
+    0.06431937912974672
+   ],
+   "realised_icc_mean": 0.08198045434342398,
+   "results": {
+    "S3|0.1": {
+     "coverage": 0.9809999999999999,
+     "coverage_per_realisation": [
+      0.96,
+      0.98,
+      0.985,
+      0.985,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9719999999999999,
+      0.9890000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.025646802689364097
+    },
+    "S3c|0.1": {
+     "coverage": 0.992,
+     "coverage_per_realisation": [
+      0.985,
+      0.995,
+      0.995,
+      0.99,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9890000000000001,
+      0.9949999999999999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.03131087695674127
+    },
+    "SPLIT6|0.1": {
+     "coverage": 0.961,
+     "coverage_per_realisation": [
+      0.935,
+      0.975,
+      0.96,
+      0.97,
+      0.965
+     ],
+     "coverage_ci90_seedcluster": [
+      0.95,
+      0.97
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.01664740146092016
+    },
+    "B1u_c1s|0.1": {
+     "coverage": 0.9390000000000001,
+     "coverage_per_realisation": [
+      0.91,
+      0.93,
+      0.95,
+      0.955,
+      0.95
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9259999999999999,
+      0.951
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.018380040517331424
+    },
+    "S3c-S3|0.1": {
+     "delta_coverage": 0.01100000000000001,
+     "delta_ds_own": -0.005664074267377169,
+     "delta_coverage_per_realisation": [
+      0.025000000000000022,
+      0.015000000000000013,
+      0.010000000000000009,
+      0.0050000000000000044,
+      0.0
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.005852713178294569,
+      -0.005819987187700194,
+      -0.0060056039850560315,
+      -0.0060038240917782044,
+      -0.004638242894056847
+     ]
+    },
+    "S3|0.05": {
+     "coverage": 0.9880000000000001,
+     "coverage_per_realisation": [
+      0.975,
+      0.99,
+      1.0,
+      0.99,
+      0.985
+     ],
+     "coverage_ci90_seedcluster": [
+      0.982,
+      0.994
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.05274402732312712
+    },
+    "S3c|0.05": {
+     "coverage": 0.9960000000000001,
+     "coverage_per_realisation": [
+      0.99,
+      1.0,
+      1.0,
+      0.995,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.993,
+      0.999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.06490666855315606
+    },
+    "SPLIT6|0.05": {
+     "coverage": 0.959,
+     "coverage_per_realisation": [
+      0.95,
+      0.985,
+      0.965,
+      0.95,
+      0.945
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9490000000000001,
+      0.9700000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.03884088698433279
+    },
+    "B1u_c1s|0.05": {
+     "coverage": 0.968,
+     "coverage_per_realisation": [
+      0.96,
+      0.96,
+      0.98,
+      0.98,
+      0.96
+     ],
+     "coverage_ci90_seedcluster": [
+      0.96,
+      0.976
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.036538861755251215
+    },
+    "S3c-S3|0.05": {
+     "delta_coverage": 0.008000000000000007,
+     "delta_ds_own": -0.01216264123002895,
+     "delta_coverage_per_realisation": [
+      0.015000000000000013,
+      0.010000000000000009,
+      0.0,
+      0.0050000000000000044,
+      0.010000000000000009
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.014169896640826865,
+      -0.012882767456758482,
+      -0.01099937733499378,
+      -0.011462715105162523,
+      -0.011298449612403103
+     ]
+    }
+   }
+  },
+  "21": {
+   "cell": {
+    "name": "D_F60",
+    "tau": 0.5,
+    "r": 100,
+    "pi": 0.05,
+    "tail": "normal",
+    "F": 60,
+    "size_sigma": 0.0,
+    "rare": null,
+    "slides": null,
+    "two_stage": null
+   },
+   "realised_icc_per_realisation": [
+    0.1072391269689335,
+    0.053983897748124475,
+    0.07909252838467952,
+    0.10989020790881245,
+    0.071136210878861
+   ],
+   "realised_icc_mean": 0.0842683943778822,
+   "results": {
+    "S3|0.1": {
+     "coverage": 1.0,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      1.0,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.029660647331506272
+    },
+    "S3c|0.1": {
+     "coverage": 1.0,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      1.0,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.03564001495441257
+    },
+    "SPLIT6|0.1": {
+     "coverage": 0.9970000000000001,
+     "coverage_per_realisation": [
+      1.0,
+      0.995,
+      0.995,
+      1.0,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9949999999999999,
+      0.999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.018705572533659755
+    },
+    "B1u_c1s|0.1": {
+     "coverage": 0.982,
+     "coverage_per_realisation": [
+      0.995,
+      0.99,
+      0.975,
+      0.995,
+      0.955
+     ],
+     "coverage_ci90_seedcluster": [
+      0.97,
+      0.993
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.021328912103505036
+    },
+    "S3c-S3|0.1": {
+     "delta_coverage": 0.0,
+     "delta_ds_own": -0.005979367622906288,
+     "delta_coverage_per_realisation": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.006092814371257485,
+      -0.006373456790123445,
+      -0.0028549848942598273,
+      -0.009278846153846165,
+      -0.005296735905044519
+     ]
+    },
+    "S3|0.05": {
+     "coverage": 0.998,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      0.995,
+      1.0,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9960000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.04248140710750516
+    },
+    "S3c|0.05": {
+     "coverage": 1.0,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      1.0,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.05307127871603392
+    },
+    "SPLIT6|0.05": {
+     "coverage": 0.9960000000000001,
+     "coverage_per_realisation": [
+      0.995,
+      1.0,
+      1.0,
+      0.995,
+      0.99
+     ],
+     "coverage_ci90_seedcluster": [
+      0.993,
+      0.999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.02989322324176589
+    },
+    "B1u_c1s|0.05": {
+     "coverage": 0.999,
+     "coverage_per_realisation": [
+      0.995,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9970000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.027186027764789428
+    },
+    "S3c-S3|0.05": {
+     "delta_coverage": 0.0020000000000000018,
+     "delta_ds_own": -0.01058987160852876,
+     "delta_coverage_per_realisation": [
+      0.0,
+      0.0,
+      0.0050000000000000044,
+      0.0,
+      0.0050000000000000044
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.01414670658682636,
+      -0.006450617283950615,
+      -0.015287009063444108,
+      -0.00783653846153845,
+      -0.00922848664688427
+     ]
+    }
+   }
+  },
+  "22": {
+   "cell": {
+    "name": "D_F100",
+    "tau": 0.5,
+    "r": 100,
+    "pi": 0.05,
+    "tail": "normal",
+    "F": 100,
+    "size_sigma": 0.0,
+    "rare": null,
+    "slides": null,
+    "two_stage": null
+   },
+   "realised_icc_per_realisation": [
+    0.08488106687807455,
+    0.09602076522991138,
+    0.08784190026269983,
+    0.09426502729057591,
+    0.07829135495700279
+   ],
+   "realised_icc_mean": 0.0882600229236529,
+   "results": {
+    "S3|0.1": {
+     "coverage": 0.998,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      0.995,
+      1.0,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9960000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.027625646203553744
+    },
+    "S3c|0.1": {
+     "coverage": 0.999,
+     "coverage_per_realisation": [
+      0.995,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9970000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.034006377268919294
+    },
+    "SPLIT6|0.1": {
+     "coverage": 0.994,
+     "coverage_per_realisation": [
+      0.995,
+      1.0,
+      0.985,
+      1.0,
+      0.99
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9899999999999999,
+      0.998
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.017511049645303648
+    },
+    "B1u_c1s|0.1": {
+     "coverage": 0.9780000000000001,
+     "coverage_per_realisation": [
+      0.985,
+      0.995,
+      0.97,
+      0.98,
+      0.96
+     ],
+     "coverage_ci90_seedcluster": [
+      0.969,
+      0.9869999999999999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.018525188686132336
+    },
+    "S3c-S3|0.1": {
+     "delta_coverage": 0.0010000000000000009,
+     "delta_ds_own": -0.006380731065365545,
+     "delta_coverage_per_realisation": [
+      -0.0050000000000000044,
+      0.0,
+      0.0050000000000000044,
+      0.0,
+      0.0050000000000000044
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.008355140186915896,
+      -0.006735074626865668,
+      -0.006214689265536727,
+      -0.005725952813067162,
+      -0.004872798434442275
+     ]
+    },
+    "S3|0.05": {
+     "coverage": 0.9960000000000001,
+     "coverage_per_realisation": [
+      0.995,
+      1.0,
+      1.0,
+      0.995,
+      0.99
+     ],
+     "coverage_ci90_seedcluster": [
+      0.993,
+      0.999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.047961210988508696
+    },
+    "S3c|0.05": {
+     "coverage": 1.0,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      1.0,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.057990730831386984
+    },
+    "SPLIT6|0.05": {
+     "coverage": 0.9940000000000001,
+     "coverage_per_realisation": [
+      0.995,
+      1.0,
+      0.99,
+      0.99,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.991,
+      0.9970000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.037976674669878877
+    },
+    "B1u_c1s|0.05": {
+     "coverage": 0.99,
+     "coverage_per_realisation": [
+      0.985,
+      0.995,
+      0.99,
+      0.995,
+      0.985
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9869999999999999,
+      0.993
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.03476182410287982
+    },
+    "S3c-S3|0.05": {
+     "delta_coverage": 0.0040000000000000036,
+     "delta_ds_own": -0.010029519842878292,
+     "delta_coverage_per_realisation": [
+      0.0050000000000000044,
+      0.0,
+      0.0,
+      0.0050000000000000044,
+      0.010000000000000009
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.009523364485981317,
+      -0.01053171641791046,
+      -0.007401129943502827,
+      -0.012867513611615242,
+      -0.009823874755381608
+     ]
+    }
+   }
+  },
+  "23": {
+   "cell": {
+    "name": "D_F150",
+    "tau": 0.5,
+    "r": 100,
+    "pi": 0.05,
+    "tail": "normal",
+    "F": 150,
+    "size_sigma": 0.0,
+    "rare": null,
+    "slides": null,
+    "two_stage": null
+   },
+   "realised_icc_per_realisation": [
+    0.05592478557234791,
+    0.10263461939478018,
+    0.09707636968357392,
+    0.07181137316162833,
+    0.07220029689709347
+   ],
+   "realised_icc_mean": 0.07992948894188476,
+   "results": {
+    "S3|0.1": {
+     "coverage": 0.998,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      0.995,
+      1.0,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9960000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.02385655821261165
+    },
+    "S3c|0.1": {
+     "coverage": 0.999,
+     "coverage_per_realisation": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9970000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.028612648581076077
+    },
+    "SPLIT6|0.1": {
+     "coverage": 0.9949999999999999,
+     "coverage_per_realisation": [
+      0.995,
+      0.99,
+      1.0,
+      0.995,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.993,
+      0.9970000000000001
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.01739120135558693
+    },
+    "B1u_c1s|0.1": {
+     "coverage": 0.99,
+     "coverage_per_realisation": [
+      0.98,
+      0.99,
+      0.995,
+      0.99,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.986,
+      0.994
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.01664951383855195
+    },
+    "S3c-S3|0.1": {
+     "delta_coverage": 0.0010000000000000009,
+     "delta_ds_own": -0.004756090368464429,
+     "delta_coverage_per_realisation": [
+      0.0,
+      0.0,
+      0.0050000000000000044,
+      0.0,
+      0.0
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.003642117376294593,
+      -0.004127475247524756,
+      -0.005925692695214101,
+      -0.004344660194174767,
+      -0.00574050632911393
+     ]
+    },
+    "S3|0.05": {
+     "coverage": 0.998,
+     "coverage_per_realisation": [
+      0.99,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9940000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.05251292184267679
+    },
+    "S3c|0.05": {
+     "coverage": 0.999,
+     "coverage_per_realisation": [
+      0.995,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9970000000000001,
+      1.0
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.06409091893986353
+    },
+    "SPLIT6|0.05": {
+     "coverage": 0.993,
+     "coverage_per_realisation": [
+      0.985,
+      0.995,
+      0.995,
+      0.995,
+      0.995
+     ],
+     "coverage_ci90_seedcluster": [
+      0.9890000000000001,
+      0.9949999999999999
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.04326910334755718
+    },
+    "B1u_c1s|0.05": {
+     "coverage": 0.9879999999999999,
+     "coverage_per_realisation": [
+      0.98,
+      0.99,
+      0.995,
+      0.985,
+      0.99
+     ],
+     "coverage_ci90_seedcluster": [
+      0.984,
+      0.992
+     ],
+     "band": "hold_1-delta",
+     "near_boundary": false,
+     "cannot_certify": 0.0,
+     "ds_own": -0.03604220351474759
+    },
+    "S3c-S3|0.05": {
+     "delta_coverage": 0.0010000000000000009,
+     "delta_ds_own": -0.01157799709718674,
+     "delta_coverage_per_realisation": [
+      0.0050000000000000044,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "delta_ds_own_per_realisation": [
+      -0.013590333716915981,
+      -0.010680693069306926,
+      -0.008772040302266998,
+      -0.01282160194174757,
+      -0.012025316455696218
+     ]
+    }
+   }
+  }
+ },
+ "cells_below_hold_1_delta": [
+  {
+   "cell": 19,
+   "name": "C2_S12_om0.8_s2",
+   "key": "SPLIT6|0.1",
+   "coverage": 0.8619999999999999,
+   "band": "below_1-delta_within_1-2delta",
+   "near_boundary": false
+  },
+  {
+   "cell": 19,
+   "name": "C2_S12_om0.8_s2",
+   "key": "B1u_c1s|0.1",
+   "coverage": 0.8969999999999999,
+   "band": "below_1-delta_within_1-2delta",
+   "near_boundary": true
+  },
+  {
+   "cell": 19,
+   "name": "C2_S12_om0.8_s2",
+   "key": "SPLIT6|0.05",
+   "coverage": 0.8709999999999999,
+   "band": "below_1-delta_within_1-2delta",
+   "near_boundary": false
+  }
+ ],
+ "platt_fallback": [],
+ "seconds": 2053.8172512054443,
+ "ci_definition": "seed-cluster 90% interval: percentile 5-95 of the mean coverage over B=10000 resamples of the five per-seed coverages with replacement (default_rng([20261103, 99]); equals a seed-cluster bootstrap when every seed has the same number of draws)",
+ "note": "synthetic; no project data; supplementary stress test; no rule or constant changed; every cell is reported"
+}

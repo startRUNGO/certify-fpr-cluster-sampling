@@ -1,0 +1,4798 @@
+{
+ "version": "e2n_r1",
+ "spec": "E-batch draft3",
+ "ndraw": 1000,
+ "seeds": [
+  41,
+  42,
+  43,
+  44,
+  45
+ ],
+ "ns": [
+  10,
+  20,
+  50,
+  100,
+  200
+ ],
+ "pooled": {
+  "bbbc041_all": {
+   "iid": {
+    "10": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.255,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.027940456769983718,
+       "coverage_nonvacuous": 0.255,
+       "fpr_mean_nonvacuous": 0.18445876147120457,
+       "fpr_mean": 0.18445876147120457,
+       "fpr_median": 0.16483609123973308,
+       "fpr_p90": 0.3433713900329987,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.245,
+        0.247,
+        0.273,
+        0.257,
+        0.253
+       ],
+       "coverage_ci90_seedcluster": [
+        0.24820000000000003,
+        0.26260000000000006
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.6417999999999999,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.16322544861337682,
+       "coverage_nonvacuous": 0.6417999999999999,
+       "fpr_mean_nonvacuous": 0.09401565864585591,
+       "fpr_mean": 0.09401565864585591,
+       "fpr_median": 0.06945347688898529,
+       "fpr_p90": 0.21322109015583984,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.635,
+        0.634,
+        0.654,
+        0.6579999999999999,
+        0.628
+       ],
+       "coverage_ci90_seedcluster": [
+        0.633,
+        0.651
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.38759999999999994,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.017198694942903752,
+       "coverage_nonvacuous": 0.38759999999999994,
+       "fpr_mean_nonvacuous": 0.09401565864585591,
+       "fpr_mean": 0.09401565864585591,
+       "fpr_median": 0.06945347688898529,
+       "fpr_p90": 0.21322109015583984,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.38,
+        0.381,
+        0.396,
+        0.395,
+        0.386
+       ],
+       "coverage_ci90_seedcluster": [
+        0.38260000000000005,
+        0.3926
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      }
+     }
+    },
+    "20": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.3304,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.010627406199021234,
+       "coverage_nonvacuous": 0.3304,
+       "fpr_mean_nonvacuous": 0.1427095888431245,
+       "fpr_mean": 0.1427095888431245,
+       "fpr_median": 0.13192788496278635,
+       "fpr_p90": 0.2450935761254426,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.356,
+        0.30700000000000005,
+        0.31799999999999995,
+        0.32099999999999995,
+        0.35
+       ],
+       "coverage_ci90_seedcluster": [
+        0.31639999999999996,
+        0.3454
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.6126,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.09507667210440454,
+       "coverage_nonvacuous": 0.6126,
+       "fpr_mean_nonvacuous": 0.09437139725895416,
+       "fpr_mean": 0.09437139725895416,
+       "fpr_median": 0.0808644651588506,
+       "fpr_p90": 0.18062721294891254,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.6639999999999999,
+        0.604,
+        0.5820000000000001,
+        0.602,
+        0.611
+       ],
+       "coverage_ci90_seedcluster": [
+        0.5948,
+        0.6352
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.27359999999999995,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.08534747145187603,
+       "coverage_nonvacuous": 0.27359999999999995,
+       "fpr_mean_nonvacuous": 0.09437139725895416,
+       "fpr_mean": 0.09437139725895416,
+       "fpr_median": 0.0808644651588506,
+       "fpr_p90": 0.18062721294891254,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.277,
+        0.274,
+        0.271,
+        0.255,
+        0.29100000000000004
+       ],
+       "coverage_ci90_seedcluster": [
+        0.26539999999999997,
+        0.28200000000000003
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.6496,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.1318774061990212,
+       "coverage_nonvacuous": 0.6496,
+       "fpr_mean_nonvacuous": 0.04735492689741551,
+       "fpr_mean": 0.04735492689741551,
+       "fpr_median": 0.032793795312763496,
+       "fpr_p90": 0.1095539176722789,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.661,
+        0.654,
+        0.64,
+        0.646,
+        0.647
+       ],
+       "coverage_ci90_seedcluster": [
+        0.6442,
+        0.6552
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      }
+     }
+    },
+    "50": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.37239999999999995,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.005134910277324662,
+       "coverage_nonvacuous": 0.37239999999999995,
+       "fpr_mean_nonvacuous": 0.11869770937206445,
+       "fpr_mean": 0.11869770937206445,
+       "fpr_median": 0.11368836862008336,
+       "fpr_p90": 0.17943372594358944,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.373,
+        0.378,
+        0.366,
+        0.355,
+        0.39
+       ],
+       "coverage_ci90_seedcluster": [
+        0.364,
+        0.3808000000000001
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.562,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.03710130505709622,
+       "coverage_nonvacuous": 0.562,
+       "fpr_mean_nonvacuous": 0.09896839607871474,
+       "fpr_mean": 0.09896839607871474,
+       "fpr_median": 0.09275718380422482,
+       "fpr_p90": 0.15418984994098806,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.5569999999999999,
+        0.544,
+        0.5740000000000001,
+        0.552,
+        0.583
+       ],
+       "coverage_ci90_seedcluster": [
+        0.5516,
+        0.5732000000000002
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.9952,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.49182406199021206,
+       "coverage_nonvacuous": 0.9952,
+       "fpr_mean_nonvacuous": 0.019546258159308234,
+       "fpr_mean": 0.019546258159308234,
+       "fpr_median": 0.01363296962689986,
+       "fpr_p90": 0.044639545246525504,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.995,
+        0.994,
+        0.997,
+        0.996,
+        0.994
+       ],
+       "coverage_ci90_seedcluster": [
+        0.9944,
+        0.9960000000000001
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.4528,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.001329119086460033,
+       "coverage_nonvacuous": 0.4528,
+       "fpr_mean_nonvacuous": 0.05921957752246067,
+       "fpr_mean": 0.05921957752246067,
+       "fpr_median": 0.053755088277091356,
+       "fpr_p90": 0.10315051665582776,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.43700000000000006,
+        0.45199999999999996,
+        0.46399999999999997,
+        0.45299999999999996,
+        0.45799999999999996
+       ],
+       "coverage_ci90_seedcluster": [
+        0.446,
+        0.45919999999999994
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.7202,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.12472960848287114,
+       "coverage_nonvacuous": 0.7202,
+       "fpr_mean_nonvacuous": 0.03931898258544693,
+       "fpr_mean": 0.03931898258544693,
+       "fpr_median": 0.03338391502276172,
+       "fpr_p90": 0.07612182961196617,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.719,
+        0.7130000000000001,
+        0.725,
+        0.72,
+        0.724
+       ],
+       "coverage_ci90_seedcluster": [
+        0.7168,
+        0.7234
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.9278,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.3114,
+       "coverage_nonvacuous": 0.9278,
+       "fpr_mean_nonvacuous": 0.019534195630705495,
+       "fpr_mean": 0.019534195630705495,
+       "fpr_median": 0.01362092636751211,
+       "fpr_p90": 0.04462750198713786,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.925,
+        0.927,
+        0.928,
+        0.921,
+        0.938
+       ],
+       "coverage_ci90_seedcluster": [
+        0.924,
+        0.9324
+       ]
+      }
+     }
+    },
+    "100": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.4274,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -3.099510603586157e-05,
+       "coverage_nonvacuous": 0.4274,
+       "fpr_mean_nonvacuous": 0.10865874701929329,
+       "fpr_mean": 0.10865874701929329,
+       "fpr_median": 0.10614928824337017,
+       "fpr_p90": 0.1497687694197558,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.41800000000000004,
+        0.43300000000000005,
+        0.41400000000000003,
+        0.42300000000000004,
+        0.44899999999999995
+       ],
+       "coverage_ci90_seedcluster": [
+        0.41900000000000004,
+        0.43740000000000007
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.5478000000000001,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.020527079934747117,
+       "coverage_nonvacuous": 0.5478000000000001,
+       "fpr_mean_nonvacuous": 0.0989397186694607,
+       "fpr_mean": 0.0989397186694607,
+       "fpr_median": 0.0960630585061541,
+       "fpr_p90": 0.1382602307488499,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.529,
+        0.5589999999999999,
+        0.5409999999999999,
+        0.5429999999999999,
+        0.567
+       ],
+       "coverage_ci90_seedcluster": [
+        0.5374000000000001,
+        0.5586
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.9756,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.21076468189233277,
+       "coverage_nonvacuous": 0.9756,
+       "fpr_mean_nonvacuous": 0.049401500590119704,
+       "fpr_mean": 0.049401500590119704,
+       "fpr_median": 0.0466676301274177,
+       "fpr_p90": 0.07894476961244792,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.972,
+        0.986,
+        0.976,
+        0.971,
+        0.973
+       ],
+       "coverage_ci90_seedcluster": [
+        0.9722,
+        0.9802
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.384,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.024375938009787927,
+       "coverage_nonvacuous": 0.384,
+       "fpr_mean_nonvacuous": 0.05949097719006673,
+       "fpr_mean": 0.05949097719006673,
+       "fpr_median": 0.05672375171616445,
+       "fpr_p90": 0.0920707180191247,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.359,
+        0.41000000000000003,
+        0.39,
+        0.376,
+        0.385
+       ],
+       "coverage_ci90_seedcluster": [
+        0.372,
+        0.396
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.5640000000000001,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.030340538336052204,
+       "coverage_nonvacuous": 0.5640000000000001,
+       "fpr_mean_nonvacuous": 0.049401500590119704,
+       "fpr_mean": 0.049401500590119704,
+       "fpr_median": 0.0466676301274177,
+       "fpr_p90": 0.07894476961244792,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.5449999999999999,
+        0.5700000000000001,
+        0.575,
+        0.573,
+        0.5569999999999999
+       ],
+       "coverage_ci90_seedcluster": [
+        0.5553999999999999,
+        0.5721999999999999
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.9928,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.42390750407830347,
+       "coverage_nonvacuous": 0.9928,
+       "fpr_mean_nonvacuous": 0.009910537851964255,
+       "fpr_mean": 0.009910537851964255,
+       "fpr_median": 0.007009176963653441,
+       "fpr_p90": 0.022606402196690537,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.988,
+        0.992,
+        0.996,
+        0.997,
+        0.991
+       ],
+       "coverage_ci90_seedcluster": [
+        0.9902000000000001,
+        0.9952
+       ]
+      }
+     }
+    },
+    "200": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.4334,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.000372430668841789,
+       "coverage_nonvacuous": 0.4334,
+       "fpr_mean_nonvacuous": 0.10478494592576536,
+       "fpr_mean": 0.10478494592576536,
+       "fpr_median": 0.10344557651082686,
+       "fpr_p90": 0.1332116964135174,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.45099999999999996,
+        0.42900000000000005,
+        0.43400000000000005,
+        0.42900000000000005,
+        0.42400000000000004
+       ],
+       "coverage_ci90_seedcluster": [
+        0.42700000000000005,
+        0.4412
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.5306,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.00943809135399671,
+       "coverage_nonvacuous": 0.5306,
+       "fpr_mean_nonvacuous": 0.09994887636389913,
+       "fpr_mean": 0.09994887636389913,
+       "fpr_median": 0.09847171038369823,
+       "fpr_p90": 0.12804513813618515,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.5349999999999999,
+        0.5349999999999999,
+        0.5349999999999999,
+        0.528,
+        0.52
+       ],
+       "coverage_ci90_seedcluster": [
+        0.526,
+        0.5349999999999999
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.9398,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.09710367047308316,
+       "coverage_nonvacuous": 0.9398,
+       "fpr_mean_nonvacuous": 0.06987581713514947,
+       "fpr_mean": 0.06987581713514947,
+       "fpr_median": 0.06814678324541756,
+       "fpr_p90": 0.09338584194426384,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.942,
+        0.942,
+        0.9390000000000001,
+        0.9319999999999999,
+        0.944
+       ],
+       "coverage_ci90_seedcluster": [
+        0.9363999999999999,
+        0.9426
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.4172,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.014436786296900487,
+       "coverage_nonvacuous": 0.4172,
+       "fpr_mean_nonvacuous": 0.054893166654623404,
+       "fpr_mean": 0.054893166654623404,
+       "fpr_median": 0.053363682346990404,
+       "fpr_p90": 0.07626153142086374,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.43200000000000005,
+        0.403,
+        0.42900000000000005,
+        0.393,
+        0.42900000000000005
+       ],
+       "coverage_ci90_seedcluster": [
+        0.4042,
+        0.42960000000000004
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.5458000000000001,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.013630995106035892,
+       "coverage_nonvacuous": 0.5458000000000001,
+       "fpr_mean_nonvacuous": 0.049925772575089726,
+       "fpr_mean": 0.049925772575089726,
+       "fpr_median": 0.04813690777271962,
+       "fpr_p90": 0.07075414890285903,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.544,
+        0.5489999999999999,
+        0.5660000000000001,
+        0.516,
+        0.554
+       ],
+       "coverage_ci90_seedcluster": [
+        0.5328,
+        0.5568000000000002
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.9666,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.2081977161500816,
+       "coverage_nonvacuous": 0.9666,
+       "fpr_mean_nonvacuous": 0.025287043861550687,
+       "fpr_mean": 0.025287043861550687,
+       "fpr_median": 0.023400052990341313,
+       "fpr_p90": 0.04045451260929259,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.96,
+        0.974,
+        0.97,
+        0.962,
+        0.967
+       ],
+       "coverage_ci90_seedcluster": [
+        0.9628,
+        0.9703999999999999
+       ]
+      }
+     }
+    }
+   },
+   "field": {
+    "10": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.235,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.03069004893964114,
+       "coverage_nonvacuous": 0.235,
+       "fpr_mean_nonvacuous": 0.31381246718211814,
+       "fpr_mean": 0.31381246718211814,
+       "fpr_median": 0.23730038297564848,
+       "fpr_p90": 0.7456692439241757,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.23299999999999998,
+        0.19899999999999995,
+        0.23199999999999998,
+        0.249,
+        0.262
+       ],
+       "coverage_ci90_seedcluster": [
+        0.21899999999999994,
+        0.25020000000000003
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.48440000000000005,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.10478646003262639,
+       "coverage_nonvacuous": 0.48440000000000005,
+       "fpr_mean_nonvacuous": 0.198690892887251,
+       "fpr_mean": 0.198690892887251,
+       "fpr_median": 0.10655273743285881,
+       "fpr_p90": 0.5596755545920948,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.542,
+        0.378,
+        0.45399999999999996,
+        0.487,
+        0.5609999999999999
+       ],
+       "coverage_ci90_seedcluster": [
+        0.43260000000000004,
+        0.532
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.3156,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.07563768352365416,
+       "coverage_nonvacuous": 0.3156,
+       "fpr_mean_nonvacuous": 0.198690892887251,
+       "fpr_mean": 0.198690892887251,
+       "fpr_median": 0.10655273743285881,
+       "fpr_p90": 0.5596755545920948,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.363,
+        0.241,
+        0.28600000000000003,
+        0.31699999999999995,
+        0.371
+       ],
+       "coverage_ci90_seedcluster": [
+        0.2804,
+        0.3508
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      }
+     }
+    },
+    "20": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.25760000000000005,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.022617455138662344,
+       "coverage_nonvacuous": 0.25760000000000005,
+       "fpr_mean_nonvacuous": 0.282473603584074,
+       "fpr_mean": 0.282473603584074,
+       "fpr_median": 0.2038381867668666,
+       "fpr_p90": 0.7018992220054435,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.272,
+        0.19299999999999995,
+        0.252,
+        0.275,
+        0.29600000000000004
+       ],
+       "coverage_ci90_seedcluster": [
+        0.22939999999999997,
+        0.28220000000000006
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.40480000000000005,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.04497300163132135,
+       "coverage_nonvacuous": 0.40480000000000005,
+       "fpr_mean_nonvacuous": 0.21904251511429057,
+       "fpr_mean": 0.21904251511429057,
+       "fpr_median": 0.13423416913553482,
+       "fpr_p90": 0.6130103331165562,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.469,
+        0.28,
+        0.381,
+        0.42200000000000004,
+        0.472
+       ],
+       "coverage_ci90_seedcluster": [
+        0.3488,
+        0.4526
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.21999999999999997,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.13545114192495922,
+       "coverage_nonvacuous": 0.21999999999999997,
+       "fpr_mean_nonvacuous": 0.21904251511429057,
+       "fpr_mean": 0.21904251511429057,
+       "fpr_median": 0.13423416913553482,
+       "fpr_p90": 0.6130103331165562,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.238,
+        0.14300000000000002,
+        0.21299999999999997,
+        0.244,
+        0.262
+       ],
+       "coverage_ci90_seedcluster": [
+        0.18580000000000002,
+        0.2476
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.4608,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.01711908646003263,
+       "coverage_nonvacuous": 0.4608,
+       "fpr_mean_nonvacuous": 0.13351766264421802,
+       "fpr_mean": 0.13351766264421802,
+       "fpr_median": 0.05736204446371368,
+       "fpr_p90": 0.35035648047787693,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.5389999999999999,
+        0.32899999999999996,
+        0.42100000000000004,
+        0.45399999999999996,
+        0.5609999999999999
+       ],
+       "coverage_ci90_seedcluster": [
+        0.39599999999999996,
+        0.5241999999999999
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      }
+     }
+    },
+    "50": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.30079999999999996,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.006129282218597091,
+       "coverage_nonvacuous": 0.30079999999999996,
+       "fpr_mean_nonvacuous": 0.22632554134450947,
+       "fpr_mean": 0.22632554134450947,
+       "fpr_median": 0.16187947106004769,
+       "fpr_p90": 0.5347604595707783,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.32399999999999995,
+        0.24,
+        0.281,
+        0.30800000000000005,
+        0.351
+       ],
+       "coverage_ci90_seedcluster": [
+        0.27040000000000003,
+        0.32839999999999997
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.36960000000000004,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.02250505709624793,
+       "coverage_nonvacuous": 0.36960000000000004,
+       "fpr_mean_nonvacuous": 0.19990303971866946,
+       "fpr_mean": 0.19990303971866946,
+       "fpr_median": 0.13730520027940363,
+       "fpr_p90": 0.46794686513958156,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.40900000000000003,
+        0.28200000000000003,
+        0.348,
+        0.378,
+        0.43100000000000005
+       ],
+       "coverage_ci90_seedcluster": [
+        0.3276,
+        0.40560000000000007
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.8564,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.35834845024469814,
+       "coverage_nonvacuous": 0.8564,
+       "fpr_mean_nonvacuous": 0.05540012524989763,
+       "fpr_mean": 0.05540012524989763,
+       "fpr_median": 0.025670207384926647,
+       "fpr_p90": 0.12927234626779394,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.917,
+        0.751,
+        0.847,
+        0.842,
+        0.925
+       ],
+       "coverage_ci90_seedcluster": [
+        0.8056000000000001,
+        0.9046
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.3288,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.06154951060358891,
+       "coverage_nonvacuous": 0.3288,
+       "fpr_mean_nonvacuous": 0.13847274851265745,
+       "fpr_mean": 0.13847274851265745,
+       "fpr_median": 0.08112339523568657,
+       "fpr_p90": 0.3299299082303638,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.379,
+        0.247,
+        0.278,
+        0.31799999999999995,
+        0.42200000000000004
+       ],
+       "coverage_ci90_seedcluster": [
+        0.28159999999999996,
+        0.37600000000000006
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.46940000000000004,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.02432797716150082,
+       "coverage_nonvacuous": 0.46940000000000004,
+       "fpr_mean_nonvacuous": 0.10175928896596574,
+       "fpr_mean": 0.10175928896596574,
+       "fpr_median": 0.05495941421586342,
+       "fpr_p90": 0.2405881927884963,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.5660000000000001,
+        0.32999999999999996,
+        0.42500000000000004,
+        0.43600000000000005,
+        0.5900000000000001
+       ],
+       "coverage_ci90_seedcluster": [
+        0.39620000000000005,
+        0.5448000000000001
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.6926,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.17792446982055465,
+       "coverage_nonvacuous": 0.6926,
+       "fpr_mean_nonvacuous": 0.05538806031264302,
+       "fpr_mean": 0.05538806031264302,
+       "fpr_median": 0.025658164125538896,
+       "fpr_p90": 0.12926030300840619,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.794,
+        0.5369999999999999,
+        0.6579999999999999,
+        0.6599999999999999,
+        0.8140000000000001
+       ],
+       "coverage_ci90_seedcluster": [
+        0.6125999999999999,
+        0.7712
+       ]
+      }
+     }
+    },
+    "100": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.3336,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.0022001631321370597,
+       "coverage_nonvacuous": 0.3336,
+       "fpr_mean_nonvacuous": 0.17573178697882794,
+       "fpr_mean": 0.17573178697882794,
+       "fpr_median": 0.14122528121010675,
+       "fpr_p90": 0.3389105667557868,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.32299999999999995,
+        0.247,
+        0.32299999999999995,
+        0.384,
+        0.391
+       ],
+       "coverage_ci90_seedcluster": [
+        0.2925999999999999,
+        0.37320000000000003
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.3782,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.013658156606851523,
+       "coverage_nonvacuous": 0.3782,
+       "fpr_mean_nonvacuous": 0.16294949779608356,
+       "fpr_mean": 0.16294949779608356,
+       "fpr_median": 0.12865211840932628,
+       "fpr_p90": 0.3164522966495654,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.385,
+        0.27,
+        0.364,
+        0.42200000000000004,
+        0.44999999999999996
+       ],
+       "coverage_ci90_seedcluster": [
+        0.3306,
+        0.4202000000000001
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.6874,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.15284420880913538,
+       "coverage_nonvacuous": 0.6874,
+       "fpr_mean_nonvacuous": 0.09320177758508565,
+       "fpr_mean": 0.09320177758508565,
+       "fpr_median": 0.06475058409808032,
+       "fpr_p90": 0.1918298528313705,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.789,
+        0.508,
+        0.631,
+        0.726,
+        0.783
+       ],
+       "coverage_ci90_seedcluster": [
+        0.6066,
+        0.7614
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.3164,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.06703238172920065,
+       "coverage_nonvacuous": 0.3164,
+       "fpr_mean_nonvacuous": 0.10816555146084739,
+       "fpr_mean": 0.10816555146084739,
+       "fpr_median": 0.07733579015824843,
+       "fpr_p90": 0.2194028951995568,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.33399999999999996,
+        0.21599999999999997,
+        0.31299999999999994,
+        0.33699999999999997,
+        0.382
+       ],
+       "coverage_ci90_seedcluster": [
+        0.2728,
+        0.3538
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.38859999999999995,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.027579934747145186,
+       "coverage_nonvacuous": 0.38859999999999995,
+       "fpr_mean_nonvacuous": 0.09320177758508565,
+       "fpr_mean": 0.09320177758508565,
+       "fpr_median": 0.06475058409808032,
+       "fpr_p90": 0.1918298528313705,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.43600000000000005,
+        0.268,
+        0.356,
+        0.402,
+        0.481
+       ],
+       "coverage_ci90_seedcluster": [
+        0.32999999999999996,
+        0.44020000000000004
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.8742,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.3085064437194127,
+       "coverage_nonvacuous": 0.8742,
+       "fpr_mean_nonvacuous": 0.025026394007274126,
+       "fpr_mean": 0.025026394007274126,
+       "fpr_median": 0.012868222655779582,
+       "fpr_p90": 0.05773779415661055,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.95,
+        0.741,
+        0.841,
+        0.882,
+        0.957
+       ],
+       "coverage_ci90_seedcluster": [
+        0.8109999999999999,
+        0.931
+       ]
+      }
+     }
+    },
+    "200": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.3648,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.0015883360522023127,
+       "coverage_nonvacuous": 0.3648,
+       "fpr_mean_nonvacuous": 0.14398222174049186,
+       "fpr_mean": 0.14398222174049186,
+       "fpr_median": 0.12717681913433054,
+       "fpr_p90": 0.258301418695956,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.387,
+        0.30900000000000005,
+        0.356,
+        0.384,
+        0.388
+       ],
+       "coverage_ci90_seedcluster": [
+        0.3402,
+        0.386
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.39259999999999995,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.007601386623164736,
+       "coverage_nonvacuous": 0.39259999999999995,
+       "fpr_mean_nonvacuous": 0.13792152853048148,
+       "fpr_mean": 0.13792152853048148,
+       "fpr_median": 0.12001710142833061,
+       "fpr_p90": 0.24933521208179785,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.41700000000000004,
+        0.33099999999999996,
+        0.38,
+        0.41200000000000003,
+        0.42300000000000004
+       ],
+       "coverage_ci90_seedcluster": [
+        0.3656,
+        0.4162099999999999
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.593,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.08113874388254483,
+       "coverage_nonvacuous": 0.593,
+       "fpr_mean_nonvacuous": 0.10038614061709661,
+       "fpr_mean": 0.10038614061709661,
+       "fpr_median": 0.0847062649035335,
+       "fpr_p90": 0.18748584917021957,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.675,
+        0.469,
+        0.5429999999999999,
+        0.625,
+        0.653
+       ],
+       "coverage_ci90_seedcluster": [
+        0.5353999999999999,
+        0.6462000000000001
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.34540000000000004,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.04407944535073409,
+       "coverage_nonvacuous": 0.34540000000000004,
+       "fpr_mean_nonvacuous": 0.08119506226365104,
+       "fpr_mean": 0.08119506226365104,
+       "fpr_median": 0.0657200664787918,
+       "fpr_p90": 0.15586988462557505,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.389,
+        0.28700000000000003,
+        0.32499999999999996,
+        0.354,
+        0.372
+       ],
+       "coverage_ci90_seedcluster": [
+        0.3174,
+        0.37160000000000004
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.39880000000000004,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.02140432300163132,
+       "coverage_nonvacuous": 0.39880000000000004,
+       "fpr_mean_nonvacuous": 0.07483951875135487,
+       "fpr_mean": 0.07483951875135487,
+       "fpr_median": 0.06056555146084741,
+       "fpr_p90": 0.14495989594623895,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.46099999999999997,
+        0.31399999999999995,
+        0.356,
+        0.41000000000000003,
+        0.45299999999999996
+       ],
+       "coverage_ci90_seedcluster": [
+        0.35839999999999994,
+        0.43839999999999996
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.7176,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.14324241435562804,
+       "coverage_nonvacuous": 0.7176,
+       "fpr_mean_nonvacuous": 0.041302789218874196,
+       "fpr_mean": 0.041302789218874196,
+       "fpr_median": 0.031192041814196547,
+       "fpr_p90": 0.08558180986102076,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.848,
+        0.532,
+        0.649,
+        0.7010000000000001,
+        0.858
+       ],
+       "coverage_ci90_seedcluster": [
+        0.623,
+        0.8122
+       ]
+      }
+     }
+    }
+   }
+  },
+  "mpidb_full": {
+   "iid": {
+    "10": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.26180000000000003,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.022482820976491846,
+       "coverage_nonvacuous": 0.26180000000000003,
+       "fpr_mean_nonvacuous": 0.18328026940150008,
+       "fpr_mean": 0.18328026940150008,
+       "fpr_median": 0.16347772845553343,
+       "fpr_p90": 0.33998163171590395,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.246,
+        0.281,
+        0.27,
+        0.255,
+        0.257
+       ],
+       "coverage_ci90_seedcluster": [
+        0.253,
+        0.27140000000000003
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.6588,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.09243254972875227,
+       "coverage_nonvacuous": 0.6588,
+       "fpr_mean_nonvacuous": 0.09061111281187816,
+       "fpr_mean": 0.09061111281187816,
+       "fpr_median": 0.06643196081432723,
+       "fpr_p90": 0.2080361242920558,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.6719999999999999,
+        0.6579999999999999,
+        0.6599999999999999,
+        0.647,
+        0.657
+       ],
+       "coverage_ci90_seedcluster": [
+        0.6534,
+        0.6643999999999999
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.4014,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.03565135623869802,
+       "coverage_nonvacuous": 0.4014,
+       "fpr_mean_nonvacuous": 0.09061111281187816,
+       "fpr_mean": 0.09061111281187816,
+       "fpr_median": 0.06643196081432723,
+       "fpr_p90": 0.2080361242920558,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.401,
+        0.403,
+        0.41100000000000003,
+        0.383,
+        0.40900000000000003
+       ],
+       "coverage_ci90_seedcluster": [
+        0.39380000000000004,
+        0.40820000000000006
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      }
+     }
+    },
+    "20": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.31120000000000003,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.013122965641952962,
+       "coverage_nonvacuous": 0.31120000000000003,
+       "fpr_mean_nonvacuous": 0.14409557630491351,
+       "fpr_mean": 0.14409557630491351,
+       "fpr_median": 0.13347619776519215,
+       "fpr_p90": 0.24429817847849378,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.31999999999999995,
+        0.32399999999999995,
+        0.30600000000000005,
+        0.30500000000000005,
+        0.30100000000000005
+       ],
+       "coverage_ci90_seedcluster": [
+        0.30440000000000006,
+        0.3186
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.599,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.03141772151898736,
+       "coverage_nonvacuous": 0.599,
+       "fpr_mean_nonvacuous": 0.09621968467778967,
+       "fpr_mean": 0.09621968467778967,
+       "fpr_median": 0.08388183070564825,
+       "fpr_p90": 0.1806367671819991,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.606,
+        0.622,
+        0.5880000000000001,
+        0.596,
+        0.583
+       ],
+       "coverage_ci90_seedcluster": [
+        0.5892,
+        0.61
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.2528,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.0253634719710669,
+       "coverage_nonvacuous": 0.2528,
+       "fpr_mean_nonvacuous": 0.09621968467778967,
+       "fpr_mean": 0.09621968467778967,
+       "fpr_median": 0.08388183070564825,
+       "fpr_p90": 0.1806367671819991,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.277,
+        0.249,
+        0.251,
+        0.246,
+        0.241
+       ],
+       "coverage_ci90_seedcluster": [
+        0.24500000000000002,
+        0.2636
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.628,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.10987703435804701,
+       "coverage_nonvacuous": 0.628,
+       "fpr_mean_nonvacuous": 0.049202204194091534,
+       "fpr_mean": 0.049202204194091534,
+       "fpr_median": 0.03551201591917952,
+       "fpr_p90": 0.11114342568498396,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.64,
+        0.64,
+        0.62,
+        0.615,
+        0.625
+       ],
+       "coverage_ci90_seedcluster": [
+        0.6200000000000001,
+        0.636
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      }
+     }
+    },
+    "50": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.36819999999999997,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.005657504520795641,
+       "coverage_nonvacuous": 0.36819999999999997,
+       "fpr_mean_nonvacuous": 0.11805155365069647,
+       "fpr_mean": 0.11805155365069647,
+       "fpr_median": 0.11403643043012401,
+       "fpr_p90": 0.17589162712383294,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.372,
+        0.385,
+        0.386,
+        0.351,
+        0.347
+       ],
+       "coverage_ci90_seedcluster": [
+        0.3556,
+        0.38
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.5640000000000001,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.009820976491862586,
+       "coverage_nonvacuous": 0.5640000000000001,
+       "fpr_mean_nonvacuous": 0.09819791826113579,
+       "fpr_mean": 0.09819791826113579,
+       "fpr_median": 0.09352517985611508,
+       "fpr_p90": 0.1518444818613195,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.55,
+        0.583,
+        0.577,
+        0.5609999999999999,
+        0.5489999999999999
+       ],
+       "coverage_ci90_seedcluster": [
+        0.5542,
+        0.5741999999999999
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.9952,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.3327081374321881,
+       "coverage_nonvacuous": 0.9952,
+       "fpr_mean_nonvacuous": 0.019317250880146946,
+       "fpr_mean": 0.019317250880146946,
+       "fpr_median": 0.013470075003826687,
+       "fpr_p90": 0.0443900198989744,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.997,
+        0.994,
+        0.996,
+        0.994,
+        0.995
+       ],
+       "coverage_ci90_seedcluster": [
+        0.9944,
+        0.9960000000000001
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.45999999999999996,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.0083363471971067,
+       "coverage_nonvacuous": 0.45999999999999996,
+       "fpr_mean_nonvacuous": 0.05824742078677484,
+       "fpr_mean": 0.05824742078677484,
+       "fpr_median": 0.052655747742231696,
+       "fpr_p90": 0.1007194244604317,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.44299999999999995,
+        0.44899999999999995,
+        0.46799999999999997,
+        0.489,
+        0.45099999999999996
+       ],
+       "coverage_ci90_seedcluster": [
+        0.44819999999999993,
+        0.473
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.7228,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.07631356238698012,
+       "coverage_nonvacuous": 0.7228,
+       "fpr_mean_nonvacuous": 0.0389829174957906,
+       "fpr_mean": 0.0389829174957906,
+       "fpr_median": 0.03344558395836522,
+       "fpr_p90": 0.07377927445277821,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.71,
+        0.724,
+        0.738,
+        0.73,
+        0.712
+       ],
+       "coverage_ci90_seedcluster": [
+        0.7148,
+        0.7308
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.9278,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.27592694394213385,
+       "coverage_nonvacuous": 0.9278,
+       "fpr_mean_nonvacuous": 0.019164181846012547,
+       "fpr_mean": 0.019164181846012547,
+       "fpr_median": 0.01331700596969232,
+       "fpr_p90": 0.04423695086484003,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.9319999999999999,
+        0.9299999999999999,
+        0.945,
+        0.918,
+        0.914
+       ],
+       "coverage_ci90_seedcluster": [
+        0.9196,
+        0.9363999999999999
+       ]
+      }
+     }
+    },
+    "100": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.41100000000000003,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.002843037974683523,
+       "coverage_nonvacuous": 0.41100000000000003,
+       "fpr_mean_nonvacuous": 0.1095415582427675,
+       "fpr_mean": 0.1095415582427675,
+       "fpr_median": 0.10699525485994188,
+       "fpr_p90": 0.15046686055410985,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.406,
+        0.40800000000000003,
+        0.42100000000000004,
+        0.399,
+        0.42100000000000004
+       ],
+       "coverage_ci90_seedcluster": [
+        0.4048,
+        0.41800000000000004
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.5384,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.004711392405063313,
+       "coverage_nonvacuous": 0.5384,
+       "fpr_mean_nonvacuous": 0.09975753864993112,
+       "fpr_mean": 0.09975753864993112,
+       "fpr_median": 0.09719883667534057,
+       "fpr_p90": 0.13975202816470234,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.5349999999999999,
+        0.5389999999999999,
+        0.546,
+        0.5329999999999999,
+        0.5389999999999999
+       ],
+       "coverage_ci90_seedcluster": [
+        0.5353999999999999,
+        0.5418
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.9768,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.07039602169981919,
+       "coverage_nonvacuous": 0.9768,
+       "fpr_mean_nonvacuous": 0.049689637226389104,
+       "fpr_mean": 0.049689637226389104,
+       "fpr_median": 0.046839124445124725,
+       "fpr_p90": 0.07775906934027244,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.989,
+        0.981,
+        0.973,
+        0.97,
+        0.971
+       ],
+       "coverage_ci90_seedcluster": [
+        0.9714,
+        0.9822000000000001
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.37560000000000004,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.0059410488245931195,
+       "coverage_nonvacuous": 0.37560000000000004,
+       "fpr_mean_nonvacuous": 0.05966502372570029,
+       "fpr_mean": 0.05966502372570029,
+       "fpr_median": 0.0567886116638604,
+       "fpr_p90": 0.09078524414510951,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.364,
+        0.351,
+        0.399,
+        0.375,
+        0.389
+       ],
+       "coverage_ci90_seedcluster": [
+        0.36319999999999997,
+        0.388
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.5578000000000001,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.013614828209764927,
+       "coverage_nonvacuous": 0.5578000000000001,
+       "fpr_mean_nonvacuous": 0.049689637226389104,
+       "fpr_mean": 0.049689637226389104,
+       "fpr_median": 0.046839124445124725,
+       "fpr_p90": 0.07775906934027244,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.5569999999999999,
+        0.5409999999999999,
+        0.5700000000000001,
+        0.563,
+        0.558
+       ],
+       "coverage_ci90_seedcluster": [
+        0.5506,
+        0.5645999999999999
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.9932,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.4159215189873418,
+       "coverage_nonvacuous": 0.9932,
+       "fpr_mean_nonvacuous": 0.009916669217817234,
+       "fpr_mean": 0.009916669217817234,
+       "fpr_median": 0.006888106536047767,
+       "fpr_p90": 0.022654217051890413,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.994,
+        0.997,
+        0.991,
+        0.989,
+        0.995
+       ],
+       "coverage_ci90_seedcluster": [
+        0.991,
+        0.9953999999999998
+       ]
+      }
+     }
+    },
+    "200": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.4326,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.000772513562386959,
+       "coverage_nonvacuous": 0.4326,
+       "fpr_mean_nonvacuous": 0.10434278279504056,
+       "fpr_mean": 0.10434278279504056,
+       "fpr_median": 0.10347466707485076,
+       "fpr_p90": 0.13148630032144493,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.43100000000000005,
+        0.41400000000000003,
+        0.44199999999999995,
+        0.42700000000000005,
+        0.44899999999999995
+       ],
+       "coverage_ci90_seedcluster": [
+        0.4234000000000001,
+        0.4417999999999999
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.5287999999999999,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.0030119349005425173,
+       "coverage_nonvacuous": 0.5287999999999999,
+       "fpr_mean_nonvacuous": 0.09935508954538498,
+       "fpr_mean": 0.09935508954538498,
+       "fpr_median": 0.0985764579825501,
+       "fpr_p90": 0.1264350221950099,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.515,
+        0.52,
+        0.532,
+        0.52,
+        0.5569999999999999
+       ],
+       "coverage_ci90_seedcluster": [
+        0.519,
+        0.5412
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.95,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.032152260397830035,
+       "coverage_nonvacuous": 0.95,
+       "fpr_mean_nonvacuous": 0.06943327720802082,
+       "fpr_mean": 0.06943327720802082,
+       "fpr_median": 0.06842185825807434,
+       "fpr_p90": 0.09170365834991584,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.952,
+        0.946,
+        0.961,
+        0.938,
+        0.953
+       ],
+       "coverage_ci90_seedcluster": [
+        0.9441999999999998,
+        0.9558
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.41080000000000005,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.002622423146473771,
+       "coverage_nonvacuous": 0.41080000000000005,
+       "fpr_mean_nonvacuous": 0.05458888718812184,
+       "fpr_mean": 0.05458888718812184,
+       "fpr_median": 0.05326802387876928,
+       "fpr_p90": 0.07500382672585337,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.42300000000000004,
+        0.398,
+        0.43600000000000005,
+        0.388,
+        0.40900000000000003
+       ],
+       "coverage_ci90_seedcluster": [
+        0.3984,
+        0.4232
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.5394,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.0063468354430379825,
+       "coverage_nonvacuous": 0.5394,
+       "fpr_mean_nonvacuous": 0.049731057707025864,
+       "fpr_mean": 0.049731057707025864,
+       "fpr_median": 0.048369814786468734,
+       "fpr_p90": 0.06949334149701514,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.5549999999999999,
+        0.532,
+        0.56,
+        0.515,
+        0.5349999999999999
+       ],
+       "coverage_ci90_seedcluster": [
+        0.5264,
+        0.5519999999999999
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.9774,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.09710886075949368,
+       "coverage_nonvacuous": 0.9774,
+       "fpr_mean_nonvacuous": 0.024943242002142967,
+       "fpr_mean": 0.024943242002142967,
+       "fpr_median": 0.02357263125669673,
+       "fpr_p90": 0.039338741772539376,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.982,
+        0.972,
+        0.979,
+        0.975,
+        0.979
+       ],
+       "coverage_ci90_seedcluster": [
+        0.9746,
+        0.9800000000000001
+       ]
+      }
+     }
+    }
+   },
+   "field": {
+    "10": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.2156,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.039780470162748625,
+       "coverage_nonvacuous": 0.2156,
+       "fpr_mean_nonvacuous": 0.2642058166232971,
+       "fpr_mean": 0.2642058166232971,
+       "fpr_median": 0.2312873105770703,
+       "fpr_p90": 0.5412980254094598,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.19199999999999995,
+        0.21399999999999997,
+        0.25,
+        0.19399999999999995,
+        0.22799999999999998
+       ],
+       "coverage_ci90_seedcluster": [
+        0.19999999999999996,
+        0.23159999999999997
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.4568,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.0576712477396022,
+       "coverage_nonvacuous": 0.4568,
+       "fpr_mean_nonvacuous": 0.16535175264044086,
+       "fpr_mean": 0.16535175264044086,
+       "fpr_median": 0.11702127659574468,
+       "fpr_p90": 0.3960048982090924,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.44199999999999995,
+        0.392,
+        0.5469999999999999,
+        0.45599999999999996,
+        0.44699999999999995
+       ],
+       "coverage_ci90_seedcluster": [
+        0.42300000000000004,
+        0.49499999999999994
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.3034,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.0008900542495479272,
+       "coverage_nonvacuous": 0.3034,
+       "fpr_mean_nonvacuous": 0.16535175264044086,
+       "fpr_mean": 0.16535175264044086,
+       "fpr_median": 0.11702127659574468,
+       "fpr_p90": 0.3960048982090924,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.28400000000000003,
+        0.265,
+        0.369,
+        0.277,
+        0.32199999999999995
+       ],
+       "coverage_ci90_seedcluster": [
+        0.27640000000000003,
+        0.3332
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      }
+     }
+    },
+    "20": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.23660000000000003,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.035768896925858926,
+       "coverage_nonvacuous": 0.23660000000000003,
+       "fpr_mean_nonvacuous": 0.24005599265268635,
+       "fpr_mean": 0.24005599265268635,
+       "fpr_median": 0.20480636767182003,
+       "fpr_p90": 0.5111281187815706,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.242,
+        0.21999999999999997,
+        0.276,
+        0.22099999999999997,
+        0.22399999999999998
+       ],
+       "coverage_ci90_seedcluster": [
+        0.2218,
+        0.2538
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.368,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.0021725135623869626,
+       "coverage_nonvacuous": 0.368,
+       "fpr_mean_nonvacuous": 0.18756525332925147,
+       "fpr_mean": 0.18756525332925147,
+       "fpr_median": 0.14648706566661562,
+       "fpr_p90": 0.42049594367059545,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.378,
+        0.31799999999999995,
+        0.44299999999999995,
+        0.345,
+        0.356
+       ],
+       "coverage_ci90_seedcluster": [
+        0.3385999999999999,
+        0.39960000000000007
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.19379999999999997,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.058953707052441226,
+       "coverage_nonvacuous": 0.19379999999999997,
+       "fpr_mean_nonvacuous": 0.18756525332925147,
+       "fpr_mean": 0.18756525332925147,
+       "fpr_median": 0.14648706566661562,
+       "fpr_p90": 0.42049594367059545,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.20299999999999996,
+        0.18799999999999994,
+        0.22099999999999997,
+        0.16500000000000004,
+        0.19199999999999995
+       ],
+       "coverage_ci90_seedcluster": [
+        0.1802,
+        0.20719999999999997
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.44899999999999995,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.07735443037974685,
+       "coverage_nonvacuous": 0.44899999999999995,
+       "fpr_mean_nonvacuous": 0.11253194550742385,
+       "fpr_mean": 0.11253194550742385,
+       "fpr_median": 0.06337058013163932,
+       "fpr_p90": 0.30081126588091245,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.44799999999999995,
+        0.40700000000000003,
+        0.519,
+        0.41400000000000003,
+        0.45699999999999996
+       ],
+       "coverage_ci90_seedcluster": [
+        0.41980000000000006,
+        0.48
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      }
+     }
+    },
+    "50": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.2744,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.026443037974683527,
+       "coverage_nonvacuous": 0.2744,
+       "fpr_mean_nonvacuous": 0.2012970457676412,
+       "fpr_mean": 0.2012970457676412,
+       "fpr_median": 0.16891167916730448,
+       "fpr_p90": 0.41585795193632374,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.22199999999999998,
+        0.271,
+        0.344,
+        0.271,
+        0.264
+       ],
+       "coverage_ci90_seedcluster": [
+        0.2486,
+        0.3036
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.33819999999999995,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.01599240506329112,
+       "coverage_nonvacuous": 0.33819999999999995,
+       "fpr_mean_nonvacuous": 0.18079341803153223,
+       "fpr_mean": 0.18079341803153223,
+       "fpr_median": 0.14587478953007804,
+       "fpr_p90": 0.38233583346089134,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.29200000000000004,
+        0.31799999999999995,
+        0.41800000000000004,
+        0.34099999999999997,
+        0.32199999999999995
+       ],
+       "coverage_ci90_seedcluster": [
+        0.3092,
+        0.3728
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.8436,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.2831764918625679,
+       "coverage_nonvacuous": 0.8436,
+       "fpr_mean_nonvacuous": 0.04967264656360018,
+       "fpr_mean": 0.04967264656360018,
+       "fpr_median": 0.01622531761824586,
+       "fpr_p90": 0.14740547987142205,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.845,
+        0.776,
+        0.928,
+        0.843,
+        0.8260000000000001
+       ],
+       "coverage_ci90_seedcluster": [
+        0.8094000000000001,
+        0.8778
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.30279999999999996,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.03139746835443037,
+       "coverage_nonvacuous": 0.30279999999999996,
+       "fpr_mean_nonvacuous": 0.1291762130720955,
+       "fpr_mean": 0.1291762130720955,
+       "fpr_median": 0.09092300627583039,
+       "fpr_p90": 0.28731057707025864,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.275,
+        0.28500000000000003,
+        0.344,
+        0.29100000000000004,
+        0.31899999999999995
+       ],
+       "coverage_ci90_seedcluster": [
+        0.2846,
+        0.32219999999999993
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.46340000000000003,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.035362386980108504,
+       "coverage_nonvacuous": 0.46340000000000003,
+       "fpr_mean_nonvacuous": 0.09405896219194856,
+       "fpr_mean": 0.09405896219194856,
+       "fpr_median": 0.05541099035665087,
+       "fpr_p90": 0.2369508648400429,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.43500000000000005,
+        0.42100000000000004,
+        0.5640000000000001,
+        0.43500000000000005,
+        0.46199999999999997
+       ],
+       "coverage_ci90_seedcluster": [
+        0.43200000000000005,
+        0.5096
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.7162,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.22639529837251357,
+       "coverage_nonvacuous": 0.7162,
+       "fpr_mean_nonvacuous": 0.049519577529465786,
+       "fpr_mean": 0.049519577529465786,
+       "fpr_median": 0.01607224858411138,
+       "fpr_p90": 0.14725241083728757,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.731,
+        0.656,
+        0.7969999999999999,
+        0.692,
+        0.7050000000000001
+       ],
+       "coverage_ci90_seedcluster": [
+        0.6828000000000001,
+        0.7521999999999999
+       ]
+      }
+     }
+    },
+    "100": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.2962,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.021318625678119332,
+       "coverage_nonvacuous": 0.2962,
+       "fpr_mean_nonvacuous": 0.1805931731210776,
+       "fpr_mean": 0.1805931731210776,
+       "fpr_median": 0.15704882902188888,
+       "fpr_p90": 0.3485381907240165,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.263,
+        0.28800000000000003,
+        0.393,
+        0.278,
+        0.259
+       ],
+       "coverage_ci90_seedcluster": [
+        0.26639999999999997,
+        0.34019999999999995
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.3294,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.01580976491862566,
+       "coverage_nonvacuous": 0.3294,
+       "fpr_mean_nonvacuous": 0.1693910913822134,
+       "fpr_mean": 0.1693910913822134,
+       "fpr_median": 0.14595132404714523,
+       "fpr_p90": 0.3329251492423083,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.29500000000000004,
+        0.32399999999999995,
+        0.44199999999999995,
+        0.30600000000000005,
+        0.28
+       ],
+       "coverage_ci90_seedcluster": [
+        0.294,
+        0.3802
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.6186,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.03676238698010852,
+       "coverage_nonvacuous": 0.6186,
+       "fpr_mean_nonvacuous": 0.10190947497321293,
+       "fpr_mean": 0.10190947497321293,
+       "fpr_median": 0.07760600030613807,
+       "fpr_p90": 0.2162865452318996,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.641,
+        0.5589999999999999,
+        0.763,
+        0.567,
+        0.563
+       ],
+       "coverage_ci90_seedcluster": [
+        0.5638,
+        0.6821999999999999
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.27159999999999995,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.03703616636528028,
+       "coverage_nonvacuous": 0.27159999999999995,
+       "fpr_mean_nonvacuous": 0.11773607837134548,
+       "fpr_mean": 0.11773607837134548,
+       "fpr_median": 0.09046379917342717,
+       "fpr_p90": 0.2456757997857033,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.236,
+        0.28200000000000003,
+        0.33799999999999997,
+        0.261,
+        0.241
+       ],
+       "coverage_ci90_seedcluster": [
+        0.24699999999999997,
+        0.30019999999999997
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.347,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.020018806509945745,
+       "coverage_nonvacuous": 0.347,
+       "fpr_mean_nonvacuous": 0.10190947497321293,
+       "fpr_mean": 0.10190947497321293,
+       "fpr_median": 0.07760600030613807,
+       "fpr_p90": 0.2162865452318996,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.30300000000000005,
+        0.351,
+        0.44099999999999995,
+        0.31899999999999995,
+        0.32099999999999995
+       ],
+       "coverage_ci90_seedcluster": [
+        0.3158,
+        0.38899999999999996
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.8882,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.3845417721518988,
+       "coverage_nonvacuous": 0.8882,
+       "fpr_mean_nonvacuous": 0.020023756314097658,
+       "fpr_mean": 0.020023756314097658,
+       "fpr_median": 0.007500382672585348,
+       "fpr_p90": 0.05541099035665087,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.902,
+        0.868,
+        0.921,
+        0.854,
+        0.896
+       ],
+       "coverage_ci90_seedcluster": [
+        0.8702,
+        0.9057999999999999
+       ]
+      }
+     }
+    },
+    "200": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.378,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.01253236889692584,
+       "coverage_nonvacuous": 0.378,
+       "fpr_mean_nonvacuous": 0.14651905709474972,
+       "fpr_mean": 0.14651905709474972,
+       "fpr_median": 0.12658809122914438,
+       "fpr_p90": 0.27279963263431817,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.33099999999999996,
+        0.397,
+        0.45799999999999996,
+        0.385,
+        0.31899999999999995
+       ],
+       "coverage_ci90_seedcluster": [
+        0.3394,
+        0.4166
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.4004,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.009521518987341753,
+       "coverage_nonvacuous": 0.4004,
+       "fpr_mean_nonvacuous": 0.1415195775294658,
+       "fpr_mean": 0.1415195775294658,
+       "fpr_median": 0.1213072095515077,
+       "fpr_p90": 0.26516148783101195,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.357,
+        0.41900000000000004,
+        0.493,
+        0.402,
+        0.33099999999999996
+       ],
+       "coverage_ci90_seedcluster": [
+        0.35940000000000005,
+        0.44239999999999996
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.5518000000000001,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.014211934900542516,
+       "coverage_nonvacuous": 0.5518000000000001,
+       "fpr_mean_nonvacuous": 0.10901680697994795,
+       "fpr_mean": 0.10901680697994795,
+       "fpr_median": 0.0903107301392928,
+       "fpr_p90": 0.21538343793050668,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.532,
+        0.5329999999999999,
+        0.723,
+        0.526,
+        0.44499999999999995
+       ],
+       "coverage_ci90_seedcluster": [
+        0.49499999999999994,
+        0.6279999999999999
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.33340000000000003,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.025015551537070517,
+       "coverage_nonvacuous": 0.33340000000000003,
+       "fpr_mean_nonvacuous": 0.09128761671513853,
+       "fpr_mean": 0.09128761671513853,
+       "fpr_median": 0.07454461962345016,
+       "fpr_p90": 0.18476963110362782,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.29600000000000004,
+        0.345,
+        0.42700000000000005,
+        0.31799999999999995,
+        0.281
+       ],
+       "coverage_ci90_seedcluster": [
+        0.29880000000000007,
+        0.3724
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.3688,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.01737974683544303,
+       "coverage_nonvacuous": 0.3688,
+       "fpr_mean_nonvacuous": 0.08488960661258227,
+       "fpr_mean": 0.08488960661258227,
+       "fpr_median": 0.06826878922393997,
+       "fpr_p90": 0.1723557324353283,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.33099999999999996,
+        0.374,
+        0.482,
+        0.348,
+        0.30900000000000005
+       ],
+       "coverage_ci90_seedcluster": [
+        0.3298,
+        0.41719999999999996
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.7234,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.07189656419529838,
+       "coverage_nonvacuous": 0.7234,
+       "fpr_mean_nonvacuous": 0.0447157201898056,
+       "fpr_mean": 0.0447157201898056,
+       "fpr_median": 0.02862390938313175,
+       "fpr_p90": 0.09995407928975963,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.729,
+        0.6759999999999999,
+        0.837,
+        0.6970000000000001,
+        0.6779999999999999
+       ],
+       "coverage_ci90_seedcluster": [
+        0.6848000000000001,
+        0.7729999999999999
+       ]
+      }
+     }
+    }
+   }
+  },
+  "lacuna_B": {
+   "iid": {
+    "10": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.26380000000000003,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.0140134475939354,
+       "coverage_nonvacuous": 0.26380000000000003,
+       "fpr_mean_nonvacuous": 0.18049413345798762,
+       "fpr_mean": 0.18049413345798762,
+       "fpr_median": 0.1599275447002454,
+       "fpr_p90": 0.3339546570059601,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.265,
+        0.261,
+        0.272,
+        0.257,
+        0.264
+       ],
+       "coverage_ci90_seedcluster": [
+        0.26020000000000004,
+        0.2676
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.6517999999999999,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.17840197758734344,
+       "coverage_nonvacuous": 0.6517999999999999,
+       "fpr_mean_nonvacuous": 0.09117615986911301,
+       "fpr_mean": 0.09117615986911301,
+       "fpr_median": 0.06692376611740875,
+       "fpr_p90": 0.20714230065053957,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.652,
+        0.651,
+        0.6579999999999999,
+        0.6599999999999999,
+        0.638
+       ],
+       "coverage_ci90_seedcluster": [
+        0.6458,
+        0.6569999999999998
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.40680000000000005,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.09231100856954513,
+       "coverage_nonvacuous": 0.40680000000000005,
+       "fpr_mean_nonvacuous": 0.09117615986911301,
+       "fpr_mean": 0.09117615986911301,
+       "fpr_median": 0.06692376611740875,
+       "fpr_p90": 0.20714230065053957,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.40800000000000003,
+        0.398,
+        0.4,
+        0.43100000000000005,
+        0.397
+       ],
+       "coverage_ci90_seedcluster": [
+        0.3984,
+        0.4176
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      }
+     }
+    },
+    "20": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.32020000000000004,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.011272907053394857,
+       "coverage_nonvacuous": 0.32020000000000004,
+       "fpr_mean_nonvacuous": 0.14304932803552647,
+       "fpr_mean": 0.14304932803552647,
+       "fpr_median": 0.13149078726968177,
+       "fpr_p90": 0.24629153519535663,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.30400000000000005,
+        0.32699999999999996,
+        0.29700000000000004,
+        0.348,
+        0.32499999999999996
+       ],
+       "coverage_ci90_seedcluster": [
+        0.3068000000000001,
+        0.33459999999999995
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.6186,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.08425603164139749,
+       "coverage_nonvacuous": 0.6186,
+       "fpr_mean_nonvacuous": 0.09499852362588135,
+       "fpr_mean": 0.09499852362588135,
+       "fpr_median": 0.08177515484398734,
+       "fpr_p90": 0.17847181644657395,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.609,
+        0.642,
+        0.596,
+        0.619,
+        0.627
+       ],
+       "coverage_ci90_seedcluster": [
+        0.6073999999999999,
+        0.6299999999999999
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.25360000000000005,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.0018349373764008196,
+       "coverage_nonvacuous": 0.25360000000000005,
+       "fpr_mean_nonvacuous": 0.09499852362588135,
+       "fpr_mean": 0.09499852362588135,
+       "fpr_median": 0.08177515484398734,
+       "fpr_p90": 0.17847181644657395,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.246,
+        0.261,
+        0.238,
+        0.258,
+        0.265
+       ],
+       "coverage_ci90_seedcluster": [
+        0.24580000000000002,
+        0.2612
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.6348,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.23005049439683584,
+       "coverage_nonvacuous": 0.6348,
+       "fpr_mean_nonvacuous": 0.04760066222585797,
+       "fpr_mean": 0.04760066222585797,
+       "fpr_median": 0.03444548323010399,
+       "fpr_p90": 0.10700985547894516,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.659,
+        0.639,
+        0.615,
+        0.629,
+        0.632
+       ],
+       "coverage_ci90_seedcluster": [
+        0.6246,
+        0.6456
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      }
+     }
+    },
+    "50": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.38139999999999996,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.005828345418589321,
+       "coverage_nonvacuous": 0.38139999999999996,
+       "fpr_mean_nonvacuous": 0.11763221923571346,
+       "fpr_mean": 0.11763221923571346,
+       "fpr_median": 0.1126270889330373,
+       "fpr_p90": 0.1766409567215924,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.387,
+        0.378,
+        0.383,
+        0.375,
+        0.384
+       ],
+       "coverage_ci90_seedcluster": [
+        0.378,
+        0.3846
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.5666,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.025722742254449572,
+       "coverage_nonvacuous": 0.5666,
+       "fpr_mean_nonvacuous": 0.09783053640294495,
+       "fpr_mean": 0.09783053640294495,
+       "fpr_median": 0.09301351719839512,
+       "fpr_p90": 0.1516360874138133,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.562,
+        0.569,
+        0.579,
+        0.56,
+        0.563
+       ],
+       "coverage_ci90_seedcluster": [
+        0.5619999999999999,
+        0.5719999999999998
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.9958,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.557622412656559,
+       "coverage_nonvacuous": 0.9958,
+       "fpr_mean_nonvacuous": 0.01915778894472362,
+       "fpr_mean": 0.01915778894472362,
+       "fpr_median": 0.013439289470608906,
+       "fpr_p90": 0.04392505161466244,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.996,
+        0.999,
+        0.994,
+        0.995,
+        0.995
+       ],
+       "coverage_ci90_seedcluster": [
+        0.9945999999999999,
+        0.9972
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.45320000000000005,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.050975346077785075,
+       "coverage_nonvacuous": 0.45320000000000005,
+       "fpr_mean_nonvacuous": 0.058922675392466206,
+       "fpr_mean": 0.058922675392466206,
+       "fpr_median": 0.05354290834015041,
+       "fpr_p90": 0.10231779050290214,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.45199999999999996,
+        0.45599999999999996,
+        0.44399999999999995,
+        0.46299999999999997,
+        0.45099999999999996
+       ],
+       "coverage_ci90_seedcluster": [
+        0.4486,
+        0.45780000000000004
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.7268,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.2006875411997363,
+       "coverage_nonvacuous": 0.7268,
+       "fpr_mean_nonvacuous": 0.03891636866503058,
+       "fpr_mean": 0.03891636866503058,
+       "fpr_median": 0.033549530598730115,
+       "fpr_p90": 0.07426862997156326,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.728,
+        0.723,
+        0.722,
+        0.733,
+        0.728
+       ],
+       "coverage_ci90_seedcluster": [
+        0.7238,
+        0.7299999999999999
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.9294,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.4715314436387607,
+       "coverage_nonvacuous": 0.9294,
+       "fpr_mean_nonvacuous": 0.0191382961318219,
+       "fpr_mean": 0.0191382961318219,
+       "fpr_median": 0.013419812239492068,
+       "fpr_p90": 0.0439055743835456,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.9359999999999999,
+        0.9339999999999999,
+        0.923,
+        0.922,
+        0.9319999999999999
+       ],
+       "coverage_ci90_seedcluster": [
+        0.9248000000000001,
+        0.9336
+       ]
+      }
+     }
+    },
+    "100": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.41459999999999997,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.0032013183915622933,
+       "coverage_nonvacuous": 0.41459999999999997,
+       "fpr_mean_nonvacuous": 0.1091346110396946,
+       "fpr_mean": 0.1091346110396946,
+       "fpr_median": 0.10619960266448525,
+       "fpr_p90": 0.15058042148728135,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.41900000000000004,
+        0.41500000000000004,
+        0.43000000000000005,
+        0.43000000000000005,
+        0.379
+       ],
+       "coverage_ci90_seedcluster": [
+        0.39940000000000003,
+        0.42700000000000005
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.5468,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.010782992748846407,
+       "coverage_nonvacuous": 0.5468,
+       "fpr_mean_nonvacuous": 0.09927514705309493,
+       "fpr_mean": 0.09927514705309493,
+       "fpr_median": 0.09637333956604732,
+       "fpr_p90": 0.13885318063184138,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.5720000000000001,
+        0.55,
+        0.5349999999999999,
+        0.558,
+        0.519
+       ],
+       "coverage_ci90_seedcluster": [
+        0.5328,
+        0.5604000000000001
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.9728,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.1458036914963744,
+       "coverage_nonvacuous": 0.9728,
+       "fpr_mean_nonvacuous": 0.04982202874839313,
+       "fpr_mean": 0.04982202874839313,
+       "fpr_median": 0.046862218067079575,
+       "fpr_p90": 0.07875423629776793,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.977,
+        0.973,
+        0.968,
+        0.98,
+        0.966
+       ],
+       "coverage_ci90_seedcluster": [
+        0.9688000000000001,
+        0.9766
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.37660000000000005,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.0072192485168094634,
+       "coverage_nonvacuous": 0.37660000000000005,
+       "fpr_mean_nonvacuous": 0.05976373339566047,
+       "fpr_mean": 0.05976373339566047,
+       "fpr_median": 0.056990378247828266,
+       "fpr_p90": 0.09157025437263845,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.381,
+        0.379,
+        0.371,
+        0.384,
+        0.368
+       ],
+       "coverage_ci90_seedcluster": [
+        0.3718,
+        0.381
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.5548,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.05971272247857611,
+       "coverage_nonvacuous": 0.5548,
+       "fpr_mean_nonvacuous": 0.04982202874839313,
+       "fpr_mean": 0.04982202874839313,
+       "fpr_median": 0.046862218067079575,
+       "fpr_p90": 0.07875423629776793,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.5529999999999999,
+        0.556,
+        0.536,
+        0.577,
+        0.552
+       ],
+       "coverage_ci90_seedcluster": [
+        0.546,
+        0.564
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.9944,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.6328491760052735,
+       "coverage_nonvacuous": 0.9944,
+       "fpr_mean_nonvacuous": 0.009977114253437733,
+       "fpr_mean": 0.009977114253437733,
+       "fpr_median": 0.006885201199797408,
+       "fpr_p90": 0.02294417825561923,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.993,
+        0.995,
+        0.996,
+        0.991,
+        0.997
+       ],
+       "coverage_ci90_seedcluster": [
+        0.9927999999999999,
+        0.9960000000000001
+       ]
+      }
+     }
+    },
+    "200": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.4446,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.0014721160184574806,
+       "coverage_nonvacuous": 0.4446,
+       "fpr_mean_nonvacuous": 0.10412546063651594,
+       "fpr_mean": 0.10412546063651594,
+       "fpr_median": 0.1027618713723657,
+       "fpr_p90": 0.13213548361964866,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.476,
+        0.42400000000000004,
+        0.46099999999999997,
+        0.41200000000000003,
+        0.44999999999999996
+       ],
+       "coverage_ci90_seedcluster": [
+        0.42679999999999996,
+        0.46180000000000004
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.5372,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.004680158206987473,
+       "coverage_nonvacuous": 0.5372,
+       "fpr_mean_nonvacuous": 0.09920059210782595,
+       "fpr_mean": 0.09920059210782595,
+       "fpr_median": 0.09792177943983482,
+       "fpr_p90": 0.12625530754547934,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.5549999999999999,
+        0.524,
+        0.552,
+        0.499,
+        0.556
+       ],
+       "coverage_ci90_seedcluster": [
+        0.5202,
+        0.554
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.9486,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.043453394858272903,
+       "coverage_nonvacuous": 0.9486,
+       "fpr_mean_nonvacuous": 0.06941248100969966,
+       "fpr_mean": 0.06941248100969966,
+       "fpr_median": 0.06831638814226171,
+       "fpr_p90": 0.09247789334268242,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.955,
+        0.945,
+        0.949,
+        0.955,
+        0.9390000000000001
+       ],
+       "coverage_ci90_seedcluster": [
+        0.9434000000000001,
+        0.953
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.4206,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.00612353328938692,
+       "coverage_nonvacuous": 0.4206,
+       "fpr_mean_nonvacuous": 0.05435450508355732,
+       "fpr_mean": 0.05435450508355732,
+       "fpr_median": 0.05291963694441193,
+       "fpr_p90": 0.07467765182501652,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.43999999999999995,
+        0.41500000000000004,
+        0.41500000000000004,
+        0.40800000000000003,
+        0.42500000000000004
+       ],
+       "coverage_ci90_seedcluster": [
+        0.4128,
+        0.429
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.5544,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.030253790375741562,
+       "coverage_nonvacuous": 0.5544,
+       "fpr_mean_nonvacuous": 0.04952059911962915,
+       "fpr_mean": 0.04952059911962915,
+       "fpr_median": 0.047991897471855394,
+       "fpr_p90": 0.06912469323360992,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.5660000000000001,
+        0.5469999999999999,
+        0.56,
+        0.5449999999999999,
+        0.554
+       ],
+       "coverage_ci90_seedcluster": [
+        0.5488,
+        0.5600000000000002
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.9702,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.2971179960448253,
+       "coverage_nonvacuous": 0.9702,
+       "fpr_mean_nonvacuous": 0.02489687195668264,
+       "fpr_mean": 0.02489687195668264,
+       "fpr_median": 0.023236336722371576,
+       "fpr_p90": 0.039425811226676,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.959,
+        0.972,
+        0.976,
+        0.972,
+        0.972
+       ],
+       "coverage_ci90_seedcluster": [
+        0.9650000000000001,
+        0.9736
+       ]
+      }
+     }
+    }
+   },
+   "field": {
+    "10": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.24180000000000001,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.024822017139090307,
+       "coverage_nonvacuous": 0.24180000000000001,
+       "fpr_mean_nonvacuous": 0.22134624284211754,
+       "fpr_mean": 0.22134624284211754,
+       "fpr_median": 0.18542324023216855,
+       "fpr_p90": 0.4466012231701143,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.22699999999999998,
+        0.243,
+        0.23199999999999998,
+        0.251,
+        0.256
+       ],
+       "coverage_ci90_seedcluster": [
+        0.2338,
+        0.24980000000000002
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.5482,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.13553909030982203,
+       "coverage_nonvacuous": 0.5482,
+       "fpr_mean_nonvacuous": 0.12288170308908884,
+       "fpr_mean": 0.12288170308908884,
+       "fpr_median": 0.08838767480814924,
+       "fpr_p90": 0.2766526430602627,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.522,
+        0.5609999999999999,
+        0.542,
+        0.554,
+        0.562
+       ],
+       "coverage_ci90_seedcluster": [
+        0.5364000000000001,
+        0.5586
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.3084,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.0494481212920237,
+       "coverage_nonvacuous": 0.3084,
+       "fpr_mean_nonvacuous": 0.12288170308908884,
+       "fpr_mean": 0.12288170308908884,
+       "fpr_median": 0.08838767480814924,
+       "fpr_p90": 0.2766526430602627,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.30600000000000005,
+        0.30600000000000005,
+        0.31499999999999995,
+        0.31599999999999995,
+        0.29900000000000004
+       ],
+       "coverage_ci90_seedcluster": [
+        0.30360000000000004,
+        0.31339999999999996
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      }
+     }
+    },
+    "20": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.275,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.02590375741595254,
+       "coverage_nonvacuous": 0.275,
+       "fpr_mean_nonvacuous": 0.1847389155077714,
+       "fpr_mean": 0.1847389155077714,
+       "fpr_median": 0.16020996455143938,
+       "fpr_p90": 0.35544972926648766,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.24,
+        0.248,
+        0.31899999999999995,
+        0.278,
+        0.29000000000000004
+       ],
+       "coverage_ci90_seedcluster": [
+        0.2532,
+        0.2968
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.4756,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.07426802900461436,
+       "coverage_nonvacuous": 0.4756,
+       "fpr_mean_nonvacuous": 0.13197345253398776,
+       "fpr_mean": 0.13197345253398776,
+       "fpr_median": 0.10613143235557632,
+       "fpr_p90": 0.2712457637022321,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.43200000000000005,
+        0.45699999999999996,
+        0.509,
+        0.491,
+        0.489
+       ],
+       "coverage_ci90_seedcluster": [
+        0.4537999999999999,
+        0.4946199999999997
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.19920000000000004,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.011822940013183944,
+       "coverage_nonvacuous": 0.19920000000000004,
+       "fpr_mean_nonvacuous": 0.13197345253398776,
+       "fpr_mean": 0.13197345253398776,
+       "fpr_median": 0.10613143235557632,
+       "fpr_p90": 0.2712457637022321,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.17000000000000004,
+        0.17900000000000005,
+        0.23199999999999998,
+        0.21799999999999997,
+        0.19699999999999995
+       ],
+       "coverage_ci90_seedcluster": [
+        0.1826,
+        0.2158
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.4818,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.13819947264337507,
+       "coverage_nonvacuous": 0.4818,
+       "fpr_mean_nonvacuous": 0.07529609286743796,
+       "fpr_mean": 0.07529609286743796,
+       "fpr_median": 0.051848389232986625,
+       "fpr_p90": 0.17594756729383357,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.42700000000000005,
+        0.45199999999999996,
+        0.523,
+        0.52,
+        0.487
+       ],
+       "coverage_ci90_seedcluster": [
+        0.454,
+        0.508
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 1.0,
+       "vacuous_share": 1.0,
+       "ds_own_nonvacuous": null,
+       "coverage_nonvacuous": null,
+       "fpr_mean_nonvacuous": null,
+       "fpr_mean": 0.0,
+       "fpr_median": 0.0,
+       "fpr_p90": 0.0,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+       ],
+       "coverage_ci90_seedcluster": [
+        1.0,
+        1.0
+       ]
+      }
+     }
+    },
+    "50": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.30200000000000005,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.029216875411997363,
+       "coverage_nonvacuous": 0.30200000000000005,
+       "fpr_mean_nonvacuous": 0.15629263760663784,
+       "fpr_mean": 0.15629263760663784,
+       "fpr_median": 0.13768454676483188,
+       "fpr_p90": 0.2836702894316545,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.30200000000000005,
+        0.29700000000000004,
+        0.30400000000000005,
+        0.30400000000000005,
+        0.30300000000000005
+       ],
+       "coverage_ci90_seedcluster": [
+        0.2998,
+        0.30360000000000004
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.40859999999999996,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.044474884640738295,
+       "coverage_nonvacuous": 0.40859999999999996,
+       "fpr_mean_nonvacuous": 0.1340702738498695,
+       "fpr_mean": 0.1340702738498695,
+       "fpr_median": 0.11663939854310312,
+       "fpr_p90": 0.24974874371859324,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.405,
+        0.403,
+        0.41600000000000004,
+        0.406,
+        0.41300000000000003
+       ],
+       "coverage_ci90_seedcluster": [
+        0.4048000000000001,
+        0.4126
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.9224,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.38951957811470006,
+       "coverage_nonvacuous": 0.9224,
+       "fpr_mean_nonvacuous": 0.037980503291652055,
+       "fpr_mean": 0.037980503291652055,
+       "fpr_median": 0.025028241985119437,
+       "fpr_p90": 0.08923688208484284,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.915,
+        0.9319999999999999,
+        0.909,
+        0.911,
+        0.945
+       ],
+       "coverage_ci90_seedcluster": [
+        0.9122,
+        0.933
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.2996,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.023252340145023045,
+       "coverage_nonvacuous": 0.2996,
+       "fpr_mean_nonvacuous": 0.08911149546180515,
+       "fpr_mean": 0.08911149546180515,
+       "fpr_median": 0.0740719099372833,
+       "fpr_p90": 0.17482957422772782,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.29300000000000004,
+        0.30500000000000005,
+        0.30100000000000005,
+        0.29400000000000004,
+        0.30500000000000005
+       ],
+       "coverage_ci90_seedcluster": [
+        0.29560000000000003,
+        0.30340000000000006
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.493,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.11220817402768618,
+       "coverage_nonvacuous": 0.493,
+       "fpr_mean_nonvacuous": 0.06417189435549842,
+       "fpr_mean": 0.06417189435549842,
+       "fpr_median": 0.050679755365977186,
+       "fpr_p90": 0.13149273499279346,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.46699999999999997,
+        0.481,
+        0.497,
+        0.508,
+        0.512
+       ],
+       "coverage_ci90_seedcluster": [
+        0.4808,
+        0.5052
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.7392000000000001,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.3034286090969018,
+       "coverage_nonvacuous": 0.7392000000000001,
+       "fpr_mean_nonvacuous": 0.037961018269642786,
+       "fpr_mean": 0.037961018269642786,
+       "fpr_median": 0.0250087647540026,
+       "fpr_p90": 0.089217404853726,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.728,
+        0.746,
+        0.737,
+        0.757,
+        0.728
+       ],
+       "coverage_ci90_seedcluster": [
+        0.7315999999999999,
+        0.7472000000000001
+       ]
+      }
+     }
+    },
+    "100": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.2974,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.02637033618984838,
+       "coverage_nonvacuous": 0.2974,
+       "fpr_mean_nonvacuous": 0.14784877098671653,
+       "fpr_mean": 0.14784877098671653,
+       "fpr_median": 0.13425655408827086,
+       "fpr_p90": 0.25406879358030465,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.29800000000000004,
+        0.30000000000000004,
+        0.31200000000000006,
+        0.281,
+        0.29600000000000004
+       ],
+       "coverage_ci90_seedcluster": [
+        0.29040000000000005,
+        0.30400000000000005
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.35760000000000003,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.03251285431773236,
+       "coverage_nonvacuous": 0.35760000000000003,
+       "fpr_mean_nonvacuous": 0.1369757079973511,
+       "fpr_mean": 0.1369757079973511,
+       "fpr_median": 0.12300845311830466,
+       "fpr_p90": 0.2383097658836821,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.349,
+        0.35,
+        0.377,
+        0.347,
+        0.365
+       ],
+       "coverage_ci90_seedcluster": [
+        0.3488,
+        0.3666
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.7385999999999999,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.10840804218853,
+       "coverage_nonvacuous": 0.7385999999999999,
+       "fpr_mean_nonvacuous": 0.07781527014919559,
+       "fpr_mean": 0.07781527014919559,
+       "fpr_median": 0.06711853842857696,
+       "fpr_p90": 0.14317712593977638,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.751,
+        0.729,
+        0.716,
+        0.723,
+        0.774
+       ],
+       "coverage_ci90_seedcluster": [
+        0.724,
+        0.7548
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.2318,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": 0.0038466710613052364,
+       "coverage_nonvacuous": 0.2318,
+       "fpr_mean_nonvacuous": 0.09017192941451443,
+       "fpr_mean": 0.09017192941451443,
+       "fpr_median": 0.07828873047407581,
+       "fpr_p90": 0.1636126368275486,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.235,
+        0.23299999999999998,
+        0.22299999999999998,
+        0.22199999999999998,
+        0.246
+       ],
+       "coverage_ci90_seedcluster": [
+        0.22519999999999998,
+        0.23879999999999998
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.3166,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.022317073170731682,
+       "coverage_nonvacuous": 0.3166,
+       "fpr_mean_nonvacuous": 0.07781527014919559,
+       "fpr_mean": 0.07781527014919559,
+       "fpr_median": 0.06711853842857696,
+       "fpr_p90": 0.14317712593977638,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.31899999999999995,
+        0.30600000000000005,
+        0.32799999999999996,
+        0.30800000000000005,
+        0.32199999999999995
+       ],
+       "coverage_ci90_seedcluster": [
+        0.31000000000000005,
+        0.3226
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.885,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.4347852340145022,
+       "coverage_nonvacuous": 0.885,
+       "fpr_mean_nonvacuous": 0.022860391102800828,
+       "fpr_mean": 0.022860391102800828,
+       "fpr_median": 0.015270149195590332,
+       "fpr_p90": 0.0543083635230416,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.89,
+        0.883,
+        0.877,
+        0.902,
+        0.873
+       ],
+       "coverage_ci90_seedcluster": [
+        0.8774000000000001,
+        0.8932
+       ]
+      }
+     }
+    },
+    "200": {
+     "0.1": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.3022,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.03694924192485168,
+       "coverage_nonvacuous": 0.3022,
+       "fpr_mean_nonvacuous": 0.12956647968524795,
+       "fpr_mean": 0.12956647968524795,
+       "fpr_median": 0.1254820614701414,
+       "fpr_p90": 0.20646059756145063,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.29000000000000004,
+        0.31100000000000005,
+        0.29700000000000004,
+        0.29200000000000004,
+        0.32099999999999995
+       ],
+       "coverage_ci90_seedcluster": [
+        0.2936,
+        0.3114
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.33640000000000003,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.04040606460118655,
+       "coverage_nonvacuous": 0.33640000000000003,
+       "fpr_mean_nonvacuous": 0.12460393829613181,
+       "fpr_mean": 0.12460393829613181,
+       "fpr_median": 0.1204374586108839,
+       "fpr_p90": 0.1989599158583616,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.32199999999999995,
+        0.34299999999999997,
+        0.32699999999999996,
+        0.32799999999999996,
+        0.362
+       ],
+       "coverage_ci90_seedcluster": [
+        0.3263999999999999,
+        0.3476
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.5978,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.07199934080421885,
+       "coverage_nonvacuous": 0.5978,
+       "fpr_mean_nonvacuous": 0.09375804993962059,
+       "fpr_mean": 0.09375804993962059,
+       "fpr_median": 0.08870904912157684,
+       "fpr_p90": 0.15541661797358888,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.558,
+        0.624,
+        0.581,
+        0.575,
+        0.651
+       ],
+       "coverage_ci90_seedcluster": [
+        0.574,
+        0.6250000000000001
+       ]
+      }
+     },
+     "0.05": {
+      "Q": {
+       "n_draws": 5000,
+       "coverage": 0.23760000000000003,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.015430191166776507,
+       "coverage_nonvacuous": 0.23760000000000003,
+       "fpr_mean_nonvacuous": 0.07754977211639594,
+       "fpr_mean": 0.07754977211639594,
+       "fpr_median": 0.07302987807253325,
+       "fpr_p90": 0.13186669783023644,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.21499999999999997,
+        0.254,
+        0.238,
+        0.236,
+        0.245
+       ],
+       "coverage_ci90_seedcluster": [
+        0.22759999999999997,
+        0.2468
+       ]
+      },
+      "MC": {
+       "n_draws": 5000,
+       "coverage": 0.2872,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.028812261041529303,
+       "coverage_nonvacuous": 0.2872,
+       "fpr_mean_nonvacuous": 0.07188049160531339,
+       "fpr_mean": 0.07188049160531339,
+       "fpr_median": 0.06706984535078497,
+       "fpr_p90": 0.12325191850726508,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.268,
+        0.29600000000000004,
+        0.28200000000000003,
+        0.29400000000000004,
+        0.29600000000000004
+       ],
+       "coverage_ci90_seedcluster": [
+        0.27880000000000005,
+        0.2952
+       ]
+      },
+      "CP": {
+       "n_draws": 5000,
+       "coverage": 0.6819999999999999,
+       "vacuous_share": 0.0,
+       "ds_own_nonvacuous": -0.16990810810810808,
+       "coverage_nonvacuous": 0.6819999999999999,
+       "fpr_mean_nonvacuous": 0.04223403840909976,
+       "fpr_mean": 0.04223403840909976,
+       "fpr_median": 0.037084648046433744,
+       "fpr_p90": 0.07921779439834832,
+       "convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+       "coverage_per_seed": [
+        0.638,
+        0.688,
+        0.669,
+        0.704,
+        0.7110000000000001
+       ],
+       "coverage_ci90_seedcluster": [
+        0.6612,
+        0.7004199999999998
+       ]
+      }
+     }
+    }
+   }
+  }
+ },
+ "infeasible": [],
+ "analytic_check_iid": [
+  {
+   "rule": "Q",
+   "n": 10,
+   "eps": 0.1,
+   "observed_iid": 0.7398,
+   "analytic": 0.7360989291
+  },
+  {
+   "rule": "MC",
+   "n": 10,
+   "eps": 0.1,
+   "observed_iid": 0.3492,
+   "analytic": 0.34867844009999993
+  },
+  {
+   "rule": "CP",
+   "n": 10,
+   "eps": 0.1,
+   "observed_iid": 0.0,
+   "analytic": null
+  },
+  {
+   "rule": "Q",
+   "n": 10,
+   "eps": 0.05,
+   "observed_iid": 0.6014,
+   "analytic": 0.598736939238379
+  },
+  {
+   "rule": "MC",
+   "n": 10,
+   "eps": 0.05,
+   "observed_iid": 0.0,
+   "analytic": null
+  },
+  {
+   "rule": "CP",
+   "n": 10,
+   "eps": 0.05,
+   "observed_iid": 0.0,
+   "analytic": null
+  },
+  {
+   "rule": "Q",
+   "n": 20,
+   "eps": 0.1,
+   "observed_iid": 0.6794,
+   "analytic": 0.6769268051894659
+  },
+  {
+   "rule": "MC",
+   "n": 20,
+   "eps": 0.1,
+   "observed_iid": 0.38993333333333335,
+   "analytic": 0.3917469981251679
+  },
+  {
+   "rule": "CP",
+   "n": 20,
+   "eps": 0.1,
+   "observed_iid": 0.0,
+   "analytic": null
+  },
+  {
+   "rule": "Q",
+   "n": 20,
+   "eps": 0.05,
+   "observed_iid": 0.74,
+   "analytic": 0.7358395249438502
+  },
+  {
+   "rule": "MC",
+   "n": 20,
+   "eps": 0.05,
+   "observed_iid": 0.3625333333333333,
+   "analytic": 0.35848592240854227
+  },
+  {
+   "rule": "CP",
+   "n": 20,
+   "eps": 0.05,
+   "observed_iid": 0.0,
+   "analytic": null
+  },
+  {
+   "rule": "Q",
+   "n": 50,
+   "eps": 0.1,
+   "observed_iid": 0.626,
+   "analytic": 0.6161230077242765
+  },
+  {
+   "rule": "MC",
+   "n": 50,
+   "eps": 0.1,
+   "observed_iid": 0.4358,
+   "analytic": 0.4311984068290623
+  },
+  {
+   "rule": "CP",
+   "n": 50,
+   "eps": 0.1,
+   "observed_iid": 0.0046,
+   "analytic": 0.005153775207320108
+  },
+  {
+   "rule": "Q",
+   "n": 50,
+   "eps": 0.05,
+   "observed_iid": 0.5446666666666666,
+   "analytic": 0.5405331227195149
+  },
+  {
+   "rule": "MC",
+   "n": 50,
+   "eps": 0.05,
+   "observed_iid": 0.27673333333333333,
+   "analytic": 0.27943175232069517
+  },
+  {
+   "rule": "CP",
+   "n": 50,
+   "eps": 0.05,
+   "observed_iid": 0.07166666666666667,
+   "analytic": 0.07694497527671335
+  },
+  {
+   "rule": "Q",
+   "n": 100,
+   "eps": 0.1,
+   "observed_iid": 0.5823333333333334,
+   "analytic": 0.5831555122664914
+  },
+  {
+   "rule": "MC",
+   "n": 100,
+   "eps": 0.1,
+   "observed_iid": 0.45566666666666666,
+   "analytic": 0.45129016544200484
+  },
+  {
+   "rule": "CP",
+   "n": 100,
+   "eps": 0.1,
+   "observed_iid": 0.02493333333333333,
+   "analytic": 0.023711082663476827
+  },
+  {
+   "rule": "Q",
+   "n": 100,
+   "eps": 0.05,
+   "observed_iid": 0.6212666666666666,
+   "analytic": 0.6159991279561411
+  },
+  {
+   "rule": "MC",
+   "n": 100,
+   "eps": 0.05,
+   "observed_iid": 0.4411333333333333,
+   "analytic": 0.43598130068571
+  },
+  {
+   "rule": "CP",
+   "n": 100,
+   "eps": 0.05,
+   "observed_iid": 0.006533333333333334,
+   "analytic": 0.005920529220334028
+  },
+  {
+   "rule": "Q",
+   "n": 200,
+   "eps": 0.1,
+   "observed_iid": 0.5631333333333334,
+   "analytic": 0.5591747822642024
+  },
+  {
+   "rule": "MC",
+   "n": 200,
+   "eps": 0.1,
+   "observed_iid": 0.4678,
+   "analytic": 0.46553847082589916
+  },
+  {
+   "rule": "CP",
+   "n": 200,
+   "eps": 0.1,
+   "observed_iid": 0.05386666666666667,
+   "analytic": 0.05656204313708833
+  },
+  {
+   "rule": "Q",
+   "n": 200,
+   "eps": 0.05,
+   "observed_iid": 0.5838,
+   "analytic": 0.5830671820811711
+  },
+  {
+   "rule": "MC",
+   "n": 200,
+   "eps": 0.05,
+   "observed_iid": 0.4534666666666667,
+   "analytic": 0.45470980868081556
+  },
+  {
+   "rule": "CP",
+   "n": 200,
+   "eps": 0.05,
+   "observed_iid": 0.0286,
+   "analytic": 0.026446800009119878
+  }
+ ],
+ "reading_E2_b": [
+  {
+   "site": "bbbc041_all",
+   "n": 50,
+   "eps": 0.1,
+   "cp_viol_field_nonvacuous": 0.14359999999999995,
+   "cp_viol_iid_nonvacuous": 0.0048000000000000265,
+   "vacuous_share_field": 0.0,
+   "vacuous_share_iid": 0.0,
+   "E2_b": true
+  },
+  {
+   "site": "bbbc041_all",
+   "n": 50,
+   "eps": 0.05,
+   "cp_viol_field_nonvacuous": 0.3074,
+   "cp_viol_iid_nonvacuous": 0.07220000000000004,
+   "vacuous_share_field": 0.0,
+   "vacuous_share_iid": 0.0,
+   "E2_b": true
+  },
+  {
+   "site": "bbbc041_all",
+   "n": 100,
+   "eps": 0.1,
+   "cp_viol_field_nonvacuous": 0.3126,
+   "cp_viol_iid_nonvacuous": 0.024399999999999977,
+   "vacuous_share_field": 0.0,
+   "vacuous_share_iid": 0.0,
+   "E2_b": true
+  },
+  {
+   "site": "bbbc041_all",
+   "n": 100,
+   "eps": 0.05,
+   "cp_viol_field_nonvacuous": 0.12580000000000002,
+   "cp_viol_iid_nonvacuous": 0.007199999999999984,
+   "vacuous_share_field": 0.0,
+   "vacuous_share_iid": 0.0,
+   "E2_b": true
+  },
+  {
+   "site": "bbbc041_all",
+   "n": 200,
+   "eps": 0.1,
+   "cp_viol_field_nonvacuous": 0.40700000000000003,
+   "cp_viol_iid_nonvacuous": 0.06020000000000003,
+   "vacuous_share_field": 0.0,
+   "vacuous_share_iid": 0.0,
+   "E2_b": true
+  },
+  {
+   "site": "bbbc041_all",
+   "n": 200,
+   "eps": 0.05,
+   "cp_viol_field_nonvacuous": 0.2824,
+   "cp_viol_iid_nonvacuous": 0.033399999999999985,
+   "vacuous_share_field": 0.0,
+   "vacuous_share_iid": 0.0,
+   "E2_b": true
+  },
+  {
+   "site": "mpidb_full",
+   "n": 50,
+   "eps": 0.1,
+   "cp_viol_field_nonvacuous": 0.15639999999999998,
+   "cp_viol_iid_nonvacuous": 0.0048000000000000265,
+   "vacuous_share_field": 0.0,
+   "vacuous_share_iid": 0.0,
+   "E2_b": true
+  },
+  {
+   "site": "mpidb_full",
+   "n": 50,
+   "eps": 0.05,
+   "cp_viol_field_nonvacuous": 0.28380000000000005,
+   "cp_viol_iid_nonvacuous": 0.07220000000000004,
+   "vacuous_share_field": 0.0,
+   "vacuous_share_iid": 0.0,
+   "E2_b": true
+  },
+  {
+   "site": "mpidb_full",
+   "n": 100,
+   "eps": 0.1,
+   "cp_viol_field_nonvacuous": 0.38139999999999996,
+   "cp_viol_iid_nonvacuous": 0.0232,
+   "vacuous_share_field": 0.0,
+   "vacuous_share_iid": 0.0,
+   "E2_b": true
+  },
+  {
+   "site": "mpidb_full",
+   "n": 100,
+   "eps": 0.05,
+   "cp_viol_field_nonvacuous": 0.11180000000000001,
+   "cp_viol_iid_nonvacuous": 0.006800000000000028,
+   "vacuous_share_field": 0.0,
+   "vacuous_share_iid": 0.0,
+   "E2_b": true
+  },
+  {
+   "site": "mpidb_full",
+   "n": 200,
+   "eps": 0.1,
+   "cp_viol_field_nonvacuous": 0.44819999999999993,
+   "cp_viol_iid_nonvacuous": 0.050000000000000044,
+   "vacuous_share_field": 0.0,
+   "vacuous_share_iid": 0.0,
+   "E2_b": true
+  },
+  {
+   "site": "mpidb_full",
+   "n": 200,
+   "eps": 0.05,
+   "cp_viol_field_nonvacuous": 0.27659999999999996,
+   "cp_viol_iid_nonvacuous": 0.022599999999999953,
+   "vacuous_share_field": 0.0,
+   "vacuous_share_iid": 0.0,
+   "E2_b": true
+  },
+  {
+   "site": "lacuna_B",
+   "n": 50,
+   "eps": 0.1,
+   "cp_viol_field_nonvacuous": 0.0776,
+   "cp_viol_iid_nonvacuous": 0.0041999999999999815,
+   "vacuous_share_field": 0.0,
+   "vacuous_share_iid": 0.0,
+   "E2_b": false
+  },
+  {
+   "site": "lacuna_B",
+   "n": 50,
+   "eps": 0.05,
+   "cp_viol_field_nonvacuous": 0.2607999999999999,
+   "cp_viol_iid_nonvacuous": 0.0706,
+   "vacuous_share_field": 0.0,
+   "vacuous_share_iid": 0.0,
+   "E2_b": true
+  },
+  {
+   "site": "lacuna_B",
+   "n": 100,
+   "eps": 0.1,
+   "cp_viol_field_nonvacuous": 0.2614000000000001,
+   "cp_viol_iid_nonvacuous": 0.027200000000000002,
+   "vacuous_share_field": 0.0,
+   "vacuous_share_iid": 0.0,
+   "E2_b": true
+  },
+  {
+   "site": "lacuna_B",
+   "n": 100,
+   "eps": 0.05,
+   "cp_viol_field_nonvacuous": 0.11499999999999999,
+   "cp_viol_iid_nonvacuous": 0.005600000000000049,
+   "vacuous_share_field": 0.0,
+   "vacuous_share_iid": 0.0,
+   "E2_b": true
+  },
+  {
+   "site": "lacuna_B",
+   "n": 200,
+   "eps": 0.1,
+   "cp_viol_field_nonvacuous": 0.4022,
+   "cp_viol_iid_nonvacuous": 0.0514,
+   "vacuous_share_field": 0.0,
+   "vacuous_share_iid": 0.0,
+   "E2_b": true
+  },
+  {
+   "site": "lacuna_B",
+   "n": 200,
+   "eps": 0.05,
+   "cp_viol_field_nonvacuous": 0.31800000000000006,
+   "cp_viol_iid_nonvacuous": 0.02980000000000005,
+   "vacuous_share_field": 0.0,
+   "vacuous_share_iid": 0.0,
+   "E2_b": true
+  }
+ ],
+ "anchor_auroc_basis": {
+  "bbbc041_all": "p32",
+  "mpidb_full": "both",
+  "lacuna_B": "s"
+ },
+ "duplicate_fraction": {
+  "bbbc041_all__41": 0.0007346388226510125,
+  "bbbc041_all__42": 0.0007466820820386522,
+  "bbbc041_all__43": 0.0006623792663246197,
+  "bbbc041_all__44": 0.0008671146759159365,
+  "bbbc041_all__45": 0.0006623792663246197,
+  "mpidb_full__41": 0.00015306903413436768,
+  "mpidb_full__42": 0.0010714832389407958,
+  "mpidb_full__43": 0.00030613806826873535,
+  "mpidb_full__44": 0.0006122761365375817,
+  "mpidb_full__45": 0.00030613806826873535,
+  "lacuna_B__41": 0.0038175372988975553,
+  "lacuna_B__42": 0.003739628374430315,
+  "lacuna_B__43": 0.0019477231116824534,
+  "lacuna_B__44": 0.004051264072299499,
+  "lacuna_B__45": 0.0014218378715281643
+ },
+ "vacuous_convention": "vacuous draw = tau +inf (no cell flagged): FPR 0 and counted as covered in coverage / fpr_*; coverage_nonvacuous and fpr_mean_nonvacuous exclude those draws. NOT the manuscript convention for cannot-certify (evaluated at the fallback threshold): never put the two in one table.",
+ "ci_definition": "seed-cluster 90% interval: percentile 5-95 of the mean coverage over B=10000 resamples of the five per-seed coverages with replacement (default_rng([20261103, 99]); equals a seed-cluster bootstrap when every seed has the same number of draws)",
+ "cp_definition": "R1 exact (order statistic), no 200-point grid: differs from the manuscript R1 (grid) and must not be compared with Table 5 R1 rows",
+ "inputs_used": {
+  "runs/a2pp_eval_20261028T173145Z/a2_link/a2_s41_bbbc041_all_logits.npz": "161e4d1cd2521edd72c0e166a14b7ca7c686a3809d3d85f189eb04f0334a3468",
+  "runs/a2pp_eval_20261028T173145Z/a2_link/a2_s42_bbbc041_all_logits.npz": "6e728c3f56b51c9db76dc6a08f84cb460407ac0769f15a512d99846b87c80de5",
+  "runs/a2pp_eval_20261028T173145Z/a2_link/a2_s43_bbbc041_all_logits.npz": "130de5d2ebf368390c8545a3e7ed460ed2b0a2eb0e61f62e5d35b32b58915bda",
+  "runs/a2pp_eval_20261028T173145Z/a2_link/a2_s44_bbbc041_all_logits.npz": "c9e4d315779dcc1d1f7e3626ff6247fc6bcc9c6fa8186113ef2030c0616c77c0",
+  "runs/a2pp_eval_20261028T173145Z/a2_link/a2_s45_bbbc041_all_logits.npz": "a4ef2dab6283359a441ea3dac3813e2ee6819d290f6390ebeb027fb7fcf82cc7",
+  "runs/a2_frozen_mh_lh_20261029/a2_s41_mh_logits.npz": "19ef11da6ecac1da37b7e62a85cfd7b07104f0f01f07d8d73fc029088ccbc169",
+  "runs/a2_frozen_mh_lh_20261029/ids_mh.npz": "f66ce936f949e211f387eab048200b20f8ef0de4455beab1054bea809146669e",
+  "runs/a2_frozen_mh_lh_20261029/a2_s42_mh_logits.npz": "4d77eac74f87e5655b9f56a8e35dd4543ef686873409b815009c9c5ed363c0d8",
+  "runs/a2_frozen_mh_lh_20261029/a2_s43_mh_logits.npz": "fc3c20c8cd91a488a36d8e2d4ec395e96064bc41d1fc7c508397a5bfe6e552b2",
+  "runs/a2_frozen_mh_lh_20261029/a2_s44_mh_logits.npz": "19dda61eac516ae92ab89affd527a9e729d67266e059a9a16acdac5f12b3cea1",
+  "runs/a2_frozen_mh_lh_20261029/a2_s45_mh_logits.npz": "cf4f10cdb88ad97774c00fdc24a83e274c78b6b88e47acd956d120816d61d501",
+  "runs/a2_frozen_mh_lh_20261029/a2_s41_lh_logits.npz": "c927a3e620d2dec09f19e9c80dc055b260926c07b2be94d3a8cec72fe49fcb49",
+  "runs/a2_frozen_mh_lh_20261029/ids_lh.npz": "1158eeaad3dcc654faa0f501739d95c99038c88ea08c83bdbdf5ce9391f98cc6",
+  "runs/a2_frozen_mh_lh_20261029/a2_s42_lh_logits.npz": "aba53ef523e79b491272e57013e3bd6aff1983a549780a1fdae86691a15f1572",
+  "runs/a2_frozen_mh_lh_20261029/a2_s43_lh_logits.npz": "e8d6403b4e38a5498dd5b8d0de2621242d383714745966ab7f3844184535bb8d",
+  "runs/a2_frozen_mh_lh_20261029/a2_s44_lh_logits.npz": "bae8f6d7ede93af81822783078944228230f8e89ff9009e9b3e49b3f643dbfbd",
+  "runs/a2_frozen_mh_lh_20261029/a2_s45_lh_logits.npz": "5acb4bb0fdf1c4d3d107e6044811212f1bf310f46ae8d7df4c55830af16cd5f8"
+ }
+}

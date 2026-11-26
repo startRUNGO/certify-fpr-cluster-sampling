@@ -1,0 +1,736 @@
+{
+ "g0": {
+  "fcm": {
+   "min_cov_eps010": 0.95,
+   "cov_ok": true,
+   "not_computable_cells": [],
+   "eps005_below_090": []
+  },
+  "fcm_inf": {
+   "min_cov_eps010": 0.95,
+   "cov_ok": true,
+   "not_computable_cells": [],
+   "eps005_below_090": []
+  },
+  "fms": {
+   "min_cov_eps010": 0.959,
+   "cov_ok": true,
+   "not_computable_cells": [],
+   "eps005_below_090": []
+  }
+ },
+ "M_A": "not_detected",
+ "M_B": "not_detected",
+ "M_B_A2": false,
+ "lacuna_fcm_inf_identical_to_fc": false,
+ "reinhard_stably_dominates_fms_sites": [],
+ "reinhard_not_stably_dominating_fms": true,
+ "fms_stably_dominates_reinhard": false,
+ "n_favourable_of_9": {
+  "fcm_inf_vs_fc": 1,
+  "fcm_vs_fc": 2,
+  "fc_vs_fcm": 3,
+  "fcm_vs_a2": 4,
+  "fms_vs_fcm": 6,
+  "fms_vs_a2": 7,
+  "fms_vs_reinhard": 4,
+  "reinhard_vs_fms": 4,
+  "fc_vs_fcm_inf": 2
+ },
+ "reading": "row 4 STOP: the front-end mechanism line closes on the development sites; 5.9 follows path A of the fact note; lab-opponent space and all-foreground statistics only as limitations, no new variant arm",
+ "comparisons": {
+  "fcm_inf_vs_fc": {
+   "bbbc041_all": {
+    "not_computable": false,
+    "dominates": false,
+    "n_fav": 1,
+    "items": {
+     "S3": {
+      "diff": -0.006403344208809128,
+      "seeds": 1,
+      "favourable": false,
+      "unsure": false
+     },
+     "SPLIT6": {
+      "diff": -0.0038209624796084786,
+      "seeds": 1,
+      "favourable": false,
+      "unsure": false
+     },
+     "icc_c0": {
+      "diff": -0.04595665640856941,
+      "seeds": 5,
+      "favourable": true,
+      "unsure": false
+     }
+    }
+   },
+   "mpidb_full": {
+    "not_computable": false,
+    "dominates": false,
+    "n_fav": 0,
+    "items": {
+     "S3": {
+      "diff": -0.0023399638336347103,
+      "seeds": 2,
+      "favourable": false,
+      "unsure": false
+     },
+     "SPLIT6": {
+      "diff": -0.0015334538878842528,
+      "seeds": 2,
+      "favourable": false,
+      "unsure": false
+     },
+     "icc_c0": {
+      "diff": -0.002132668481971363,
+      "seeds": 3,
+      "favourable": false,
+      "unsure": true
+     }
+    }
+   },
+   "lacuna_B": {
+    "not_computable": false,
+    "dominates": false,
+    "n_fav": 0,
+    "items": {
+     "S3": {
+      "diff": -1.318391562296628e-06,
+      "seeds": 0,
+      "favourable": false,
+      "unsure": false
+     },
+     "SPLIT6": {
+      "diff": 3.955174686882945e-06,
+      "seeds": 1,
+      "favourable": false,
+      "unsure": true
+     },
+     "icc_c0": {
+      "diff": 0.0,
+      "seeds": 0,
+      "favourable": false,
+      "unsure": true
+     }
+    }
+   }
+  },
+  "fcm_vs_fc": {
+   "bbbc041_all": {
+    "not_computable": false,
+    "dominates": false,
+    "n_fav": 1,
+    "items": {
+     "S3": {
+      "diff": -0.006636623164763475,
+      "seeds": 1,
+      "favourable": false,
+      "unsure": false
+     },
+     "SPLIT6": {
+      "diff": -0.0037899673735726086,
+      "seeds": 1,
+      "favourable": false,
+      "unsure": false
+     },
+     "icc_c0": {
+      "diff": -0.04593098644636015,
+      "seeds": 5,
+      "favourable": true,
+      "unsure": false
+     }
+    }
+   },
+   "mpidb_full": {
+    "not_computable": false,
+    "dominates": false,
+    "n_fav": 1,
+    "items": {
+     "S3": {
+      "diff": -0.0024719710669077535,
+      "seeds": 1,
+      "favourable": false,
+      "unsure": false
+     },
+     "SPLIT6": {
+      "diff": -0.0015497287522603757,
+      "seeds": 2,
+      "favourable": false,
+      "unsure": false
+     },
+     "icc_c0": {
+      "diff": -0.0026245216970961494,
+      "seeds": 4,
+      "favourable": true,
+      "unsure": false
+     }
+    }
+   },
+   "lacuna_B": {
+    "not_computable": false,
+    "dominates": false,
+    "n_fav": 0,
+    "items": {
+     "S3": {
+      "diff": -5.141727092945053e-05,
+      "seeds": 3,
+      "favourable": false,
+      "unsure": false
+     },
+     "SPLIT6": {
+      "diff": -0.00011733684904416397,
+      "seeds": 2,
+      "favourable": false,
+      "unsure": false
+     },
+     "icc_c0": {
+      "diff": 3.3961247926372895e-06,
+      "seeds": 2,
+      "favourable": false,
+      "unsure": false
+     }
+    }
+   }
+  },
+  "fc_vs_fcm": {
+   "bbbc041_all": {
+    "not_computable": false,
+    "dominates": false,
+    "n_fav": 2,
+    "items": {
+     "S3": {
+      "diff": 0.006636623164763475,
+      "seeds": 4,
+      "favourable": true,
+      "unsure": false
+     },
+     "SPLIT6": {
+      "diff": 0.0037899673735726086,
+      "seeds": 4,
+      "favourable": true,
+      "unsure": false
+     },
+     "icc_c0": {
+      "diff": 0.04593098644636015,
+      "seeds": 0,
+      "favourable": false,
+      "unsure": false
+     }
+    }
+   },
+   "mpidb_full": {
+    "not_computable": false,
+    "dominates": false,
+    "n_fav": 1,
+    "items": {
+     "S3": {
+      "diff": 0.0024719710669077535,
+      "seeds": 4,
+      "favourable": true,
+      "unsure": false
+     },
+     "SPLIT6": {
+      "diff": 0.0015497287522603757,
+      "seeds": 3,
+      "favourable": false,
+      "unsure": true
+     },
+     "icc_c0": {
+      "diff": 0.0026245216970961494,
+      "seeds": 1,
+      "favourable": false,
+      "unsure": false
+     }
+    }
+   },
+   "lacuna_B": {
+    "not_computable": false,
+    "dominates": false,
+    "n_fav": 0,
+    "items": {
+     "S3": {
+      "diff": 5.141727092945053e-05,
+      "seeds": 2,
+      "favourable": false,
+      "unsure": true
+     },
+     "SPLIT6": {
+      "diff": 0.00011733684904416397,
+      "seeds": 3,
+      "favourable": false,
+      "unsure": true
+     },
+     "icc_c0": {
+      "diff": -3.3961247926372895e-06,
+      "seeds": 3,
+      "favourable": false,
+      "unsure": true
+     }
+    }
+   }
+  },
+  "fcm_vs_a2": {
+   "bbbc041_all": {
+    "not_computable": false,
+    "dominates": false,
+    "n_fav": 1,
+    "items": {
+     "S3": {
+      "diff": 0.019004893964110925,
+      "seeds": 2,
+      "favourable": false,
+      "unsure": true
+     },
+     "SPLIT6": {
+      "diff": 0.0023311582381729153,
+      "seeds": 2,
+      "favourable": false,
+      "unsure": true
+     },
+     "icc_c0": {
+      "diff": -0.09690298810194634,
+      "seeds": 5,
+      "favourable": true,
+      "unsure": false
+     }
+    }
+   },
+   "mpidb_full": {
+    "not_computable": false,
+    "dominates": false,
+    "n_fav": 1,
+    "items": {
+     "S3": {
+      "diff": 0.002515370705244116,
+      "seeds": 3,
+      "favourable": false,
+      "unsure": true
+     },
+     "SPLIT6": {
+      "diff": -0.00473598553345388,
+      "seeds": 3,
+      "favourable": false,
+      "unsure": false
+     },
+     "icc_c0": {
+      "diff": -0.12979102754683597,
+      "seeds": 5,
+      "favourable": true,
+      "unsure": false
+     }
+    }
+   },
+   "lacuna_B": {
+    "not_computable": false,
+    "dominates": false,
+    "n_fav": 2,
+    "items": {
+     "S3": {
+      "diff": 0.006207646671061294,
+      "seeds": 5,
+      "favourable": true,
+      "unsure": false
+     },
+     "SPLIT6": {
+      "diff": 0.0020955833882663095,
+      "seeds": 3,
+      "favourable": false,
+      "unsure": true
+     },
+     "icc_c0": {
+      "diff": -0.0008863949038276642,
+      "seeds": 4,
+      "favourable": true,
+      "unsure": false
+     }
+    }
+   }
+  },
+  "fms_vs_fcm": {
+   "bbbc041_all": {
+    "not_computable": false,
+    "dominates": true,
+    "n_fav": 3,
+    "items": {
+     "S3": {
+      "diff": 0.07824388254486134,
+      "seeds": 5,
+      "favourable": true,
+      "unsure": false
+     },
+     "SPLIT6": {
+      "diff": 0.021977161500815662,
+      "seeds": 5,
+      "favourable": true,
+      "unsure": false
+     },
+     "icc_c0": {
+      "diff": -0.017035357729885,
+      "seeds": 4,
+      "favourable": true,
+      "unsure": false
+     }
+    }
+   },
+   "mpidb_full": {
+    "not_computable": false,
+    "dominates": false,
+    "n_fav": 1,
+    "items": {
+     "S3": {
+      "diff": 0.031585895117540674,
+      "seeds": 4,
+      "favourable": true,
+      "unsure": false
+     },
+     "SPLIT6": {
+      "diff": 0.005372513562386962,
+      "seeds": 2,
+      "favourable": false,
+      "unsure": true
+     },
+     "icc_c0": {
+      "diff": -0.019074997471728264,
+      "seeds": 3,
+      "favourable": false,
+      "unsure": true
+     }
+    }
+   },
+   "lacuna_B": {
+    "not_computable": false,
+    "dominates": false,
+    "n_fav": 2,
+    "items": {
+     "S3": {
+      "diff": 0.003538562953197079,
+      "seeds": 4,
+      "favourable": true,
+      "unsure": false
+     },
+     "SPLIT6": {
+      "diff": -0.002554383651944634,
+      "seeds": 1,
+      "favourable": false,
+      "unsure": false
+     },
+     "icc_c0": {
+      "diff": -0.0647744311787477,
+      "seeds": 5,
+      "favourable": true,
+      "unsure": false
+     }
+    }
+   }
+  },
+  "fms_vs_a2": {
+   "bbbc041_all": {
+    "not_computable": false,
+    "dominates": true,
+    "n_fav": 3,
+    "items": {
+     "S3": {
+      "diff": 0.09724877650897226,
+      "seeds": 5,
+      "favourable": true,
+      "unsure": false
+     },
+     "SPLIT6": {
+      "diff": 0.024308319738988577,
+      "seeds": 5,
+      "favourable": true,
+      "unsure": false
+     },
+     "icc_c0": {
+      "diff": -0.11393834583183134,
+      "seeds": 5,
+      "favourable": true,
+      "unsure": false
+     }
+    }
+   },
+   "mpidb_full": {
+    "not_computable": false,
+    "dominates": false,
+    "n_fav": 2,
+    "items": {
+     "S3": {
+      "diff": 0.03410126582278479,
+      "seeds": 4,
+      "favourable": true,
+      "unsure": false
+     },
+     "SPLIT6": {
+      "diff": 0.0006365280289330824,
+      "seeds": 3,
+      "favourable": false,
+      "unsure": true
+     },
+     "icc_c0": {
+      "diff": -0.14886602501856422,
+      "seeds": 5,
+      "favourable": true,
+      "unsure": false
+     }
+    }
+   },
+   "lacuna_B": {
+    "not_computable": false,
+    "dominates": false,
+    "n_fav": 2,
+    "items": {
+     "S3": {
+      "diff": 0.009746209624258373,
+      "seeds": 5,
+      "favourable": true,
+      "unsure": false
+     },
+     "SPLIT6": {
+      "diff": -0.0004588002636783245,
+      "seeds": 2,
+      "favourable": false,
+      "unsure": false
+     },
+     "icc_c0": {
+      "diff": -0.06566082608257537,
+      "seeds": 5,
+      "favourable": true,
+      "unsure": false
+     }
+    }
+   }
+  },
+  "fms_vs_reinhard": {
+   "bbbc041_all": {
+    "not_computable": false,
+    "dominates": true,
+    "n_fav": 3,
+    "items": {
+     "S3": {
+      "diff": 0.02110970636215336,
+      "seeds": 5,
+      "favourable": true,
+      "unsure": false
+     },
+     "SPLIT6": {
+      "diff": 0.006628058727569336,
+      "seeds": 5,
+      "favourable": true,
+      "unsure": false
+     },
+     "icc_c0": {
+      "diff": -0.031019238440261374,
+      "seeds": 5,
+      "favourable": true,
+      "unsure": false
+     }
+    }
+   },
+   "mpidb_full": {
+    "not_computable": false,
+    "dominates": false,
+    "n_fav": 1,
+    "items": {
+     "S3": {
+      "diff": -0.022922242314647394,
+      "seeds": 0,
+      "favourable": false,
+      "unsure": false
+     },
+     "SPLIT6": {
+      "diff": -0.01680650994575046,
+      "seeds": 0,
+      "favourable": false,
+      "unsure": false
+     },
+     "icc_c0": {
+      "diff": -0.049196797087464925,
+      "seeds": 5,
+      "favourable": true,
+      "unsure": false
+     }
+    }
+   },
+   "lacuna_B": {
+    "not_computable": false,
+    "dominates": false,
+    "n_fav": 0,
+    "items": {
+     "S3": {
+      "diff": -0.006477916941331596,
+      "seeds": 1,
+      "favourable": false,
+      "unsure": false
+     },
+     "SPLIT6": {
+      "diff": -0.005180619644034289,
+      "seeds": 2,
+      "favourable": false,
+      "unsure": false
+     },
+     "icc_c0": {
+      "diff": 0.003287451460905276,
+      "seeds": 1,
+      "favourable": false,
+      "unsure": false
+     }
+    }
+   }
+  },
+  "reinhard_vs_fms": {
+   "bbbc041_all": {
+    "not_computable": false,
+    "dominates": false,
+    "n_fav": 0,
+    "items": {
+     "S3": {
+      "diff": -0.02110970636215336,
+      "seeds": 0,
+      "favourable": false,
+      "unsure": false
+     },
+     "SPLIT6": {
+      "diff": -0.006628058727569336,
+      "seeds": 0,
+      "favourable": false,
+      "unsure": false
+     },
+     "icc_c0": {
+      "diff": 0.031019238440261374,
+      "seeds": 0,
+      "favourable": false,
+      "unsure": false
+     }
+    }
+   },
+   "mpidb_full": {
+    "not_computable": false,
+    "dominates": false,
+    "n_fav": 2,
+    "items": {
+     "S3": {
+      "diff": 0.022922242314647394,
+      "seeds": 5,
+      "favourable": true,
+      "unsure": false
+     },
+     "SPLIT6": {
+      "diff": 0.01680650994575046,
+      "seeds": 5,
+      "favourable": true,
+      "unsure": false
+     },
+     "icc_c0": {
+      "diff": 0.049196797087464925,
+      "seeds": 0,
+      "favourable": false,
+      "unsure": false
+     }
+    }
+   },
+   "lacuna_B": {
+    "not_computable": false,
+    "dominates": false,
+    "n_fav": 2,
+    "items": {
+     "S3": {
+      "diff": 0.006477916941331596,
+      "seeds": 4,
+      "favourable": true,
+      "unsure": false
+     },
+     "SPLIT6": {
+      "diff": 0.005180619644034289,
+      "seeds": 3,
+      "favourable": false,
+      "unsure": true
+     },
+     "icc_c0": {
+      "diff": -0.003287451460905276,
+      "seeds": 4,
+      "favourable": true,
+      "unsure": false
+     }
+    }
+   }
+  },
+  "fc_vs_fcm_inf": {
+   "bbbc041_all": {
+    "not_computable": false,
+    "dominates": false,
+    "n_fav": 2,
+    "items": {
+     "S3": {
+      "diff": 0.006403344208809128,
+      "seeds": 4,
+      "favourable": true,
+      "unsure": false
+     },
+     "SPLIT6": {
+      "diff": 0.0038209624796084786,
+      "seeds": 4,
+      "favourable": true,
+      "unsure": false
+     },
+     "icc_c0": {
+      "diff": 0.04595665640856941,
+      "seeds": 0,
+      "favourable": false,
+      "unsure": false
+     }
+    }
+   },
+   "mpidb_full": {
+    "not_computable": false,
+    "dominates": false,
+    "n_fav": 0,
+    "items": {
+     "S3": {
+      "diff": 0.0023399638336347103,
+      "seeds": 3,
+      "favourable": false,
+      "unsure": true
+     },
+     "SPLIT6": {
+      "diff": 0.0015334538878842528,
+      "seeds": 3,
+      "favourable": false,
+      "unsure": true
+     },
+     "icc_c0": {
+      "diff": 0.002132668481971363,
+      "seeds": 2,
+      "favourable": false,
+      "unsure": false
+     }
+    }
+   },
+   "lacuna_B": {
+    "not_computable": false,
+    "dominates": false,
+    "n_fav": 0,
+    "items": {
+     "S3": {
+      "diff": 1.318391562296628e-06,
+      "seeds": 2,
+      "favourable": false,
+      "unsure": true
+     },
+     "SPLIT6": {
+      "diff": -3.955174686882945e-06,
+      "seeds": 0,
+      "favourable": false,
+      "unsure": false
+     },
+     "icc_c0": {
+      "diff": 0.0,
+      "seeds": 0,
+      "favourable": false,
+      "unsure": true
+     }
+    }
+   }
+  }
+ }
+}

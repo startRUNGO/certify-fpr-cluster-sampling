@@ -1,0 +1,50 @@
+{
+ "a2|bbbc041_all|0.1": {
+  "min_m_ideal_mean_ratio": 147,
+  "min_m_ideal_ratio1": 43
+ },
+ "a2|bbbc041_all|0.05": {
+  "min_m_ideal_mean_ratio": 308,
+  "min_m_ideal_ratio1": 89
+ },
+ "a2|mpidb_full|0.1": {
+  "min_m_ideal_mean_ratio": 59,
+  "min_m_ideal_ratio1": 43
+ },
+ "a2|mpidb_full|0.05": {
+  "min_m_ideal_mean_ratio": 123,
+  "min_m_ideal_ratio1": 89
+ },
+ "a2|lacuna_B|0.1": {
+  "min_m_ideal_mean_ratio": 93,
+  "min_m_ideal_ratio1": 43
+ },
+ "a2|lacuna_B|0.05": {
+  "min_m_ideal_mean_ratio": 194,
+  "min_m_ideal_ratio1": 89
+ },
+ "a0-ctrl|bbbc041_all|0.1": {
+  "min_m_ideal_mean_ratio": 147,
+  "min_m_ideal_ratio1": 43
+ },
+ "a0-ctrl|bbbc041_all|0.05": {
+  "min_m_ideal_mean_ratio": 308,
+  "min_m_ideal_ratio1": 89
+ },
+ "a0-ctrl|mpidb_full|0.1": {
+  "min_m_ideal_mean_ratio": 59,
+  "min_m_ideal_ratio1": 43
+ },
+ "a0-ctrl|mpidb_full|0.05": {
+  "min_m_ideal_mean_ratio": 123,
+  "min_m_ideal_ratio1": 89
+ },
+ "a0-ctrl|lacuna_B|0.1": {
+  "min_m_ideal_mean_ratio": 93,
+  "min_m_ideal_ratio1": 43
+ },
+ "a0-ctrl|lacuna_B|0.05": {
+  "min_m_ideal_mean_ratio": 194,
+  "min_m_ideal_ratio1": 89
+ }
+}

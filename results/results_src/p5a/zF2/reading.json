@@ -1,0 +1,83 @@
+{
+ "reader_sha256": "a3444be43e881a5e3932a6693403ef1f51bd71a1f0006560bbdce6a76751ef70",
+ "run_meta_sha256": "67b043827a493757cd1cc5725514f21bff52a833d3c4255648ba0eb1587b2754",
+ "result": {
+  "F2a": {
+   "false_cert_rate_alpha005_pooled": 0.0026666666666666666,
+   "definition": "acceptance rate in the target cells (H0 true: any acceptance is a false certification)",
+   "accepted_and_fpr_gt_eps_report_only": 0.0003333333333333333,
+   "n_draws": 24000,
+   "upper95_cluster_bootstrap_over_cells": 0.004791666666666667,
+   "gate_le": 0.1,
+   "holds": true,
+   "per_mp": {
+    "22": 0.0026666666666666666,
+    "40": 0.0026666666666666666
+   },
+   "alpha010_pooled": 0.010541666666666666,
+   "n_target_cells": 12
+  },
+  "F2b": {
+   "rejection_rate_alpha005_pooled": 0.9999285714285714,
+   "n_draws": 14000,
+   "gate_ge": 0.8,
+   "holds": true,
+   "per_mp": {
+    "22": 0.9998571428571429,
+    "40": 1.0
+   },
+   "n_clear_cells": 7
+  },
+  "F2c": {
+   "22": {
+    "0.05": 0.99775,
+    "0.1": 1.0
+   },
+   "40": {
+    "0.05": 1.0,
+    "0.1": 1.0
+   }
+  },
+  "coverage_among_accepted_target_alpha005": {
+   "n_accepted": 64,
+   "coverage": 0.875
+  },
+  "F2_holds": true,
+  "F3": {
+   "22": {
+    "mean_clicks": 77.8337,
+    "ratio_same_fields": 0.05494478431649734,
+    "ratio_to_22_fields": 0.05494478431649734,
+    "by_pi_same_fields": {
+     "0.03": 0.030129815234319596,
+     "0.08": 0.0797597533986751
+    },
+    "by_pi_to_22": {
+     "0.03": 0.030129815234319596,
+     "0.08": 0.0797597533986751
+    },
+    "n_cells": 20
+   },
+   "40": {
+    "mean_clicks": 141.65410000000003,
+    "ratio_same_fields": 0.054996449659451,
+    "ratio_to_22_fields": 0.09999354483536545,
+    "by_pi_same_fields": {
+     "0.03": 0.030050471605585157,
+     "0.08": 0.07994242771331682
+    },
+    "by_pi_to_22": {
+     "0.03": 0.05463722110106392,
+     "0.08": 0.14534986856966695
+    },
+    "n_cells": 20
+   }
+  },
+  "sets": {
+   "target": 12,
+   "clear": 7,
+   "middle": 5,
+   "control": 4
+  }
+ }
+}

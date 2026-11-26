@@ -1,0 +1,951 @@
+{
+ "version": "e5_r1",
+ "spec": "E-batch draft3",
+ "e1_sha": "7ed9ef542091e6ab0d19135a38d4235527349f768f23569dca73e9f1378f532b",
+ "note": "cell-level FPR converted; no slide or patient data; scenario only; not for clinical claims",
+ "rows": [
+  {
+   "site": "bbbc041_all",
+   "eps": 0.1,
+   "rule": "N0",
+   "source": "E1",
+   "convention": "E1: vacuous draw -> FPR 0",
+   "neg_per_field": 62.52560240963855,
+   "fpr_mean": 0.586689789724691,
+   "fpr_p90": 0.8655610954548739,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 3668.3132530120474,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 5411.9728915662645,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "bbbc041_all",
+   "eps": 0.1,
+   "rule": "Q",
+   "source": "E1",
+   "convention": "E1: vacuous draw -> FPR 0",
+   "neg_per_field": 62.52560240963855,
+   "fpr_mean": 0.10772630729580653,
+   "fpr_p90": 0.15080569405303856,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 673.5652259036144,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 942.9216867469883,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "bbbc041_all",
+   "eps": 0.1,
+   "rule": "MC",
+   "source": "E1",
+   "convention": "E1: vacuous draw -> FPR 0",
+   "neg_per_field": 62.52560240963855,
+   "fpr_mean": 0.10703857937712262,
+   "fpr_p90": 0.1500638292747549,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 669.2651656626506,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 938.2831325301203,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "bbbc041_all",
+   "eps": 0.1,
+   "rule": "S3",
+   "source": "REV-1 stored",
+   "convention": "manuscript: cannot-certify evaluated at the fallback threshold",
+   "neg_per_field": 62.52560240963855,
+   "fpr_mean": 0.05563664282101308,
+   "fpr_p90": 0.07726232627598333,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 347.8714608433735,
+    "p_any_fp": {
+     "500": 0.9999999999996289,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 483.08734939759034,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "bbbc041_all",
+   "eps": 0.1,
+   "rule": "B1u_c1s",
+   "source": "REV-1 stored",
+   "convention": "manuscript: cannot-certify evaluated at the fallback threshold",
+   "neg_per_field": 62.52560240963855,
+   "fpr_mean": 0.06818321410506539,
+   "fpr_p90": 0.08857817279668567,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 426.3196536144578,
+    "p_any_fp": {
+     "500": 0.9999999999999996,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 553.840361445783,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "bbbc041_all",
+   "eps": 0.05,
+   "rule": "N0",
+   "source": "E1",
+   "convention": "E1: vacuous draw -> FPR 0",
+   "neg_per_field": 62.52560240963855,
+   "fpr_mean": 0.586689789724691,
+   "fpr_p90": 0.8655610954548739,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 3668.3132530120474,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 5411.9728915662645,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "bbbc041_all",
+   "eps": 0.05,
+   "rule": "Q",
+   "source": "E1",
+   "convention": "E1: vacuous draw -> FPR 0",
+   "neg_per_field": 62.52560240963855,
+   "fpr_mean": 0.055604607751041736,
+   "fpr_p90": 0.08147264975793045,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 347.6711596385542,
+    "p_any_fp": {
+     "500": 0.9999999999996225,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 509.41265060240937,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "bbbc041_all",
+   "eps": 0.05,
+   "rule": "MC",
+   "source": "E1",
+   "convention": "E1: vacuous draw -> FPR 0",
+   "neg_per_field": 62.52560240963855,
+   "fpr_mean": 0.05483322012669509,
+   "fpr_p90": 0.08033937904954602,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 342.84801204819274,
+    "p_any_fp": {
+     "500": 0.9999999999994321,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 502.3268072289159,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "bbbc041_all",
+   "eps": 0.05,
+   "rule": "S3",
+   "source": "REV-1 stored",
+   "convention": "manuscript: cannot-certify evaluated at the fallback threshold",
+   "neg_per_field": 62.52560240963855,
+   "fpr_mean": 0.02164837295565672,
+   "fpr_p90": 0.03537225714767447,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 135.35775602409637,
+    "p_any_fp": {
+     "500": 0.999982319855983,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 221.1671686746989,
+    "p_any_fp": {
+     "500": 0.9999999848687756,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "bbbc041_all",
+   "eps": 0.05,
+   "rule": "B1u_c1s",
+   "source": "REV-1 stored",
+   "convention": "manuscript: cannot-certify evaluated at the fallback threshold",
+   "neg_per_field": 62.52560240963855,
+   "fpr_mean": 0.027960016378832768,
+   "fpr_p90": 0.04166365585181974,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 174.82168674698795,
+    "p_any_fp": {
+     "500": 0.9999993048720985,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 260.50451807228916,
+    "p_any_fp": {
+     "500": 0.9999999994259108,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "mpidb_full",
+   "eps": 0.1,
+   "rule": "N0",
+   "source": "E1",
+   "convention": "E1: vacuous draw -> FPR 0",
+   "neg_per_field": 62.81730769230769,
+   "fpr_mean": 0.08066738098882592,
+   "fpr_p90": 0.1925608449410684,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 506.730769230769,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 1209.6153846153845,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "mpidb_full",
+   "eps": 0.1,
+   "rule": "Q",
+   "source": "E1",
+   "convention": "E1: vacuous draw -> FPR 0",
+   "neg_per_field": 62.81730769230769,
+   "fpr_mean": 0.10640097964181845,
+   "fpr_p90": 0.1471146487065667,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 668.3823076923077,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 924.1346153846157,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "mpidb_full",
+   "eps": 0.1,
+   "rule": "MC",
+   "source": "E1",
+   "convention": "E1: vacuous draw -> FPR 0",
+   "neg_per_field": 62.81730769230769,
+   "fpr_mean": 0.10573387417725394,
+   "fpr_p90": 0.14633399663248126,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 664.1917307692307,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 919.2307692307693,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "mpidb_full",
+   "eps": 0.1,
+   "rule": "S3",
+   "source": "REV-1 stored",
+   "convention": "manuscript: cannot-certify evaluated at the fallback threshold",
+   "neg_per_field": 62.81730769230769,
+   "fpr_mean": 0.056097045767641206,
+   "fpr_p90": 0.07440685749272923,
+   "vacuous_share": 0.03400000000000003,
+   "mean": {
+    "fp_per_100_fields": 352.38653846153846,
+    "p_any_fp": {
+     "500": 0.9999999999997091,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 467.4038461538462,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "mpidb_full",
+   "eps": 0.1,
+   "rule": "B1u_c1s",
+   "source": "REV-1 stored",
+   "convention": "manuscript: cannot-certify evaluated at the fallback threshold",
+   "neg_per_field": 62.81730769230769,
+   "fpr_mean": 0.06854400734731364,
+   "fpr_p90": 0.08694321138833616,
+   "vacuous_share": 0.03400000000000003,
+   "mean": {
+    "fp_per_100_fields": 430.575,
+    "p_any_fp": {
+     "500": 0.9999999999999997,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 546.1538461538463,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "mpidb_full",
+   "eps": 0.05,
+   "rule": "N0",
+   "source": "E1",
+   "convention": "E1: vacuous draw -> FPR 0",
+   "neg_per_field": 62.81730769230769,
+   "fpr_mean": 0.08066738098882592,
+   "fpr_p90": 0.1925608449410684,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 506.730769230769,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 1209.6153846153845,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "mpidb_full",
+   "eps": 0.05,
+   "rule": "Q",
+   "source": "E1",
+   "convention": "E1: vacuous draw -> FPR 0",
+   "neg_per_field": 62.81730769230769,
+   "fpr_mean": 0.055914342568498386,
+   "fpr_p90": 0.08251951630185221,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 351.2388461538461,
+    "p_any_fp": {
+     "500": 0.9999999999996796,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 518.3653846153851,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "mpidb_full",
+   "eps": 0.05,
+   "rule": "MC",
+   "source": "E1",
+   "convention": "E1: vacuous draw -> FPR 0",
+   "neg_per_field": 62.81730769230769,
+   "fpr_mean": 0.05519302005204347,
+   "fpr_p90": 0.0815857951936323,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 346.7076923076923,
+    "p_any_fp": {
+     "500": 0.9999999999995306,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 512.4999999999998,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "mpidb_full",
+   "eps": 0.05,
+   "rule": "S3",
+   "source": "REV-1 stored",
+   "convention": "manuscript: cannot-certify evaluated at the fallback threshold",
+   "neg_per_field": 62.81730769230769,
+   "fpr_mean": 0.02194688504515536,
+   "fpr_p90": 0.034287463646104355,
+   "vacuous_share": 0.03400000000000003,
+   "mean": {
+    "fp_per_100_fields": 137.86442307692306,
+    "p_any_fp": {
+     "500": 0.9999848217993326,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 215.38461538461516,
+    "p_any_fp": {
+     "500": 0.9999999734579411,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "mpidb_full",
+   "eps": 0.05,
+   "rule": "B1u_c1s",
+   "source": "REV-1 stored",
+   "convention": "manuscript: cannot-certify evaluated at the fallback threshold",
+   "neg_per_field": 62.81730769230769,
+   "fpr_mean": 0.030921781723557324,
+   "fpr_p90": 0.041022501148017754,
+   "vacuous_share": 0.03400000000000003,
+   "mean": {
+    "fp_per_100_fields": 194.2423076923077,
+    "p_any_fp": {
+     "500": 0.9999998488472417,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 257.6923076923077,
+    "p_any_fp": {
+     "500": 0.9999999991979368,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "lacuna_B",
+   "eps": 0.1,
+   "rule": "N0",
+   "source": "E1",
+   "convention": "E1: vacuous draw -> FPR 0",
+   "neg_per_field": 106.29813664596273,
+   "fpr_mean": 0.07988002025632036,
+   "fpr_p90": 0.1063846363600951,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 849.1097308488612,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 1130.8488612836443,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "lacuna_B",
+   "eps": 0.1,
+   "rule": "Q",
+   "source": "E1",
+   "convention": "E1: vacuous draw -> FPR 0",
+   "neg_per_field": 106.29813664596273,
+   "fpr_mean": 0.10187026216353083,
+   "fpr_p90": 0.13303338397413425,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 1082.8619047619047,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 1414.120082815735,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "lacuna_B",
+   "eps": 0.1,
+   "rule": "MC",
+   "source": "E1",
+   "convention": "E1: vacuous draw -> FPR 0",
+   "neg_per_field": 106.29813664596273,
+   "fpr_mean": 0.10149892875228858,
+   "fpr_p90": 0.1325854076584473,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 1078.9146997929606,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 1409.3581780538307,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "lacuna_B",
+   "eps": 0.1,
+   "rule": "S3",
+   "source": "REV-1 stored",
+   "convention": "manuscript: cannot-certify evaluated at the fallback threshold",
+   "neg_per_field": 106.29813664596273,
+   "fpr_mean": 0.06176890265279888,
+   "fpr_p90": 0.09400101281601803,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 656.5919254658385,
+    "p_any_fp": {
+     "500": 0.9999999999999857,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 999.2132505175978,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "lacuna_B",
+   "eps": 0.1,
+   "rule": "B1u_c1s",
+   "source": "REV-1 stored",
+   "convention": "manuscript: cannot-certify evaluated at the fallback threshold",
+   "neg_per_field": 106.29813664596273,
+   "fpr_mean": 0.07128689961435083,
+   "fpr_p90": 0.09863269837559896,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 757.7664596273293,
+    "p_any_fp": {
+     "500": 0.9999999999999999,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 1048.4472049689443,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "lacuna_B",
+   "eps": 0.05,
+   "rule": "N0",
+   "source": "E1",
+   "convention": "E1: vacuous draw -> FPR 0",
+   "neg_per_field": 106.29813664596273,
+   "fpr_mean": 0.07988002025632036,
+   "fpr_p90": 0.1063846363600951,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 849.1097308488612,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 1130.8488612836443,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "lacuna_B",
+   "eps": 0.05,
+   "rule": "Q",
+   "source": "E1",
+   "convention": "E1: vacuous draw -> FPR 0",
+   "neg_per_field": 106.29813664596273,
+   "fpr_mean": 0.053139258307039076,
+   "fpr_p90": 0.0765279887811149,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 564.860414078675,
+    "p_any_fp": {
+     "500": 0.9999999999986099,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 813.4782608695655,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "lacuna_B",
+   "eps": 0.05,
+   "rule": "MC",
+   "source": "E1",
+   "convention": "E1: vacuous draw -> FPR 0",
+   "neg_per_field": 106.29813664596273,
+   "fpr_mean": 0.052741989014841645,
+   "fpr_p90": 0.07601963304896575,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 560.6375155279502,
+    "p_any_fp": {
+     "500": 0.9999999999982855,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 808.0745341614905,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "lacuna_B",
+   "eps": 0.05,
+   "rule": "S3",
+   "source": "REV-1 stored",
+   "convention": "manuscript: cannot-certify evaluated at the fallback threshold",
+   "neg_per_field": 106.29813664596273,
+   "fpr_mean": 0.030746562268707884,
+   "fpr_p90": 0.048539207666238204,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 326.8302277432713,
+    "p_any_fp": {
+     "500": 0.9999998345468595,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 515.962732919255,
+    "p_any_fp": {
+     "500": 0.9999999999843163,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "lacuna_B",
+   "eps": 0.05,
+   "rule": "B1u_c1s",
+   "source": "REV-1 stored",
+   "convention": "manuscript: cannot-certify evaluated at the fallback threshold",
+   "neg_per_field": 106.29813664596273,
+   "fpr_mean": 0.034278407541583886,
+   "fpr_p90": 0.048967706750808304,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 364.3730848861283,
+    "p_any_fp": {
+     "500": 0.9999999733331986,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": {
+    "fp_per_100_fields": 520.5175983436852,
+    "p_any_fp": {
+     "500": 0.9999999999874792,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   }
+  },
+  {
+   "site": "bbbc041_all",
+   "eps": 0.1,
+   "rule": "SPLIT6",
+   "source": "master ssrcps/cells|SPLIT6|bbbc041_all|0.1|fpr_mean",
+   "convention": "manuscript: cannot-certify evaluated at the fallback threshold",
+   "neg_per_field": 62.52560240963855,
+   "fpr_mean": 0.0809562468386444,
+   "fpr_median": 0.08402582074812731,
+   "fpr_p90": null,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 506.1838102409638,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": null
+  },
+  {
+   "site": "bbbc041_all",
+   "eps": 0.05,
+   "rule": "SPLIT6",
+   "source": "master ssrcps/cells|SPLIT6|bbbc041_all|0.05|fpr_mean",
+   "convention": "manuscript: cannot-certify evaluated at the fallback threshold",
+   "neg_per_field": 62.52560240963855,
+   "fpr_mean": 0.03531505166558277,
+   "fpr_median": 0.0363586000915288,
+   "fpr_p90": null,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 220.80948795180723,
+    "p_any_fp": {
+     "500": 0.9999999844134064,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": null
+  },
+  {
+   "site": "mpidb_full",
+   "eps": 0.1,
+   "rule": "SPLIT6",
+   "source": "master ssrcps/cells|SPLIT6|mpidb_full|0.1|fpr_mean",
+   "convention": "manuscript: cannot-certify evaluated at the fallback threshold",
+   "neg_per_field": 62.81730769230769,
+   "fpr_mean": 0.06862880759222409,
+   "fpr_median": 0.06819225470687279,
+   "fpr_p90": null,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 431.10769230769233,
+    "p_any_fp": {
+     "500": 0.9999999999999997,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": null
+  },
+  {
+   "site": "mpidb_full",
+   "eps": 0.05,
+   "rule": "SPLIT6",
+   "source": "master ssrcps/cells|SPLIT6|mpidb_full|0.05|fpr_mean",
+   "convention": "manuscript: cannot-certify evaluated at the fallback threshold",
+   "neg_per_field": 62.81730769230769,
+   "fpr_mean": 0.031183376702893006,
+   "fpr_median": 0.030766875861013343,
+   "fpr_p90": null,
+   "vacuous_share": 0.0010000000000000009,
+   "mean": {
+    "fp_per_100_fields": 195.88557692307694,
+    "p_any_fp": {
+     "500": 0.9999998679340109,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": null
+  },
+  {
+   "site": "lacuna_B",
+   "eps": 0.1,
+   "rule": "SPLIT6",
+   "source": "master ssrcps/cells|SPLIT6|lacuna_B|0.1|fpr_mean",
+   "convention": "manuscript: cannot-certify evaluated at the fallback threshold",
+   "neg_per_field": 106.29813664596273,
+   "fpr_mean": 0.08047027774531573,
+   "fpr_median": 0.08633282692532429,
+   "fpr_p90": null,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 855.3840579710146,
+    "p_any_fp": {
+     "500": 1.0,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": null
+  },
+  {
+   "site": "lacuna_B",
+   "eps": 0.05,
+   "rule": "SPLIT6",
+   "source": "master ssrcps/cells|SPLIT6|lacuna_B|0.05|fpr_mean",
+   "convention": "manuscript: cannot-certify evaluated at the fallback threshold",
+   "neg_per_field": 106.29813664596273,
+   "fpr_mean": 0.036655817848934596,
+   "fpr_median": 0.037834521444431446,
+   "fpr_p90": null,
+   "vacuous_share": 0.0,
+   "mean": {
+    "fp_per_100_fields": 389.6445134575569,
+    "p_any_fp": {
+     "500": 0.9999999922243006,
+     "2000": 1.0,
+     "5000": 1.0
+    }
+   },
+   "p90": null
+  }
+ ],
+ "inputs_used": {
+  "runs/a2pp_eval_20261028T173145Z/a2_link/a2_s41_bbbc041_all_logits.npz": "161e4d1cd2521edd72c0e166a14b7ca7c686a3809d3d85f189eb04f0334a3468",
+  "runs/a2_frozen_mh_lh_20261029/a2_s41_mh_logits.npz": "19ef11da6ecac1da37b7e62a85cfd7b07104f0f01f07d8d73fc029088ccbc169",
+  "runs/a2_frozen_mh_lh_20261029/ids_mh.npz": "f66ce936f949e211f387eab048200b20f8ef0de4455beab1054bea809146669e",
+  "runs/a2_frozen_mh_lh_20261029/a2_s41_lh_logits.npz": "c927a3e620d2dec09f19e9c80dc055b260926c07b2be94d3a8cec72fe49fcb49",
+  "runs/a2_frozen_mh_lh_20261029/ids_lh.npz": "1158eeaad3dcc654faa0f501739d95c99038c88ea08c83bdbdf5ce9391f98cc6"
+ }
+}

@@ -1,0 +1,99 @@
+{
+ "version": "conf_sens_r1",
+ "master_sha256": "1995ec1b75fa5b4dbde0ed3b01c6d6c8f1149d92b55bac5db9c4ac691ac8f1ee",
+ "note": "from sealed outputs only; descriptive intervals",
+ "rows": {
+  "plasmo|S3|0.1": {
+   "sens": 0.9686802030456853,
+   "n_pos": 394,
+   "wilson_lo": 0.9464509467239554,
+   "wilson_hi": 0.9818585389057245,
+   "source_file": "results_src/e8/e8_plasmo_results.json",
+   "source_file_sha256": "a80c98ec5abaf3d9fcd2db3a5fce85f149e1d8ec9bd5add462cb32841b4268ac",
+   "master_key": "e8_plasmo_results/a2|plasmo|22|S3|0.1|sens",
+   "wilson_basis": "n = positive cells of the site; descriptive, ignores threshold variation across draws and clustering",
+   "n_pos_source": "results_src/e8/e8_plasmo_counts.json",
+   "n_pos_source_sha256": "8a43b504d635dc35215db87701c5e93ea8dbe84b0f47fcf46d59ecf14de515b3",
+   "n_pos_master_key": "dataset/plasmo|positives"
+  },
+  "plasmo|S3|0.05": {
+   "sens": 0.946236040609137,
+   "n_pos": 394,
+   "wilson_lo": 0.9193488496450777,
+   "wilson_hi": 0.9645057416846818,
+   "source_file": "results_src/e8/e8_plasmo_results.json",
+   "source_file_sha256": "a80c98ec5abaf3d9fcd2db3a5fce85f149e1d8ec9bd5add462cb32841b4268ac",
+   "master_key": "e8_plasmo_results/a2|plasmo|22|S3|0.05|sens",
+   "wilson_basis": "n = positive cells of the site; descriptive, ignores threshold variation across draws and clustering",
+   "n_pos_source": "results_src/e8/e8_plasmo_counts.json",
+   "n_pos_source_sha256": "8a43b504d635dc35215db87701c5e93ea8dbe84b0f47fcf46d59ecf14de515b3",
+   "n_pos_master_key": "dataset/plasmo|positives"
+  },
+  "iml|S3|0.1": {
+   "sens": 0.46663516068052935,
+   "n_pos": 529,
+   "wilson_lo": 0.42451559740354483,
+   "wilson_hi": 0.5092358038516664,
+   "source_file": "results_src/r8/results/r8_rev1_results.json",
+   "source_file_sha256": "fdd5a86c5f5bcc4d5c98685e9d95cb2ac38d4a976aa6d1e256325918b8a0b694",
+   "master_key": "r8_rev1_results/agg|a2|iml|22|S3|0.1|sens",
+   "wilson_basis": "n = positive cells of the site; descriptive, ignores threshold variation across draws and clustering",
+   "n_pos_source": "results_src/r8/results/counts.json",
+   "n_pos_source_sha256": "40012d2b3980fd7281eca711131ca03e8d7f05c76be46dcf1038e1589ad02a5e",
+   "n_pos_master_key": "dataset/iml|positives"
+  },
+  "iml|S3|0.05": {
+   "sens": 0.2703553875236295,
+   "n_pos": 529,
+   "wilson_lo": 0.23426329111021338,
+   "wilson_hi": 0.30975867644137767,
+   "source_file": "results_src/r8/results/r8_rev1_results.json",
+   "source_file_sha256": "fdd5a86c5f5bcc4d5c98685e9d95cb2ac38d4a976aa6d1e256325918b8a0b694",
+   "master_key": "r8_rev1_results/agg|a2|iml|22|S3|0.05|sens",
+   "wilson_basis": "n = positive cells of the site; descriptive, ignores threshold variation across draws and clustering",
+   "n_pos_source": "results_src/r8/results/counts.json",
+   "n_pos_source_sha256": "40012d2b3980fd7281eca711131ca03e8d7f05c76be46dcf1038e1589ad02a5e",
+   "n_pos_master_key": "dataset/iml|positives"
+  },
+  "m5|SPLIT6|0.1": {
+   "sens": 0.8876899674031147,
+   "n_pos": null,
+   "wilson_lo": null,
+   "wilson_hi": null,
+   "source_file": "results_src/m5/results/m5_confirm.json",
+   "source_file_sha256": "55c3991596a7d9fbeaaa0bf234c239f56059929613ca3d66172ee3b8e7690eed",
+   "master_key": "m5/cells_p|SPLIT6|0.1|sens",
+   "wilson_basis": "no count of positive cells in the sealed output: interval not computed"
+  },
+  "m5|SPLIT6|0.05": {
+   "sens": 0.7234444042013763,
+   "n_pos": null,
+   "wilson_lo": null,
+   "wilson_hi": null,
+   "source_file": "results_src/m5/results/m5_confirm.json",
+   "source_file_sha256": "55c3991596a7d9fbeaaa0bf234c239f56059929613ca3d66172ee3b8e7690eed",
+   "master_key": "m5/cells_p|SPLIT6|0.05|sens",
+   "wilson_basis": "no count of positive cells in the sealed output: interval not computed"
+  },
+  "m5|S3|0.1": {
+   "sens": 0.8368355668236145,
+   "n_pos": null,
+   "wilson_lo": null,
+   "wilson_hi": null,
+   "source_file": "results_src/m5/results/m5_confirm.json",
+   "source_file_sha256": "55c3991596a7d9fbeaaa0bf234c239f56059929613ca3d66172ee3b8e7690eed",
+   "master_key": "m5/cells_p|S3|0.1|sens",
+   "wilson_basis": "no count of positive cells in the sealed output: interval not computed"
+  },
+  "m5|S3|0.05": {
+   "sens": 0.6066338283230713,
+   "n_pos": null,
+   "wilson_lo": null,
+   "wilson_hi": null,
+   "source_file": "results_src/m5/results/m5_confirm.json",
+   "source_file_sha256": "55c3991596a7d9fbeaaa0bf234c239f56059929613ca3d66172ee3b8e7690eed",
+   "master_key": "m5/cells_p|S3|0.05|sens",
+   "wilson_basis": "no count of positive cells in the sealed output: interval not computed"
+  }
+ }
+}

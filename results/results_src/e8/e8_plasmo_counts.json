@@ -1,0 +1,35 @@
+{
+ "images": 116,
+ "images_expected_in_json": 121,
+ "modes": {
+  "RGB": 110,
+  "RGBA": 6
+ },
+ "sizes": {
+  "(2752, 2192)": 115,
+  "(2192, 2752)": 1
+ },
+ "json_box_counts": {
+  "uninfected": 8260,
+  "not_sure": 59,
+  "infected": 394
+ },
+ "crops_pos": 394,
+ "crops_neg": 8260,
+ "degenerate_boxes_skipped": 0,
+ "uninfected_per_image_min_q1_med_q3_max": [
+  32.0,
+  56.75,
+  72.0,
+  85.0,
+  116.0
+ ],
+ "infected_per_image_min_q1_med_q3_max": [
+  1.0,
+  3.0,
+  3.0,
+  4.0,
+  8.0
+ ],
+ "images_without_infected": 0
+}

@@ -1,0 +1,526 @@
+{
+ "M1": false,
+ "M2": false,
+ "gc_dominates_a2": false,
+ "fgc_dominates_a2": false,
+ "comparisons": {
+  "fc_vs_a2": {
+   "sites": {
+    "bbbc041_all": {
+     "items": {
+      "S3": {
+       "diff": 0.0256,
+       "seeds": 4,
+       "fav": true,
+       "unsure": false
+      },
+      "SPLIT6": {
+       "diff": 0.0061,
+       "seeds": 5,
+       "fav": true,
+       "unsure": false
+      },
+      "icc": {
+       "diff": -0.051,
+       "seeds": 4,
+       "fav": true,
+       "unsure": false
+      }
+     },
+     "dominates": true
+    },
+    "mpidb_full": {
+     "items": {
+      "S3": {
+       "diff": 0.005,
+       "seeds": 3,
+       "fav": false,
+       "unsure": true
+      },
+      "SPLIT6": {
+       "diff": -0.0032,
+       "seeds": 3,
+       "fav": false,
+       "unsure": false
+      },
+      "icc": {
+       "diff": -0.1272,
+       "seeds": 5,
+       "fav": true,
+       "unsure": false
+      }
+     },
+     "dominates": false
+    },
+    "lacuna_B": {
+     "items": {
+      "S3": {
+       "diff": 0.0063,
+       "seeds": 5,
+       "fav": true,
+       "unsure": false
+      },
+      "SPLIT6": {
+       "diff": 0.0022,
+       "seeds": 3,
+       "fav": false,
+       "unsure": true
+      },
+      "icc": {
+       "diff": -0.0009,
+       "seeds": 4,
+       "fav": true,
+       "unsure": false
+      }
+     },
+     "dominates": false
+    }
+   },
+   "n_fav": 6
+  },
+  "fc_vs_fgc": {
+   "sites": {
+    "bbbc041_all": {
+     "items": {
+      "S3": {
+       "diff": 0.0266,
+       "seeds": 5,
+       "fav": true,
+       "unsure": false
+      },
+      "SPLIT6": {
+       "diff": 0.0079,
+       "seeds": 5,
+       "fav": true,
+       "unsure": false
+      },
+      "icc": {
+       "diff": -0.0348,
+       "seeds": 4,
+       "fav": true,
+       "unsure": false
+      }
+     },
+     "dominates": true
+    },
+    "mpidb_full": {
+     "items": {
+      "S3": {
+       "diff": -0.0087,
+       "seeds": 2,
+       "fav": false,
+       "unsure": false
+      },
+      "SPLIT6": {
+       "diff": -0.0093,
+       "seeds": 1,
+       "fav": false,
+       "unsure": false
+      },
+      "icc": {
+       "diff": -0.1226,
+       "seeds": 5,
+       "fav": true,
+       "unsure": false
+      }
+     },
+     "dominates": false
+    },
+    "lacuna_B": {
+     "items": {
+      "S3": {
+       "diff": 0.0058,
+       "seeds": 4,
+       "fav": true,
+       "unsure": false
+      },
+      "SPLIT6": {
+       "diff": 0.0025,
+       "seeds": 3,
+       "fav": false,
+       "unsure": true
+      },
+      "icc": {
+       "diff": -0.0033,
+       "seeds": 4,
+       "fav": true,
+       "unsure": false
+      }
+     },
+     "dominates": false
+    }
+   },
+   "n_fav": 6
+  },
+  "fc_vs_gc": {
+   "sites": {
+    "bbbc041_all": {
+     "items": {
+      "S3": {
+       "diff": 0.0461,
+       "seeds": 4,
+       "fav": true,
+       "unsure": false
+      },
+      "SPLIT6": {
+       "diff": 0.0103,
+       "seeds": 4,
+       "fav": true,
+       "unsure": false
+      },
+      "icc": {
+       "diff": -0.2702,
+       "seeds": 5,
+       "fav": true,
+       "unsure": false
+      }
+     },
+     "dominates": true
+    },
+    "mpidb_full": {
+     "items": {
+      "S3": {
+       "diff": 0.0239,
+       "seeds": 3,
+       "fav": false,
+       "unsure": true
+      },
+      "SPLIT6": {
+       "diff": 0.0249,
+       "seeds": 4,
+       "fav": true,
+       "unsure": false
+      },
+      "icc": {
+       "diff": -0.204,
+       "seeds": 5,
+       "fav": true,
+       "unsure": false
+      }
+     },
+     "dominates": false
+    },
+    "lacuna_B": {
+     "items": {
+      "S3": {
+       "diff": -0.0215,
+       "seeds": 0,
+       "fav": false,
+       "unsure": false
+      },
+      "SPLIT6": {
+       "diff": -0.0055,
+       "seeds": 0,
+       "fav": false,
+       "unsure": false
+      },
+      "icc": {
+       "diff": -0.0635,
+       "seeds": 5,
+       "fav": true,
+       "unsure": false
+      }
+     },
+     "dominates": false
+    }
+   },
+   "n_fav": 6
+  },
+  "fgc_vs_a2": {
+   "sites": {
+    "bbbc041_all": {
+     "items": {
+      "S3": {
+       "diff": -0.0009,
+       "seeds": 3,
+       "fav": false,
+       "unsure": false
+      },
+      "SPLIT6": {
+       "diff": -0.0018,
+       "seeds": 2,
+       "fav": false,
+       "unsure": false
+      },
+      "icc": {
+       "diff": -0.0162,
+       "seeds": 4,
+       "fav": true,
+       "unsure": false
+      }
+     },
+     "dominates": false
+    },
+    "mpidb_full": {
+     "items": {
+      "S3": {
+       "diff": 0.0136,
+       "seeds": 4,
+       "fav": true,
+       "unsure": false
+      },
+      "SPLIT6": {
+       "diff": 0.0062,
+       "seeds": 4,
+       "fav": true,
+       "unsure": false
+      },
+      "icc": {
+       "diff": -0.0045,
+       "seeds": 3,
+       "fav": false,
+       "unsure": true
+      }
+     },
+     "dominates": false
+    },
+    "lacuna_B": {
+     "items": {
+      "S3": {
+       "diff": 0.0004,
+       "seeds": 4,
+       "fav": true,
+       "unsure": false
+      },
+      "SPLIT6": {
+       "diff": -0.0003,
+       "seeds": 2,
+       "fav": false,
+       "unsure": false
+      },
+      "icc": {
+       "diff": 0.0024,
+       "seeds": 2,
+       "fav": false,
+       "unsure": false
+      }
+     },
+     "dominates": false
+    }
+   },
+   "n_fav": 4
+  },
+  "gc_vs_a2": {
+   "sites": {
+    "bbbc041_all": {
+     "items": {
+      "S3": {
+       "diff": -0.0205,
+       "seeds": 1,
+       "fav": false,
+       "unsure": false
+      },
+      "SPLIT6": {
+       "diff": -0.0042,
+       "seeds": 2,
+       "fav": false,
+       "unsure": false
+      },
+      "icc": {
+       "diff": 0.2192,
+       "seeds": 0,
+       "fav": false,
+       "unsure": false
+      }
+     },
+     "dominates": false
+    },
+    "mpidb_full": {
+     "items": {
+      "S3": {
+       "diff": -0.019,
+       "seeds": 1,
+       "fav": false,
+       "unsure": false
+      },
+      "SPLIT6": {
+       "diff": -0.028,
+       "seeds": 0,
+       "fav": false,
+       "unsure": false
+      },
+      "icc": {
+       "diff": 0.0768,
+       "seeds": 2,
+       "fav": false,
+       "unsure": false
+      }
+     },
+     "dominates": false
+    },
+    "lacuna_B": {
+     "items": {
+      "S3": {
+       "diff": 0.0278,
+       "seeds": 5,
+       "fav": true,
+       "unsure": false
+      },
+      "SPLIT6": {
+       "diff": 0.0077,
+       "seeds": 5,
+       "fav": true,
+       "unsure": false
+      },
+      "icc": {
+       "diff": 0.0626,
+       "seeds": 0,
+       "fav": false,
+       "unsure": false
+      }
+     },
+     "dominates": false
+    }
+   },
+   "n_fav": 2
+  },
+  "fc_vs_reinhard": {
+   "sites": {
+    "bbbc041_all": {
+     "items": {
+      "S3": {
+       "diff": -0.0505,
+       "seeds": 0,
+       "fav": false,
+       "unsure": false
+      },
+      "SPLIT6": {
+       "diff": -0.0116,
+       "seeds": 0,
+       "fav": false,
+       "unsure": false
+      },
+      "icc": {
+       "diff": 0.0319,
+       "seeds": 2,
+       "fav": false,
+       "unsure": false
+      }
+     },
+     "dominates": false
+    },
+    "mpidb_full": {
+     "items": {
+      "S3": {
+       "diff": -0.052,
+       "seeds": 0,
+       "fav": false,
+       "unsure": false
+      },
+      "SPLIT6": {
+       "diff": -0.0206,
+       "seeds": 0,
+       "fav": false,
+       "unsure": false
+      },
+      "icc": {
+       "diff": -0.0275,
+       "seeds": 4,
+       "fav": true,
+       "unsure": false
+      }
+     },
+     "dominates": false
+    },
+    "lacuna_B": {
+     "items": {
+      "S3": {
+       "diff": -0.01,
+       "seeds": 0,
+       "fav": false,
+       "unsure": false
+      },
+      "SPLIT6": {
+       "diff": -0.0025,
+       "seeds": 1,
+       "fav": false,
+       "unsure": false
+      },
+      "icc": {
+       "diff": 0.0681,
+       "seeds": 0,
+       "fav": false,
+       "unsure": false
+      }
+     },
+     "dominates": false
+    }
+   },
+   "n_fav": 1
+  },
+  "gc_vs_reinhard": {
+   "sites": {
+    "bbbc041_all": {
+     "items": {
+      "S3": {
+       "diff": -0.0966,
+       "seeds": 0,
+       "fav": false,
+       "unsure": false
+      },
+      "SPLIT6": {
+       "diff": -0.0219,
+       "seeds": 0,
+       "fav": false,
+       "unsure": false
+      },
+      "icc": {
+       "diff": 0.3021,
+       "seeds": 0,
+       "fav": false,
+       "unsure": false
+      }
+     },
+     "dominates": false
+    },
+    "mpidb_full": {
+     "items": {
+      "S3": {
+       "diff": -0.076,
+       "seeds": 0,
+       "fav": false,
+       "unsure": false
+      },
+      "SPLIT6": {
+       "diff": -0.0455,
+       "seeds": 0,
+       "fav": false,
+       "unsure": false
+      },
+      "icc": {
+       "diff": 0.1765,
+       "seeds": 0,
+       "fav": false,
+       "unsure": false
+      }
+     },
+     "dominates": false
+    },
+    "lacuna_B": {
+     "items": {
+      "S3": {
+       "diff": 0.0115,
+       "seeds": 4,
+       "fav": true,
+       "unsure": false
+      },
+      "SPLIT6": {
+       "diff": 0.0029,
+       "seeds": 3,
+       "fav": false,
+       "unsure": true
+      },
+      "icc": {
+       "diff": 0.1316,
+       "seeds": 0,
+       "fav": false,
+       "unsure": false
+      }
+     },
+     "dominates": false
+    }
+   },
+   "n_fav": 1
+  }
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "candA|strata_cut|0": 0.5,
+ "candA|strata_cut|1": 0.8,
+ "r1prime|rho_bar_max": -0.5,
+ "r1prime|min_strata_negative": 3,
+ "r3prime|p_wrong_min": 0.6,
+ "r3prime|diff_min": 0.2,
+ "c1P2|p_max": 0.05,
+ "c1P2|other_over_tested_max": 0.5,
+ "m51|eta": 0.5,
+ "m51|pi_cap": 0.5,
+ "b1u|iccu_when_msb_msw_zero": 0.0
+}

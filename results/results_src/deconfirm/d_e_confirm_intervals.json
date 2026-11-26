@@ -1,0 +1,170 @@
+{
+ "nature": "P5a D-e: post hoc descriptive interval; the preregistered criteria used the point values reported in Section 5.6",
+ "script_sha256": "a9f401008fcd99d764810f8ee320fec2b52d00867a1010e6cb6aa98f820f0a1f",
+ "pins": {
+  "g3": "cd9543cfc0cfe91b583b28431191f14858cda2b712f8f39b49b4539e33b58b75",
+  "ebatch_lib": "359b6bce2dfdbf50a2acb8b909d631ab40d445447275915e2318e70981ef007f",
+  "master": "21496cc647faa98ef17ee0261b7da65c766f5dbfe34aae64290396bf2e35124c"
+ },
+ "cells": [
+  {
+   "site": "iml",
+   "rule": "S3",
+   "eps": 0.1,
+   "stat": "cov",
+   "point": 0.974,
+   "per_seed": [
+    0.945,
+    0.985,
+    0.985,
+    0.985,
+    0.97
+   ],
+   "ci90_seedcluster": [
+    0.961,
+    0.985
+   ],
+   "master_key": "r8_rev1_results/agg|a2|iml|22|S3|0.1|cov"
+  },
+  {
+   "site": "iml",
+   "rule": "S3",
+   "eps": 0.1,
+   "stat": "dsens",
+   "point": 0.3963137996219282,
+   "per_seed": [
+    0.44607750472589786,
+    0.5097542533081285,
+    0.34672967863894144,
+    0.37054820415879014,
+    0.3084593572778829
+   ],
+   "ci90_seedcluster": [
+    0.3436370510396976,
+    0.45167863894139887
+   ],
+   "master_key": "r8_rev1_results/agg|a2|iml|22|S3|0.1|ds_eps"
+  },
+  {
+   "site": "iml",
+   "rule": "S3",
+   "eps": 0.05,
+   "stat": "cov",
+   "point": 0.969,
+   "per_seed": [
+    0.955,
+    0.975,
+    0.99,
+    0.99,
+    0.935
+   ],
+   "ci90_seedcluster": [
+    0.954,
+    0.984
+   ],
+   "master_key": "r8_rev1_results/agg|a2|iml|22|S3|0.05|cov"
+  },
+  {
+   "site": "iml",
+   "rule": "S3",
+   "eps": 0.05,
+   "stat": "dsens",
+   "point": 0.23859735349716443,
+   "per_seed": [
+    0.30523629489603016,
+    0.36239130434782607,
+    0.17195652173913042,
+    0.22828922495274098,
+    0.12511342155009453
+   ],
+   "ci90_seedcluster": [
+    0.17385444234404537,
+    0.30144234404536857
+   ],
+   "master_key": "r8_rev1_results/agg|a2|iml|22|S3|0.05|ds_eps"
+  },
+  {
+   "site": "iml",
+   "rule": "R1_2",
+   "eps": 0.1,
+   "stat": "cov",
+   "point": 0.841,
+   "per_seed": [
+    0.805,
+    0.845,
+    0.81,
+    0.86,
+    0.885
+   ],
+   "ci90_seedcluster": [
+    0.818,
+    0.8640000000000001
+   ],
+   "master_key": "r8_rev1_results/agg|a2|iml|22|R1_2|0.1|cov"
+  },
+  {
+   "site": "iml",
+   "rule": "R1_2",
+   "eps": 0.1,
+   "stat": "dsens",
+   "point": -0.018272211720226847,
+   "per_seed": [
+    0.0035066162570888595,
+    -0.014395085066162631,
+    -0.017939508506616242,
+    -0.05575614366729681,
+    -0.006776937618147398
+   ],
+   "ci90_seedcluster": [
+    -0.03410775047258979,
+    -0.0048960302457466635
+   ],
+   "master_key": "r8_rev1_results/agg|a2|iml|22|R1_2|0.1|ds_eps"
+  },
+  {
+   "site": "iml",
+   "rule": "R1_2",
+   "eps": 0.05,
+   "stat": "cov",
+   "point": 0.789,
+   "per_seed": [
+    0.795,
+    0.77,
+    0.795,
+    0.815,
+    0.77
+   ],
+   "ci90_seedcluster": [
+    0.775,
+    0.8019999999999999
+   ],
+   "master_key": "r8_rev1_results/agg|a2|iml|22|R1_2|0.05|cov"
+  },
+  {
+   "site": "iml",
+   "rule": "R1_2",
+   "eps": 0.05,
+   "stat": "dsens",
+   "point": -0.007311909262759955,
+   "per_seed": [
+    0.002759924385633223,
+    -0.004224952741020851,
+    -0.007344045368620067,
+    -0.015775047258979227,
+    -0.011975425330812852
+   ],
+   "ci90_seedcluster": [
+    -0.011945179584121004,
+    -0.002344045368620082
+   ],
+   "master_key": "r8_rev1_results/agg|a2|iml|22|R1_2|0.05|ds_eps"
+  }
+ ],
+ "no_interval": [
+  "PlasmoCount: all values (per-draw values were not retained; no interval)",
+  "M5: Delta Sens_eps (per-draw values were not retained; no interval)"
+ ],
+ "stored_interval": [
+  "M5 coverage: m5/cells_p|SPLIT6|0.1|coverage_ci90_seedcluster|0/1 (stored 90% seed-cluster interval)"
+ ]
+}

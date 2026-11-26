@@ -1,0 +1,41 @@
+{
+ "nature": "candidate A run raw output; gates C1-C3 read by the separate frozen reader",
+ "c1_A_run_sha256": "6f064467f8400dbffdab53a67469e05a45150241c4d91c88606df2736b60655e",
+ "pins": {
+  "c1_smoke": "10b0487a2f20c49da5684f89b155f86be44f1d20524ccf3cf6cc0646fe9fccf0",
+  "c1_predict": "aeafdcbd369f1a642fd211cbf937136c42e73933ad95225858afab3eb3e48d14",
+  "c1_run": "477bd8895b49997b890352728e4b019fc64e7635f77a8dfa8cab4c07a721d213",
+  "c1_m51_run": "a787897fbc17d6c1b902c7c9311098c6970c5ff0933a04e29c913800f36fc1b8"
+ },
+ "sealed_manifest": "788238b6cb17874ea05745cd6233695e66e9cd9f83d4e13d8554768f173e43d6",
+ "part": "both",
+ "units_done": 465,
+ "ndraw": 500,
+ "delta_ref": 0.1,
+ "delta_2s": 0.05,
+ "alpha_T": 0.05,
+ "m_T": 16,
+ "seed_scheme": "sites sealed [20261121,2,idx,k,0|2]; platt [20261121,4,idx,k,1]; sd = 1000*(idx+1)+k; extra fields rng([20261123,9,unit_index,sd,draw])",
+ "c1run_crosscheck": {
+  "n_compared": 90000,
+  "n_differing": 0
+ },
+ "thread_pools": [
+  {
+   "api": "blas",
+   "lib": "mkl",
+   "n": 1
+  },
+  {
+   "api": "openmp",
+   "lib": "openmp",
+   "n": 1
+  },
+  {
+   "api": "blas",
+   "lib": "openblas",
+   "n": 1
+  }
+ ],
+ "seconds": 8303.989227749174
+}

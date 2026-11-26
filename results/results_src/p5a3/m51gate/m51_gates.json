@@ -1,0 +1,7 @@
+{
+ "M2|hw_ratio_max": 0.8,
+ "M2|min_sites": 2,
+ "M3|sens_diff_min": 0.01,
+ "M3|min_sites": 2,
+ "n_dev_sites": 3
+}

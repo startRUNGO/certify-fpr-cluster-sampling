@@ -1,0 +1,1435 @@
+{
+ "version": "e2p_certcond_r1",
+ "spec": "P5 E2' add-on, coverage among certified S3 draws (user request 2026-11-14)",
+ "seeds": [
+  41,
+  42,
+  43,
+  44,
+  45
+ ],
+ "ms": [
+  6,
+  10,
+  15,
+  22,
+  30,
+  40,
+  60
+ ],
+ "cells": {
+  "bbbc041_all|6|0.1": {
+   "coverage_all": 0.9880000000000001,
+   "cannot_certify": 0.151,
+   "n_draws": 1000,
+   "n_cert": 849,
+   "coverage_cert_seedmean": 0.9860002246467884,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.9891304347826086,
+    "42": 0.9575757575757575,
+    "43": 0.9940476190476191,
+    "44": 1.0,
+    "45": 0.989247311827957
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.9733549783549783,
+    0.9954451345755693
+   ],
+   "coverage_cert_pooled": 0.9858657243816255,
+   "n_cert_per_seed": {
+    "41": 184,
+    "42": 165,
+    "43": 168,
+    "44": 146,
+    "45": 186
+   }
+  },
+  "bbbc041_all|6|0.05": {
+   "coverage_all": 0.993,
+   "cannot_certify": 0.5959999999999999,
+   "n_draws": 1000,
+   "n_cert": 404,
+   "coverage_cert_seedmean": 0.9882440476190476,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 1.0,
+    "42": 0.9880952380952381,
+    "43": 1.0,
+    "44": 0.953125,
+    "45": 1.0
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.971875,
+    1.0
+   ],
+   "coverage_cert_pooled": 0.9900990099009901,
+   "n_cert_per_seed": {
+    "41": 103,
+    "42": 84,
+    "43": 72,
+    "44": 64,
+    "45": 81
+   }
+  },
+  "bbbc041_all|10|0.1": {
+   "coverage_all": 0.9809999999999999,
+   "cannot_certify": 0.0040000000000000036,
+   "n_draws": 1000,
+   "n_cert": 996,
+   "coverage_cert_seedmean": 0.9808990914166793,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.9798994974874372,
+    "42": 0.965,
+    "43": 0.9595959595959596,
+    "44": 1.0,
+    "45": 1.0
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.9687575757575757,
+    0.993
+   ],
+   "coverage_cert_pooled": 0.9809236947791165,
+   "n_cert_per_seed": {
+    "41": 199,
+    "42": 200,
+    "43": 198,
+    "44": 199,
+    "45": 200
+   }
+  },
+  "bbbc041_all|10|0.05": {
+   "coverage_all": 0.9870000000000001,
+   "cannot_certify": 0.083,
+   "n_draws": 1000,
+   "n_cert": 917,
+   "coverage_cert_seedmean": 0.9860797253555529,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 1.0,
+    "42": 0.9581151832460733,
+    "43": 0.978494623655914,
+    "44": 0.9937888198757764,
+    "45": 1.0
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.9736268739227991,
+    0.9975155279503106
+   ],
+   "coverage_cert_pooled": 0.9858233369683751,
+   "n_cert_per_seed": {
+    "41": 189,
+    "42": 191,
+    "43": 186,
+    "44": 161,
+    "45": 190
+   }
+  },
+  "bbbc041_all|15|0.1": {
+   "coverage_all": 0.984,
+   "cannot_certify": 0.0,
+   "n_draws": 1000,
+   "n_cert": 1000,
+   "coverage_cert_seedmean": 0.984,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.97,
+    "42": 0.975,
+    "43": 0.995,
+    "44": 0.995,
+    "45": 0.985
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.976,
+    0.991
+   ],
+   "coverage_cert_pooled": 0.984,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 200,
+    "44": 200,
+    "45": 200
+   }
+  },
+  "bbbc041_all|15|0.05": {
+   "coverage_all": 0.984,
+   "cannot_certify": 0.0030000000000000027,
+   "n_draws": 1000,
+   "n_cert": 997,
+   "coverage_cert_seedmean": 0.9839647226029136,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.9849246231155779,
+    "42": 0.96,
+    "43": 0.995,
+    "44": 0.98989898989899,
+    "45": 0.99
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.9730000000000001,
+    0.9919595959595959
+   ],
+   "coverage_cert_pooled": 0.9839518555667001,
+   "n_cert_per_seed": {
+    "41": 199,
+    "42": 200,
+    "43": 200,
+    "44": 198,
+    "45": 200
+   }
+  },
+  "bbbc041_all|22|0.1": {
+   "coverage_all": 0.993,
+   "cannot_certify": 0.0,
+   "n_draws": 1000,
+   "n_cert": 1000,
+   "coverage_cert_seedmean": 0.993,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.995,
+    "42": 0.985,
+    "43": 0.995,
+    "44": 0.99,
+    "45": 1.0
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.9890000000000001,
+    0.9970000000000001
+   ],
+   "coverage_cert_pooled": 0.993,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 200,
+    "44": 200,
+    "45": 200
+   }
+  },
+  "bbbc041_all|22|0.05": {
+   "coverage_all": 0.9890000000000001,
+   "cannot_certify": 0.0,
+   "n_draws": 1000,
+   "n_cert": 1000,
+   "coverage_cert_seedmean": 0.9890000000000001,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 1.0,
+    "42": 0.97,
+    "43": 0.995,
+    "44": 0.99,
+    "45": 0.99
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.9800000000000001,
+    0.9960000000000001
+   ],
+   "coverage_cert_pooled": 0.989,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 200,
+    "44": 200,
+    "45": 200
+   }
+  },
+  "bbbc041_all|30|0.1": {
+   "coverage_all": 0.9940000000000001,
+   "cannot_certify": 0.0,
+   "n_draws": 1000,
+   "n_cert": 1000,
+   "coverage_cert_seedmean": 0.9940000000000001,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.99,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 0.98
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.9879999999999999,
+    1.0
+   ],
+   "coverage_cert_pooled": 0.994,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 200,
+    "44": 200,
+    "45": 200
+   }
+  },
+  "bbbc041_all|30|0.05": {
+   "coverage_all": 0.998,
+   "cannot_certify": 0.0,
+   "n_draws": 1000,
+   "n_cert": 1000,
+   "coverage_cert_seedmean": 0.998,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.995,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 0.995
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.9960000000000001,
+    1.0
+   ],
+   "coverage_cert_pooled": 0.998,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 200,
+    "44": 200,
+    "45": 200
+   }
+  },
+  "bbbc041_all|40|0.1": {
+   "coverage_all": 0.998,
+   "cannot_certify": 0.0,
+   "n_draws": 1000,
+   "n_cert": 1000,
+   "coverage_cert_seedmean": 0.998,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.995,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 0.995
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.9960000000000001,
+    1.0
+   ],
+   "coverage_cert_pooled": 0.998,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 200,
+    "44": 200,
+    "45": 200
+   }
+  },
+  "bbbc041_all|40|0.05": {
+   "coverage_all": 0.9950000000000001,
+   "cannot_certify": 0.0,
+   "n_draws": 1000,
+   "n_cert": 1000,
+   "coverage_cert_seedmean": 0.9950000000000001,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 1.0,
+    "42": 0.995,
+    "43": 0.995,
+    "44": 1.0,
+    "45": 0.985
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.991,
+    0.999
+   ],
+   "coverage_cert_pooled": 0.995,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 200,
+    "44": 200,
+    "45": 200
+   }
+  },
+  "bbbc041_all|60|0.1": {
+   "coverage_all": 0.9959999999999999,
+   "cannot_certify": 0.0,
+   "n_draws": 1000,
+   "n_cert": 1000,
+   "coverage_cert_seedmean": 0.9959999999999999,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.99,
+    "42": 0.995,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 0.995
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.993,
+    0.999
+   ],
+   "coverage_cert_pooled": 0.996,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 200,
+    "44": 200,
+    "45": 200
+   }
+  },
+  "bbbc041_all|60|0.05": {
+   "coverage_all": 0.9950000000000001,
+   "cannot_certify": 0.0,
+   "n_draws": 1000,
+   "n_cert": 1000,
+   "coverage_cert_seedmean": 0.9950000000000001,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.99,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 0.985
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.99,
+    1.0
+   ],
+   "coverage_cert_pooled": 0.995,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 200,
+    "44": 200,
+    "45": 200
+   }
+  },
+  "mpidb_full|6|0.1": {
+   "coverage_all": 0.992,
+   "cannot_certify": 0.11399999999999999,
+   "n_draws": 1000,
+   "n_cert": 886,
+   "coverage_cert_seedmean": 0.9910760373414167,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 1.0,
+    "42": 0.9725274725274725,
+    "43": 0.994413407821229,
+    "44": 0.9884393063583815,
+    "45": 1.0
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.9823991650807293,
+    0.9977653631284916
+   ],
+   "coverage_cert_pooled": 0.9909706546275395,
+   "n_cert_per_seed": {
+    "41": 172,
+    "42": 182,
+    "43": 179,
+    "44": 173,
+    "45": 180
+   }
+  },
+  "mpidb_full|6|0.05": {
+   "coverage_all": 0.9960000000000001,
+   "cannot_certify": 0.32999999999999996,
+   "n_draws": 1000,
+   "n_cert": 670,
+   "coverage_cert_seedmean": 0.9954407779371912,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.983739837398374,
+    "42": 0.9934640522875817,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 1.0
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.9902439024390244,
+    1.0
+   ],
+   "coverage_cert_pooled": 0.9955223880597015,
+   "n_cert_per_seed": {
+    "41": 123,
+    "42": 153,
+    "43": 132,
+    "44": 128,
+    "45": 134
+   }
+  },
+  "mpidb_full|10|0.1": {
+   "coverage_all": 0.982,
+   "cannot_certify": 0.031000000000000028,
+   "n_draws": 1000,
+   "n_cert": 969,
+   "coverage_cert_seedmean": 0.981332439349033,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.9899497487437185,
+    "42": 0.979381443298969,
+    "43": 0.9947916666666666,
+    "44": 0.9631578947368421,
+    "45": 0.979381443298969
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.9728920238741182,
+    0.9888044712393583
+   ],
+   "coverage_cert_pooled": 0.9814241486068112,
+   "n_cert_per_seed": {
+    "41": 199,
+    "42": 194,
+    "43": 192,
+    "44": 190,
+    "45": 194
+   }
+  },
+  "mpidb_full|10|0.05": {
+   "coverage_all": 0.985,
+   "cannot_certify": 0.05499999999999998,
+   "n_draws": 1000,
+   "n_cert": 945,
+   "coverage_cert_seedmean": 0.9842249504769256,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.9690721649484536,
+    "42": 0.9844559585492227,
+    "43": 1.0,
+    "44": 0.972972972972973,
+    "45": 0.9946236559139785
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.975269570088223,
+    0.9935193257773903
+   ],
+   "coverage_cert_pooled": 0.9841269841269841,
+   "n_cert_per_seed": {
+    "41": 194,
+    "42": 193,
+    "43": 187,
+    "44": 185,
+    "45": 186
+   }
+  },
+  "mpidb_full|15|0.1": {
+   "coverage_all": 0.9810000000000001,
+   "cannot_certify": 0.03700000000000001,
+   "n_draws": 1000,
+   "n_cert": 963,
+   "coverage_cert_seedmean": 0.9803995203544581,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.9744897959183674,
+    "42": 0.9695431472081218,
+    "43": 0.9791666666666666,
+    "44": 0.988950276243094,
+    "45": 0.9898477157360406
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.9744139027571654,
+    0.9864171559753274
+   ],
+   "coverage_cert_pooled": 0.980269989615784,
+   "n_cert_per_seed": {
+    "41": 196,
+    "42": 197,
+    "43": 192,
+    "44": 181,
+    "45": 197
+   }
+  },
+  "mpidb_full|15|0.05": {
+   "coverage_all": 0.9890000000000001,
+   "cannot_certify": 0.03700000000000001,
+   "n_draws": 1000,
+   "n_cert": 963,
+   "coverage_cert_seedmean": 0.9884367137984565,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.9897959183673469,
+    "42": 0.9847715736040609,
+    "43": 0.9947916666666666,
+    "44": 0.9779005524861878,
+    "45": 0.9949238578680203
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.9836578484985153,
+    0.9928669627749576
+   ],
+   "coverage_cert_pooled": 0.9885773624091381,
+   "n_cert_per_seed": {
+    "41": 196,
+    "42": 197,
+    "43": 192,
+    "44": 181,
+    "45": 197
+   }
+  },
+  "mpidb_full|22|0.1": {
+   "coverage_all": 0.992,
+   "cannot_certify": 0.03400000000000001,
+   "n_draws": 1000,
+   "n_cert": 966,
+   "coverage_cert_seedmean": 0.9915837843171138,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 1.0,
+    "42": 0.9797979797979798,
+    "43": 1.0,
+    "44": 0.9831460674157303,
+    "45": 0.9949748743718593
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.984842211283406,
+    0.9979899497487438
+   ],
+   "coverage_cert_pooled": 0.9917184265010351,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 198,
+    "43": 191,
+    "44": 178,
+    "45": 199
+   }
+  },
+  "mpidb_full|22|0.05": {
+   "coverage_all": 0.991,
+   "cannot_certify": 0.03400000000000001,
+   "n_draws": 1000,
+   "n_cert": 966,
+   "coverage_cert_seedmean": 0.990541689023894,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.995,
+    "42": 0.9797979797979798,
+    "43": 0.9947643979057592,
+    "44": 0.9831460674157303,
+    "45": 1.0
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.984508001361934,
+    0.9959528795811519
+   ],
+   "coverage_cert_pooled": 0.9906832298136646,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 198,
+    "43": 191,
+    "44": 178,
+    "45": 199
+   }
+  },
+  "mpidb_full|30|0.1": {
+   "coverage_all": 0.9970000000000001,
+   "cannot_certify": 0.016000000000000014,
+   "n_draws": 1000,
+   "n_cert": 984,
+   "coverage_cert_seedmean": 0.9968953538862355,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 1.0,
+    "42": 1.0,
+    "43": 0.9897959183673469,
+    "44": 0.9946808510638298,
+    "45": 1.0
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.9937907077724708,
+    1.0
+   ],
+   "coverage_cert_pooled": 0.9969512195121951,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 196,
+    "44": 188,
+    "45": 200
+   }
+  },
+  "mpidb_full|30|0.05": {
+   "coverage_all": 0.998,
+   "cannot_certify": 0.016000000000000014,
+   "n_draws": 1000,
+   "n_cert": 984,
+   "coverage_cert_seedmean": 0.997872340425532,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 0.9893617021276596,
+    "45": 1.0
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.9936170212765958,
+    1.0
+   ],
+   "coverage_cert_pooled": 0.9979674796747967,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 196,
+    "44": 188,
+    "45": 200
+   }
+  },
+  "mpidb_full|40|0.1": {
+   "coverage_all": 0.9970000000000001,
+   "cannot_certify": 0.01100000000000001,
+   "n_draws": 1000,
+   "n_cert": 989,
+   "coverage_cert_seedmean": 0.9969427785710507,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.995,
+    "42": 1.0,
+    "43": 0.9949494949494949,
+    "44": 0.9947643979057592,
+    "45": 1.0
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.9949326775609497,
+    0.998989898989899
+   ],
+   "coverage_cert_pooled": 0.9969666329625885,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 198,
+    "44": 191,
+    "45": 200
+   }
+  },
+  "mpidb_full|40|0.05": {
+   "coverage_all": 1.0,
+   "cannot_certify": 0.01100000000000001,
+   "n_draws": 1000,
+   "n_cert": 989,
+   "coverage_cert_seedmean": 1.0,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 1.0
+   },
+   "coverage_cert_seedcluster_ci90": [
+    1.0,
+    1.0
+   ],
+   "coverage_cert_pooled": 1.0,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 198,
+    "44": 191,
+    "45": 200
+   }
+  },
+  "mpidb_full|60|0.1": {
+   "coverage_all": 1.0,
+   "cannot_certify": 0.0,
+   "n_draws": 1000,
+   "n_cert": 1000,
+   "coverage_cert_seedmean": 1.0,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 1.0
+   },
+   "coverage_cert_seedcluster_ci90": [
+    1.0,
+    1.0
+   ],
+   "coverage_cert_pooled": 1.0,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 200,
+    "44": 200,
+    "45": 200
+   }
+  },
+  "mpidb_full|60|0.05": {
+   "coverage_all": 0.999,
+   "cannot_certify": 0.0020000000000000018,
+   "n_draws": 1000,
+   "n_cert": 998,
+   "coverage_cert_seedmean": 0.999,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 1.0,
+    "42": 0.995,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 1.0
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.9970000000000001,
+    1.0
+   ],
+   "coverage_cert_pooled": 0.998997995991984,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 200,
+    "44": 198,
+    "45": 200
+   }
+  },
+  "lacuna_B|6|0.1": {
+   "coverage_all": 0.993,
+   "cannot_certify": 0.0010000000000000009,
+   "n_draws": 1000,
+   "n_cert": 999,
+   "coverage_cert_seedmean": 0.9929798994974874,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 1.0,
+    "42": 1.0,
+    "43": 0.99,
+    "44": 0.9798994974874372,
+    "45": 0.995
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.986959798994975,
+    0.998
+   ],
+   "coverage_cert_pooled": 0.992992992992993,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 200,
+    "44": 199,
+    "45": 200
+   }
+  },
+  "lacuna_B|6|0.05": {
+   "coverage_all": 0.9949999999999999,
+   "cannot_certify": 0.03400000000000003,
+   "n_draws": 1000,
+   "n_cert": 966,
+   "coverage_cert_seedmean": 0.9948317825626389,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.9893617021276596,
+    "42": 1.0,
+    "43": 0.9949494949494949,
+    "44": 1.0,
+    "45": 0.9898477157360406
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.9915865644238039,
+    0.997979797979798
+   ],
+   "coverage_cert_pooled": 0.994824016563147,
+   "n_cert_per_seed": {
+    "41": 188,
+    "42": 190,
+    "43": 198,
+    "44": 193,
+    "45": 197
+   }
+  },
+  "lacuna_B|10|0.1": {
+   "coverage_all": 0.9649999999999999,
+   "cannot_certify": 0.0,
+   "n_draws": 1000,
+   "n_cert": 1000,
+   "coverage_cert_seedmean": 0.9649999999999999,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.94,
+    "42": 0.965,
+    "43": 0.98,
+    "44": 0.985,
+    "45": 0.955
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.953,
+    0.977
+   ],
+   "coverage_cert_pooled": 0.965,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 200,
+    "44": 200,
+    "45": 200
+   }
+  },
+  "lacuna_B|10|0.05": {
+   "coverage_all": 0.974,
+   "cannot_certify": 0.0,
+   "n_draws": 1000,
+   "n_cert": 1000,
+   "coverage_cert_seedmean": 0.974,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.96,
+    "42": 0.98,
+    "43": 0.98,
+    "44": 0.98,
+    "45": 0.97
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.968,
+    0.9800000000000001
+   ],
+   "coverage_cert_pooled": 0.974,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 200,
+    "44": 200,
+    "45": 200
+   }
+  },
+  "lacuna_B|15|0.1": {
+   "coverage_all": 0.9549999999999998,
+   "cannot_certify": 0.0,
+   "n_draws": 1000,
+   "n_cert": 1000,
+   "coverage_cert_seedmean": 0.9549999999999998,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.965,
+    "42": 0.945,
+    "43": 0.945,
+    "44": 0.965,
+    "45": 0.955
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.9490000000000001,
+    0.961
+   ],
+   "coverage_cert_pooled": 0.955,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 200,
+    "44": 200,
+    "45": 200
+   }
+  },
+  "lacuna_B|15|0.05": {
+   "coverage_all": 0.946,
+   "cannot_certify": 0.0,
+   "n_draws": 1000,
+   "n_cert": 1000,
+   "coverage_cert_seedmean": 0.946,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.94,
+    "42": 0.96,
+    "43": 0.955,
+    "44": 0.945,
+    "45": 0.93
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.938,
+    0.954
+   ],
+   "coverage_cert_pooled": 0.946,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 200,
+    "44": 200,
+    "45": 200
+   }
+  },
+  "lacuna_B|22|0.1": {
+   "coverage_all": 0.9469999999999998,
+   "cannot_certify": 0.0,
+   "n_draws": 1000,
+   "n_cert": 1000,
+   "coverage_cert_seedmean": 0.9469999999999998,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.935,
+    "42": 0.95,
+    "43": 0.95,
+    "44": 0.945,
+    "45": 0.955
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.942,
+    0.952
+   ],
+   "coverage_cert_pooled": 0.947,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 200,
+    "44": 200,
+    "45": 200
+   }
+  },
+  "lacuna_B|22|0.05": {
+   "coverage_all": 0.9199999999999999,
+   "cannot_certify": 0.0,
+   "n_draws": 1000,
+   "n_cert": 1000,
+   "coverage_cert_seedmean": 0.9199999999999999,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.91,
+    "42": 0.9,
+    "43": 0.905,
+    "44": 0.96,
+    "45": 0.925
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.906,
+    0.938
+   ],
+   "coverage_cert_pooled": 0.92,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 200,
+    "44": 200,
+    "45": 200
+   }
+  },
+  "lacuna_B|30|0.1": {
+   "coverage_all": 0.95,
+   "cannot_certify": 0.0,
+   "n_draws": 1000,
+   "n_cert": 1000,
+   "coverage_cert_seedmean": 0.95,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.94,
+    "42": 0.97,
+    "43": 0.95,
+    "44": 0.97,
+    "45": 0.92
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.9359999999999999,
+    0.9639999999999999
+   ],
+   "coverage_cert_pooled": 0.95,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 200,
+    "44": 200,
+    "45": 200
+   }
+  },
+  "lacuna_B|30|0.05": {
+   "coverage_all": 0.923,
+   "cannot_certify": 0.0,
+   "n_draws": 1000,
+   "n_cert": 1000,
+   "coverage_cert_seedmean": 0.923,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.91,
+    "42": 0.925,
+    "43": 0.95,
+    "44": 0.945,
+    "45": 0.885
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.9049999999999999,
+    0.9390000000000001
+   ],
+   "coverage_cert_pooled": 0.923,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 200,
+    "44": 200,
+    "45": 200
+   }
+  },
+  "lacuna_B|40|0.1": {
+   "coverage_all": 0.958,
+   "cannot_certify": 0.0,
+   "n_draws": 1000,
+   "n_cert": 1000,
+   "coverage_cert_seedmean": 0.958,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.965,
+    "42": 0.945,
+    "43": 0.96,
+    "44": 0.975,
+    "45": 0.945
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.9490000000000001,
+    0.967
+   ],
+   "coverage_cert_pooled": 0.958,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 200,
+    "44": 200,
+    "45": 200
+   }
+  },
+  "lacuna_B|40|0.05": {
+   "coverage_all": 0.931,
+   "cannot_certify": 0.0,
+   "n_draws": 1000,
+   "n_cert": 1000,
+   "coverage_cert_seedmean": 0.931,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.96,
+    "42": 0.925,
+    "43": 0.925,
+    "44": 0.955,
+    "45": 0.89
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.9109999999999999,
+    0.95
+   ],
+   "coverage_cert_pooled": 0.931,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 200,
+    "44": 200,
+    "45": 200
+   }
+  },
+  "lacuna_B|60|0.1": {
+   "coverage_all": 0.9739999999999999,
+   "cannot_certify": 0.0,
+   "n_draws": 1000,
+   "n_cert": 1000,
+   "coverage_cert_seedmean": 0.9739999999999999,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.98,
+    "42": 0.97,
+    "43": 0.98,
+    "44": 0.96,
+    "45": 0.98
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.968,
+    0.9800000000000001
+   ],
+   "coverage_cert_pooled": 0.974,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 200,
+    "44": 200,
+    "45": 200
+   }
+  },
+  "lacuna_B|60|0.05": {
+   "coverage_all": 0.9560000000000001,
+   "cannot_certify": 0.0,
+   "n_draws": 1000,
+   "n_cert": 1000,
+   "coverage_cert_seedmean": 0.9560000000000001,
+   "seeds_with_cert": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "coverage_cert_per_seed": {
+    "41": 0.955,
+    "42": 0.96,
+    "43": 0.955,
+    "44": 0.95,
+    "45": 0.96
+   },
+   "coverage_cert_seedcluster_ci90": [
+    0.953,
+    0.959
+   ],
+   "coverage_cert_pooled": 0.956,
+   "n_cert_per_seed": {
+    "41": 200,
+    "42": 200,
+    "43": 200,
+    "44": 200,
+    "45": 200
+   }
+  }
+ },
+ "errors": [],
+ "infeasible": [],
+ "anchors": "S3 all-draw coverage per seed and cannot-certify share equal the stored E2' output within 1e-12 for every stored S3 cell of the grid (n_anchored recorded); a library error or a missing cell aborts",
+ "stored_sha": "11c6ac39cf7f7661020cd39b7eba648f61823d84016c0d96385cc350b9034df5",
+ "n_anchored": 42,
+ "seconds": 1165.991504907608,
+ "ci_definition": "seed-cluster 90% interval: percentile 5-95 of the mean coverage over B=10000 resamples of the five per-seed coverages with replacement (default_rng([20261103, 99]); equals a seed-cluster bootstrap when every seed has the same number of draws)",
+ "definition": "coverage_cert = share of certified draws with realised site FPR <= eps (S3; library convention); seed mean over seeds with >= 1 certified draw; pooled value written beside it",
+ "inputs_used": {
+  "runs/a2pp_eval_20261028T173145Z/a2_link/a2_s41_bbbc041_all_logits.npz": "161e4d1cd2521edd72c0e166a14b7ca7c686a3809d3d85f189eb04f0334a3468",
+  "runs/a2pp_eval_20261028T173145Z/a2_link/a2_s42_bbbc041_all_logits.npz": "6e728c3f56b51c9db76dc6a08f84cb460407ac0769f15a512d99846b87c80de5",
+  "runs/a2pp_eval_20261028T173145Z/a2_link/a2_s43_bbbc041_all_logits.npz": "130de5d2ebf368390c8545a3e7ed460ed2b0a2eb0e61f62e5d35b32b58915bda",
+  "runs/a2pp_eval_20261028T173145Z/a2_link/a2_s44_bbbc041_all_logits.npz": "c9e4d315779dcc1d1f7e3626ff6247fc6bcc9c6fa8186113ef2030c0616c77c0",
+  "runs/a2pp_eval_20261028T173145Z/a2_link/a2_s45_bbbc041_all_logits.npz": "a4ef2dab6283359a441ea3dac3813e2ee6819d290f6390ebeb027fb7fcf82cc7",
+  "runs/a2_frozen_mh_lh_20261029/a2_s41_mh_logits.npz": "19ef11da6ecac1da37b7e62a85cfd7b07104f0f01f07d8d73fc029088ccbc169",
+  "runs/a2_frozen_mh_lh_20261029/ids_mh.npz": "f66ce936f949e211f387eab048200b20f8ef0de4455beab1054bea809146669e",
+  "runs/a2_frozen_mh_lh_20261029/a2_s42_mh_logits.npz": "4d77eac74f87e5655b9f56a8e35dd4543ef686873409b815009c9c5ed363c0d8",
+  "runs/a2_frozen_mh_lh_20261029/a2_s43_mh_logits.npz": "fc3c20c8cd91a488a36d8e2d4ec395e96064bc41d1fc7c508397a5bfe6e552b2",
+  "runs/a2_frozen_mh_lh_20261029/a2_s44_mh_logits.npz": "19dda61eac516ae92ab89affd527a9e729d67266e059a9a16acdac5f12b3cea1",
+  "runs/a2_frozen_mh_lh_20261029/a2_s45_mh_logits.npz": "cf4f10cdb88ad97774c00fdc24a83e274c78b6b88e47acd956d120816d61d501",
+  "runs/a2_frozen_mh_lh_20261029/a2_s41_lh_logits.npz": "c927a3e620d2dec09f19e9c80dc055b260926c07b2be94d3a8cec72fe49fcb49",
+  "runs/a2_frozen_mh_lh_20261029/ids_lh.npz": "1158eeaad3dcc654faa0f501739d95c99038c88ea08c83bdbdf5ce9391f98cc6",
+  "runs/a2_frozen_mh_lh_20261029/a2_s42_lh_logits.npz": "aba53ef523e79b491272e57013e3bd6aff1983a549780a1fdae86691a15f1572",
+  "runs/a2_frozen_mh_lh_20261029/a2_s43_lh_logits.npz": "e8d6403b4e38a5498dd5b8d0de2621242d383714745966ab7f3844184535bb8d",
+  "runs/a2_frozen_mh_lh_20261029/a2_s44_lh_logits.npz": "bae8f6d7ede93af81822783078944228230f8e89ff9009e9b3e49b3f643dbfbd",
+  "runs/a2_frozen_mh_lh_20261029/a2_s45_lh_logits.npz": "5acb4bb0fdf1c4d3d107e6044811212f1bf310f46ae8d7df4c55830af16cd5f8"
+ }
+}

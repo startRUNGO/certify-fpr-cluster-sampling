@@ -1,0 +1,10 @@
+{
+ "n_min|delta_over_K": 33,
+ "r_mean|bbbc041_all": 0.28550503383396597,
+ "m_star|delta|bbbc041_all": 74,
+ "m_star|delta_over_K|bbbc041_all": 109,
+ "m_star|delta|mpidb_full": 46,
+ "m_star|delta_over_K|mpidb_full": 68,
+ "m_star|delta|lacuna_B": 47,
+ "m_star|delta_over_K|lacuna_B": 70
+}

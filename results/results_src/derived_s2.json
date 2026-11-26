@@ -1,0 +1,22 @@
+{
+ "bbbc041_all|cells_per_field": 64.37198795180723,
+ "bbbc041_all|false_flags_per_field_eps005": 3.2185993975903617,
+ "bbbc041_all|zero_flag_floor": 0.002480655239384233,
+ "bbbc041_all|zero_flag_floor_N": 1369.387,
+ "mpidb_full|cells_per_field": 68.13461538461539,
+ "mpidb_full|false_flags_per_field_eps005": 3.4067307692307693,
+ "mpidb_full|zero_flag_floor": 0.002456340657768563,
+ "mpidb_full|zero_flag_floor_N": 1382.959,
+ "lacuna_B|cells_per_field": 109.43892339544513,
+ "lacuna_B|false_flags_per_field_eps005": 5.471946169772257,
+ "lacuna_B|zero_flag_floor": 0.0014534540781531158,
+ "lacuna_B|zero_flag_floor_N": 2338.378,
+ "plasmo|cells_per_field": 74.60344827586206,
+ "plasmo|false_flags_per_field_eps005": 3.7301724137931034,
+ "plasmo|zero_flag_floor": 0.0021692731837604784,
+ "plasmo|zero_flag_floor_N": 1566.196,
+ "iml|cells_per_field": 111.38550724637682,
+ "iml|false_flags_per_field_eps005": 5.569275362318841,
+ "iml|zero_flag_floor": 0.0014085971973715194,
+ "iml|zero_flag_floor_N": 2412.898
+}
