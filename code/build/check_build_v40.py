@@ -23,17 +23,21 @@ from pathlib import Path
 # v1.4: main figures and tables after the S16 move; the S16 figures and S15 / S16 numbers in the SI
 # v1.8 (实验管理 2026-11-25, assemble draft 7): F-a (fig:funnel) is Figure 4; F-d and F-e keep the labels fig:pooled and fig:confirm
 # v1.9 (实验管理 2026-11-25, assemble draft 9): F-c (fig:simbox) is Figure 2 after F-b (fig:sim)
-FIGS = ["fig:sim", "fig:simbox", "fig:drift", "fig:mechanism", "fig:funnel", "fig:pooled", "fig:dev", "fig:confirm"]
+# v2.2 (实验管理 2026-11-26, assemble draft 25): new Figure 1 fig:simblocks, the heatmap fig:sim moves to the SI as Figure S3.1 and the two S3 figures become S3.2 and S3.3.
+# v2.3 (实验管理 2026-11-26, draft 25 r4): the heatmap fig:sim stays in the main text as Figure 2 after Figure 1 fig:simblocks; SI S3 figures back to S3.1 and S3.2.
+FIGS = ["fig:simblocks", "fig:sim", "fig:simbox", "fig:drift", "fig:mechanism", "fig:funnel", "fig:pooled", "fig:dev", "fig:confirm"]
 # v1.10 (实验管理 2026-11-25, draft 14): the notation table tab:notation is Table 1, so the guarantees map, sites and development tables are Tables 2, 3 and 4.
 # v1.11 (实验管理 2026-11-25, draft 15): Table 5 tab:why (baseline families) is new.
-TABS = ["tab:notation", "tab:guarantees", "tab:sites", "tab:dev", "tab:why"]
+TABS = ["tab:notation", "tab:guarantees", "tab:cost", "tab:sites", "tab:dev", "tab:why"]
 # v1.6 (实验管理 2026-11-25, SI trim v1): S15 -> S11, S16 -> S12; tab:esparse is Table S12.1
 # v1.7 (实验管理 2026-11-25, SI trim v2): S7 -> S5, S8 -> S6, S9 -> S7, S11 -> S8, S12 -> S9; tab:esparse is Table S9.1
 SI_NUMS = {"fig:minfields": "S9.1", "fig:census": "S9.2", "fig:esparse": "S9.3", "fig:overview": "S9.4", "tab:esparse": "S9.1", "sec:s15": "S8", "sec:s16": "S9",
-           "sec:s7": "S5", "sec:s8": "S6", "sec:s10": "S7", "tab:baselines": "S5.1", "tab:s8baselines": "S6.1", "tab:confirm": "S7.1", "tab:confirm-iml": "S7.2", "tab:m5bound": "S7.3",
+           "sec:s7": "S5", "sec:s8": "S6", "sec:s10": "S7", "tab:baselines": "S5.1", "tab:s8baselines": "S6.1", "tab:confirm": "S7.1", "tab:confirm-iml": "S7.2", "tab:confirm-m5": "S7.3", "tab:m5bound": "S7.4",
            "fig:simheat-s": "S3.1", "fig:simbox-s": "S3.2"}
 VBOX_WL = "50.72"
 # v1.5: the template logo PDF copied by assemble v6 draft 4
+# v2.0 (实验管理 2026-11-26, assemble draft 22): Table S7.3 is the new M5 results table tab:confirm-m5, so tab:m5bound becomes S7.4.
+# v2.1 (实验管理 2026-11-26, assemble draft 23): main table tab:cost (Table 3, Section 4.6) before tab:sites.
 LOGO = ("images/Wiley_logo-eps-converted-to.pdf", "166cac545f3f4b2ee5bc27bdfc2686f0d8feba6b9c7e7c7b4f300da8a3174976")
 MAIN_SRC = ["sections/bj_main_v40.tex", "sections/bj_abstract_v40.tex", "sections/tab_guar_v50.tex", "sections/tab_sites_v39.tex", "sections/tab_dev_v40.tex", "sections/declarations_v53.tex"]
 PTR = r"\b(Section|Figure|Table)s?(?:~|\s)+S(\d+(?:\.\d+)?)\b"
