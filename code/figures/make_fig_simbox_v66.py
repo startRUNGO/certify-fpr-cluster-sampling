@@ -26,6 +26,8 @@
 #   (4) 'over <n_realisations> synthetic sites of <n / n_realisations> draws' built from sim50/...|all50|n_realisations and |n, equal for every shown entry.
 # Output (new directory, 'x' mode): fig_simbox_v66_eps<eps>.pdf, .png (600 dpi), fig_simbox_v66_eps<eps>_numbers.json, SHA256SUMS.
 # Usage: python3 -E -B make_fig_simbox_v66.py --master <tree/results_master.json> --eps 0.1 --out <new dir>
+# public-repo patch (2026-11-28): the master is read through public_inputs.load_master, which accepts the public redacted results/results_master.json.gz
+#   (uncompressed sha 4b296884) or the pinned internal master; non-public inputs stop with a plain message.  Drawing code unchanged.
 import argparse, hashlib, json, math, sys
 from matplotlib.ticker import MultipleLocator
 from pathlib import Path
@@ -33,9 +35,11 @@ import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MaxNLocator
 import p5a_style_ieee as P
+import public_inputs as PI
 
 MASTER_SHA = "dba06e5cf5c9f73b432eb2717bc542b990bb473ed16370f869207c1e6b0e12d1"
-STYLE_SHA = "8424218990b9bec4dcb8b3bf6c54d7b2da5671b2fc9444511ccbefa7edd39ce3"
+STYLE_SHA = "74417a86988854226a6d4967425d34b79b51c279b6cfc8d59c7942ca94e9f171"
+# public-repo patch r2: STYLE_SHA follows the public style module, whose header line naming another project was redacted (original 84242189).
 RULES = [("SPLIT6", "Split-\nSelect"), ("S3", "DE-\nGrid"), ("CB_c1s", "Cluster\nbootstrap"), ("GEE_c1s", "GEE"), ("BB_c1s", "Beta-\nbinomial")]
 SETTINGS = [("e10", 0), ("e10", 3), ("e10", 9), ("e12", 19)]
 STRIP_N = 100
@@ -173,9 +177,8 @@ def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--master", required=True); ap.add_argument("--eps", required=True, choices=["0.1", "0.05"]); ap.add_argument("--out", required=True)
     a = ap.parse_args(); out = Path(a.out); es = a.eps; eps = float(es)
     if out.exists(): return fail("output directory exists", out)
-    if sha(a.master) != MASTER_SHA: return fail("master sha differs from the pin")
     if P.STYLE_SHA256 != STYLE_SHA: return fail("style module sha differs from the pin")
-    V = json.load(open(a.master))["values"]; shown = {}
+    M, MSHA = PI.load_master(a.master, (MASTER_SHA,)); V = M["values"]; shown = {}
     try: res = load(V, es, shown)
     except KeyError as e: return fail("missing or non-finite key", e)
     if isinstance(res, str): return fail(res)
@@ -190,7 +193,7 @@ def main():
                     "$\\epsilon$. The y axis does not start at zero. Numbers above the boxes are coverage. "
                     + ("Every draw certified in these four settings." if all_cert else "Boxes show certified draws only."))
     stem = f"{STEM}_eps{es}"
-    payload = json.dumps(dict(script_sha256=sha(__file__), style_sha256=P.STYLE_SHA256, master=str(a.master), master_sha256=MASTER_SHA, eps=eps,
+    payload = json.dumps(dict(script_sha256=sha(__file__), style_sha256=P.STYLE_SHA256, master=str(a.master), master_sha256=MSHA, eps=eps,
                               settings=[f"{d}|{ci}" for d, ci in SETTINGS], rules=[r for r, _ in RULES], all_certified=all_cert,
                               strips=[f"{d}|{ci}|{r}" for (d, ci, r), e in B.items() if e["n_cert"] < STRIP_N], caption_note=caption_note,
                               mediabox_mm=buf["mediabox_mm"], shown=shown), indent=1, allow_nan=False)

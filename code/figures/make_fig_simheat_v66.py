@@ -33,6 +33,8 @@
 #   Master pin 9b04913e -> dba06e5c (adds only simbox/*); the figure itself does not change.
 # Output (new directory, 'x' mode): fig_simheat_v66_eps<eps>.pdf, .png (600 dpi), fig_simheat_v66_eps<eps>_numbers.json, SHA256SUMS.
 # Usage: python3 -E -B make_fig_simheat_v66.py --master <tree/results_master.json> --eps 0.1 --out <new dir>
+# public-repo patch (2026-11-28): the master is read through public_inputs.load_master, which accepts the public redacted results/results_master.json.gz
+#   (uncompressed sha 4b296884) or the pinned internal master; non-public inputs stop with a plain message.  Drawing code unchanged.
 import argparse, hashlib, json, math, sys
 from pathlib import Path
 import matplotlib; matplotlib.use("Agg")
@@ -43,9 +45,11 @@ from matplotlib.patches import Rectangle
 from matplotlib.lines import Line2D
 import matplotlib.transforms as mtrans
 import p5a_style_ieee as P
+import public_inputs as PI
 
 MASTER_SHA = "dba06e5cf5c9f73b432eb2717bc542b990bb473ed16370f869207c1e6b0e12d1"
-STYLE_SHA = "8424218990b9bec4dcb8b3bf6c54d7b2da5671b2fc9444511ccbefa7edd39ce3"
+STYLE_SHA = "74417a86988854226a6d4967425d34b79b51c279b6cfc8d59c7942ca94e9f171"
+# public-repo patch r2: STYLE_SHA follows the public style module, whose header line naming another project was redacted (original 84242189).
 # r2: short column headers (实验管理 2026-11-25), two lines where a name is long
 RULES = [("SPLIT6", "Split-\nSelect"), ("S3", "DE-\nGrid"), ("CB_c1s", "Cluster\nbootstrap"), ("GEE_c1s", "GEE"), ("BB_c1s", "Beta-\nbinomial")]
 # (a) single-factor design: (block label, factor key in ebatch_e10/cells|i|factors, cells)
@@ -248,9 +252,8 @@ def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--master", required=True); ap.add_argument("--eps", required=True, choices=["0.1", "0.05"]); ap.add_argument("--out", required=True)
     a = ap.parse_args(); out = Path(a.out); es = a.eps
     if out.exists(): return fail("output directory exists", out)
-    if sha(a.master) != MASTER_SHA: return fail("master sha differs from the pin")
     if P.STYLE_SHA256 != STYLE_SHA: return fail("style module sha differs from the pin")
-    V = json.load(open(a.master))["values"]; shown = {}
+    M, MSHA = PI.load_master(a.master, (MASTER_SHA,)); V = M["values"]; shown = {}
     try: res = load(V, es, shown)
     except KeyError as e: return fail("missing key", e)
     if isinstance(res, str): return fail(res)
@@ -268,7 +271,7 @@ def main():
     if any(dag.values()):
         caption_note += (" $\\dagger$ In at least one site realization of this setting, the frozen fitting routine for the Platt calibration $\\psi$ failed its precision "
                          "check on the synthetic source set, and $\\psi$ was fitted by Newton-Raphson on the same objective. $\\psi$ enters only Split-Select.")
-    payload = json.dumps(dict(script_sha256=sha(__file__), style_sha256=P.STYLE_SHA256, master=str(a.master), master_sha256=MASTER_SHA, eps=float(es), delta=delta,
+    payload = json.dumps(dict(script_sha256=sha(__file__), style_sha256=P.STYLE_SHA256, master=str(a.master), master_sha256=MSHA, eps=float(es), delta=delta,
                               cell_fontsize_pt=used, rules=[r for r, _ in RULES], rows={d: [dict(block=b, cell=ci, label=l) for b, ci, l in cols[d]] for d in cols},
                               platt_dagger=[f"{d}|{ci}" for (d, ci), v in dag.items() if v], max_coverage_mcse=max(mcse), caption_note=caption_note,
                               mediabox_mm=buf["mediabox_mm"], shown=shown), indent=1, allow_nan=False)

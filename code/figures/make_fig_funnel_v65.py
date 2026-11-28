@@ -13,14 +13,18 @@
 #   share_out == (below + above) / n_fields within 1e-12.
 # Output (new directory, 'x' mode): fig_funnel_v65.pdf, .png (600 dpi), fig_funnel_v65_numbers.json, SHA256SUMS.
 # Usage: python3 -E -B make_fig_funnel_v65.py --master <tree/results_master.json> --out <new dir>
+# public-repo patch (2026-11-28): the master is read through public_inputs.load_master, which accepts the public redacted results/results_master.json.gz
+#   (uncompressed sha 4b296884) or the pinned internal master; non-public inputs stop with a plain message.  Drawing code unchanged.
 import argparse, hashlib, json, sys
 from pathlib import Path
 import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import p5a_style_ieee as P
+import public_inputs as PI
 
 MASTER_SHA = "09e168643816c024fccf77fc7306e3b7cb6cd88ea3cb118c3c4d16bd3f9ebeb5"
-STYLE_SHA = "8424218990b9bec4dcb8b3bf6c54d7b2da5671b2fc9444511ccbefa7edd39ce3"
+STYLE_SHA = "74417a86988854226a6d4967425d34b79b51c279b6cfc8d59c7942ca94e9f171"
+# public-repo patch r2: STYLE_SHA follows the public style module, whose header line naming another project was redacted (original 84242189).
 STEM = "fig_funnel_v65"
 TOL = 1e-12
 
@@ -35,9 +39,8 @@ def fail(*m): print("GATE (exit 3):", *m, file=sys.stderr); return 3
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--master", required=True); ap.add_argument("--out", required=True); a = ap.parse_args(); out = Path(a.out)
     if out.exists(): return fail("output directory exists", out)
-    if sha(a.master) != MASTER_SHA: return fail("master sha differs from the pin")
     if P.STYLE_SHA256 != STYLE_SHA: return fail("style module sha differs from the pin")
-    V = json.load(open(a.master))["values"]; shown = {}
+    M, MSHA = PI.load_master(a.master, (MASTER_SHA,)); V = M["values"]; shown = {}
 
     def g(k):
         if k not in V or V[k] is None: raise KeyError(k)
@@ -76,7 +79,7 @@ def main():
     ax.set_xlabel("Labeled negative cells in the field"); ax.set_ylabel("Field false-positive rate")
     ax.legend(loc="upper right", ncol=2)
     buf = P.render(fig); plt.close(fig)
-    payload = json.dumps(dict(script_sha256=sha(__file__), style_sha256=P.STYLE_SHA256, master=str(a.master), master_sha256=MASTER_SHA,
+    payload = json.dumps(dict(script_sha256=sha(__file__), style_sha256=P.STYLE_SHA256, master=str(a.master), master_sha256=MSHA,
                               recomputed=dict(n_out_below=len(below), n_out_above=len(above)), mediabox_mm=buf["mediabox_mm"],
                               shown={kk: v for kk, v in shown.items() if not kk.startswith(("d_a/n_f|", "d_a/X_f|", "d_a/frac_f|", "d_a/funnel_"))},
                               per_field_and_funnel_keys=dict(n_f=F, funnel=J)), indent=1, allow_nan=False)
